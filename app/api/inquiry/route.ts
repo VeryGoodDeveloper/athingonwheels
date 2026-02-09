@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server";
-import { sendSellInquiryEmail } from "@/lib/email";
+import { sendInquiryEmail } from "@/lib/email";
 
 /**
- * POST /api/sell
- * Handle sell/trade form submissions
+ * POST /api/inquiry
+ * Handle vehicle inquiry form submissions
  */
 export async function POST(request: Request) {
   try {
@@ -23,14 +23,9 @@ export async function POST(request: Request) {
     if (!data.phone || data.phone.trim().length === 0) {
       errors.push("Phone number is required");
     }
-
-    // Validate vehicle info (either VIN/plate or manual entry)
-    const hasVin = data.vin && data.vin.trim().length > 0;
-    const hasPlate = data.licensePlate && data.licensePlate.trim().length > 0;
-    const hasManualInfo = data.make && data.model && data.year;
-
-    if (!hasVin && !hasPlate && !hasManualInfo) {
-      errors.push("Please provide either VIN, License Plate, or vehicle details (make, model, year)");
+    
+    if (!data.vehicleName) {
+      errors.push("Vehicle information is missing");
     }
 
     if (errors.length > 0) {
@@ -45,42 +40,37 @@ export async function POST(request: Request) {
     }
 
     // Send email notification
-    const emailSent = await sendSellInquiryEmail({
+    const emailSent = await sendInquiryEmail({
       name: data.name.trim(),
       email: data.email.trim(),
       phone: data.phone.trim(),
-      vin: data.vin?.trim(),
-      licensePlate: data.licensePlate?.trim(),
-      make: data.make?.trim(),
-      model: data.model?.trim(),
-      year: data.year ? parseInt(data.year) : undefined,
-      mileage: data.mileage ? parseInt(data.mileage) : undefined,
-      comments: data.comments?.trim(),
-      tradeIn: data.tradeIn === true || data.tradeIn === "true",
+      message: data.message?.trim(),
+      vehicleName: data.vehicleName,
+      vehiclePrice: data.vehiclePrice || 0,
+      vehicleSlug: data.vehicleSlug || "",
     });
 
     if (!emailSent) {
-      console.error("Failed to send sell inquiry email notification");
+      console.error("Failed to send inquiry email notification");
       // Don't fail the request - still record the inquiry
     }
 
     // Log the inquiry for tracking
-    console.log("💰 Sell/Trade Inquiry:", {
+    console.log("📝 Vehicle Inquiry:", {
       timestamp: new Date().toISOString(),
       customer: data.name,
       email: data.email,
-      vehicle: data.vin || data.licensePlate || `${data.year} ${data.make} ${data.model}`,
-      tradeIn: data.tradeIn,
+      vehicle: data.vehicleName,
       emailSent,
     });
 
     return NextResponse.json({
       success: true,
-      message: "Thank you! We'll contact you within 24 hours with an offer.",
+      message: "Thank you! We'll contact you within 24 hours.",
       submittedAt: new Date().toISOString(),
     });
   } catch (error) {
-    console.error("Sell form error:", error);
+    console.error("Inquiry form error:", error);
     return NextResponse.json(
       { 
         success: false,

@@ -83,7 +83,7 @@ export async function sendEmail(options: EmailOptions): Promise<boolean> {
     });
 
     // If using streamTransport (dev mode), log the email
-    if (info.message) {
+    if (!process.env.GMAIL_USER && !process.env.SMTP_HOST && !process.env.SENDGRID_API_KEY) {
       console.log("📧 Email (DEV MODE - not actually sent):");
       console.log("To:", toEmails.join(", "));
       console.log("Subject:", options.subject);

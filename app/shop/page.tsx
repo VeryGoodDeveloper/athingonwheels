@@ -8,7 +8,7 @@ export default function ShopPage() {
   const [filters, setFilters] = useState({
     make: "all",
     minPrice: 0,
-    maxPrice: 100000,
+    maxPrice: 600000,
     minYear: 2015,
     maxYear: 2024,
     maxMileage: 100000,
@@ -72,13 +72,13 @@ export default function ShopPage() {
               {/* Price Range */}
               <div className="mb-6">
                 <label className="block text-sm font-semibold mb-2">
-                  Price Range: ${filters.minPrice.toLocaleString()} - ${filters.maxPrice.toLocaleString()}
+                  Price Range: ${filters.minPrice.toLocaleString()} - ${filters.maxPrice >= 600000 ? '$600,000+' : '$' + filters.maxPrice.toLocaleString()}
                 </label>
                 <input
                   type="range"
                   min="0"
-                  max="100000"
-                  step="5000"
+                  max="600000"
+                  step="10000"
                   value={filters.maxPrice}
                   onChange={(e) => setFilters({ ...filters, maxPrice: parseInt(e.target.value) })}
                   className="w-full"
@@ -170,7 +170,7 @@ export default function ShopPage() {
                 onClick={() => setFilters({
                   make: "all",
                   minPrice: 0,
-                  maxPrice: 100000,
+                  maxPrice: 600000,
                   minYear: 2015,
                   maxYear: 2024,
                   maxMileage: 100000,
@@ -240,7 +240,7 @@ export default function ShopPage() {
                   onClick={() => setFilters({
                     make: "all",
                     minPrice: 0,
-                    maxPrice: 100000,
+                    maxPrice: 600000,
                     minYear: 2015,
                     maxYear: 2024,
                     maxMileage: 100000,

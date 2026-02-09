@@ -1,125 +1,131 @@
+/**
+ * Main data source for vehicle listings
+ * Integrates scraper, cache, and mock data fallback
+ */
+
 import { Vehicle } from "@/types/vehicle";
+import { scrapeVehicles } from "./scraper";
+import { readCache, writeCache } from "./cache";
+import { mockVehicles } from "./mockData";
 
 /**
- * Data source for fetching vehicles from jsautohaus.com
- * This will be the main integration point for real data
+ * Fetch vehicles with smart caching and fallback
+ * 1. Check cache first (15-minute TTL)
+ * 2. Try to scrape fresh data
+ * 3. Fall back to mock data if scraping fails
  */
-
-const DATA_SOURCE_URL = "https://jsautohaus.com";
-const CACHE_DURATION = 1000 * 60 * 15; // 15 minutes
-
-interface CachedData {
-  vehicles: Vehicle[];
-  timestamp: number;
-}
-
-let cache: CachedData | null = null;
-
-/**
- * Fetch vehicles from jsautohaus.com
- * Uses caching to avoid excessive requests
- */
-export async function fetchVehicles(): Promise<Vehicle[]> {
-  // Check cache first
-  if (cache && Date.now() - cache.timestamp < CACHE_DURATION) {
-    return cache.vehicles;
-  }
-
+export async function fetchVehicles(options?: {
+  forceRefresh?: boolean;
+}): Promise<{ vehicles: Vehicle[]; source: string }> {
   try {
-    // TODO: Implement actual scraping/API integration
-    // For now, we'll need to use a server-side scraper
-    const response = await fetch(`${DATA_SOURCE_URL}/api/vehicles`, {
-      next: { revalidate: 900 }, // Revalidate every 15 minutes
-    });
-
-    if (!response.ok) {
-      throw new Error(`Failed to fetch vehicles: ${response.statusText}`);
+    // Skip cache if force refresh requested
+    if (!options?.forceRefresh) {
+      const cached = await readCache();
+      if (cached) {
+        console.log(`Using cached data (${cached.source}, ${Math.floor((Date.now() - cached.timestamp) / 1000 / 60)}min old)`);
+        return {
+          vehicles: cached.vehicles,
+          source: `cached:${cached.source}`,
+        };
+      }
     }
 
-    const data = await response.json();
-    const vehicles = parseVehicleData(data);
+    // Try to scrape fresh data
+    console.log("Attempting to scrape jsautohaus.com...");
+    const scrapedVehicles = await scrapeVehicles();
 
-    // Update cache
-    cache = {
-      vehicles,
-      timestamp: Date.now(),
+    if (scrapedVehicles.length > 0) {
+      // Success! Cache the results
+      await writeCache(scrapedVehicles, "jsautohaus");
+      console.log(`Successfully scraped ${scrapedVehicles.length} vehicles`);
+      return {
+        vehicles: scrapedVehicles,
+        source: "jsautohaus",
+      };
+    }
+
+    // Scraping returned no results - fall back to mock data
+    console.warn("Scraping returned no vehicles, using mock data");
+    await writeCache(mockVehicles, "mock");
+    return {
+      vehicles: mockVehicles,
+      source: "mock",
     };
-
-    return vehicles;
   } catch (error) {
-    console.error("Error fetching vehicles:", error);
+    console.error("Error in fetchVehicles:", error);
     
-    // Fallback to mock data if fetch fails
-    const { mockVehicles } = await import("./mockData");
-    return mockVehicles;
+    // On error, try to use cache even if expired
+    const cached = await readCache();
+    if (cached) {
+      console.log("Using expired cache due to error");
+      return {
+        vehicles: cached.vehicles,
+        source: `stale:${cached.source}`,
+      };
+    }
+
+    // Last resort: mock data
+    console.log("Using mock data as final fallback");
+    return {
+      vehicles: mockVehicles,
+      source: "mock:fallback",
+    };
   }
-}
-
-/**
- * Parse raw vehicle data into our Vehicle type
- */
-function parseVehicleData(data: any): Vehicle[] {
-  // TODO: Parse actual jsautohaus.com data structure
-  // This will need to be customized based on their actual API/HTML structure
-  
-  if (!Array.isArray(data)) {
-    return [];
-  }
-
-  return data.map((item: any) => ({
-    id: item.id || item.vin || Math.random().toString(36).substring(7),
-    vin: item.vin || "",
-    slug: generateSlug(item),
-    make: item.make || "",
-    model: item.model || "",
-    year: parseInt(item.year) || 0,
-    trim: item.trim,
-    price: parseFloat(item.price) || 0,
-    originalPrice: item.originalPrice ? parseFloat(item.originalPrice) : undefined,
-    condition: item.condition === "new" ? "new" : "used",
-    mileage: parseInt(item.mileage) || 0,
-    images: Array.isArray(item.images) ? item.images : [],
-    thumbnailUrl: item.thumbnailUrl || item.images?.[0] || "",
-    features: Array.isArray(item.features) ? item.features : [],
-    description: item.description,
-    exteriorColor: item.exteriorColor,
-    interiorColor: item.interiorColor,
-    transmission: item.transmission,
-    fuelType: item.fuelType,
-    location: item.location || "Ewing, NJ",
-    status: item.status || "available",
-    createdAt: item.createdAt || new Date().toISOString(),
-    updatedAt: item.updatedAt || new Date().toISOString(),
-  }));
-}
-
-/**
- * Generate URL-friendly slug from vehicle data
- */
-function generateSlug(vehicle: any): string {
-  const year = vehicle.year || "";
-  const make = vehicle.make || "";
-  const model = vehicle.model || "";
-  const trim = vehicle.trim || "";
-  
-  const parts = [year, make, model, trim]
-    .filter(Boolean)
-    .map(part => part.toString().toLowerCase().replace(/[^a-z0-9]+/g, "-"));
-  
-  return parts.join("-");
 }
 
 /**
  * Fetch a single vehicle by slug
  */
 export async function fetchVehicleBySlug(slug: string): Promise<Vehicle | null> {
-  const vehicles = await fetchVehicles();
+  const { vehicles } = await fetchVehicles();
   return vehicles.find(v => v.slug === slug) || null;
 }
 
 /**
- * Clear the cache (useful for forcing fresh data)
+ * Get unique makes for filtering
  */
-export function clearCache(): void {
-  cache = null;
+export function getUniqueMakes(vehicles: Vehicle[]): string[] {
+  const makes = vehicles.map(v => v.make);
+  return Array.from(new Set(makes)).sort();
+}
+
+/**
+ * Filter vehicles by various criteria
+ */
+export function filterVehicles(
+  vehicles: Vehicle[],
+  filters: {
+    make?: string;
+    minPrice?: number;
+    maxPrice?: number;
+    minYear?: number;
+    maxYear?: number;
+    maxMileage?: number;
+    condition?: "new" | "used" | "all";
+  }
+): Vehicle[] {
+  return vehicles.filter(vehicle => {
+    if (filters.make && filters.make !== "all" && vehicle.make !== filters.make) {
+      return false;
+    }
+    if (filters.minPrice && vehicle.price < filters.minPrice) {
+      return false;
+    }
+    if (filters.maxPrice && vehicle.price > filters.maxPrice) {
+      return false;
+    }
+    if (filters.minYear && vehicle.year < filters.minYear) {
+      return false;
+    }
+    if (filters.maxYear && vehicle.year > filters.maxYear) {
+      return false;
+    }
+    if (filters.maxMileage && vehicle.mileage > filters.maxMileage) {
+      return false;
+    }
+    if (filters.condition && filters.condition !== "all" && vehicle.condition !== filters.condition) {
+      return false;
+    }
+    return true;
+  });
 }

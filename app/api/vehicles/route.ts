@@ -1,45 +1,40 @@
 import { NextResponse } from "next/server";
-import { scrapeVehicles } from "@/lib/scraper";
-import { mockVehicles } from "@/lib/mockData";
+import { fetchVehicles } from "@/lib/dataSource";
 
-// Cache duration in seconds
-const CACHE_DURATION = 900; // 15 minutes
-
-export const revalidate = CACHE_DURATION;
+// Revalidate every 15 minutes
+export const revalidate = 900;
 
 /**
  * GET /api/vehicles
- * Returns list of all vehicles
+ * Returns list of all vehicles from integrated data source
  */
 export async function GET(request: Request) {
   try {
-    // Try to fetch real data
-    const vehicles = await scrapeVehicles();
+    // Check for force refresh query param
+    const { searchParams } = new URL(request.url);
+    const forceRefresh = searchParams.get("refresh") === "true";
 
-    // If scraping returns empty, use mock data
-    if (vehicles.length === 0) {
-      console.log("Scraping returned no vehicles, using mock data");
-      return NextResponse.json({
-        vehicles: mockVehicles,
-        source: "mock",
-        timestamp: new Date().toISOString(),
-      });
-    }
+    const { vehicles, source } = await fetchVehicles({ forceRefresh });
 
     return NextResponse.json({
+      success: true,
       vehicles,
-      source: "jsautohaus",
+      count: vehicles.length,
+      source,
       timestamp: new Date().toISOString(),
     });
   } catch (error) {
     console.error("API error:", error);
     
-    // Fallback to mock data on error
-    return NextResponse.json({
-      vehicles: mockVehicles,
-      source: "mock",
-      error: "Failed to fetch live data",
-      timestamp: new Date().toISOString(),
-    });
+    return NextResponse.json(
+      {
+        success: false,
+        error: "Failed to fetch vehicles",
+        vehicles: [],
+        count: 0,
+        timestamp: new Date().toISOString(),
+      },
+      { status: 500 }
+    );
   }
 }

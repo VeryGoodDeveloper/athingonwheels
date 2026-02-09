@@ -72,7 +72,7 @@ export default function ShopPage() {
               {/* Price Range */}
               <div className="mb-6">
                 <label className="block text-sm font-semibold mb-2">
-                  Price Range: ${filters.minPrice.toLocaleString()} - ${filters.maxPrice >= 600000 ? '$600,000+' : '$' + filters.maxPrice.toLocaleString()}
+                  Price Range: ${filters.minPrice.toLocaleString()} - {filters.maxPrice >= 600000 ? '$600,000+' : '$' + filters.maxPrice.toLocaleString()}
                 </label>
                 <input
                   type="range"

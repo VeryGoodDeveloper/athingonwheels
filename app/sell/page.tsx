@@ -23,11 +23,62 @@ export default function SellPage() {
 
   const [useManual, setUseManual] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: "success" | "error" | null;
+    message: string;
+  }>({ type: null, message: "" });
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: Submit to backend/API
-    console.log("Form submitted:", formData);
-    alert("Thank you! We'll contact you within 24 hours with an offer.");
+    setIsSubmitting(true);
+    setSubmitStatus({ type: null, message: "" });
+
+    try {
+      const response = await fetch("/api/sell", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setSubmitStatus({
+          type: "success",
+          message: data.message || "Thank you! We'll contact you within 24 hours with an offer.",
+        });
+        // Reset form
+        setFormData({
+          vin: "",
+          licensePlate: "",
+          make: "",
+          model: "",
+          year: "",
+          mileage: "",
+          name: "",
+          email: "",
+          phone: "",
+          tradeIn: false,
+          comments: "",
+        });
+        setUseManual(false);
+      } else {
+        setSubmitStatus({
+          type: "error",
+          message: data.error || "Failed to submit your request. Please try again.",
+        });
+      }
+    } catch (error) {
+      setSubmitStatus({
+        type: "error",
+        message: "Network error. Please check your connection and try again.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -90,6 +141,19 @@ export default function SellPage() {
         <section className="max-w-3xl mx-auto">
           <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-8 border border-gray-700">
             <h2 className="text-3xl font-bold mb-8 text-center">Get Your Instant Quote</h2>
+
+            {/* Submit Status */}
+            {submitStatus.type && (
+              <div
+                className={`p-4 rounded-lg mb-6 ${
+                  submitStatus.type === "success"
+                    ? "bg-green-900/50 border border-green-700 text-green-300"
+                    : "bg-red-900/50 border border-red-700 text-red-300"
+                }`}
+              >
+                {submitStatus.message}
+              </div>
+            )}
 
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* VIN/License Plate Section */}
@@ -250,9 +314,10 @@ export default function SellPage() {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-bold py-4 rounded-lg transition-all transform hover:scale-105 text-lg"
+                disabled={isSubmitting}
+                className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-bold py-4 rounded-lg transition-all transform hover:scale-105 text-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
               >
-                Get My Free Quote →
+                {isSubmitting ? "Submitting..." : "Get My Free Quote →"}
               </button>
             </form>
           </div>

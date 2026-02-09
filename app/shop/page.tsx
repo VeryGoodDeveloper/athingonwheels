@@ -1,12 +1,18 @@
 "use client";
 
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { Vehicle } from "@/types/vehicle";
+
+const ITEMS_PER_PAGE = 20;
 
 export default function ShopPage() {
   const [vehicles, setVehicles] = useState<Vehicle[]>([]);
   const [loading, setLoading] = useState(true);
+  const [displayedCount, setDisplayedCount] = useState(ITEMS_PER_PAGE);
+  const [loadingMore, setLoadingMore] = useState(false);
+  const observerTarget = useRef<HTMLDivElement>(null);
+
   const [filters, setFilters] = useState({
     make: "all",
     minPrice: 0,
@@ -50,17 +56,49 @@ export default function ShopPage() {
     return true;
   });
 
-  const resetFilters = () => {
-    setFilters({
-      make: "all",
-      minPrice: 0,
-      maxPrice: 600000,
-      minYear: 2015,
-      maxYear: 2024,
-      maxMileage: 100000,
-      condition: "all",
-    });
-  };
+  // Display only a subset for infinite scroll
+  const displayedVehicles = filteredVehicles.slice(0, displayedCount);
+  const hasMore = displayedCount < filteredVehicles.length;
+
+  // Load more function
+  const loadMore = useCallback(() => {
+    if (loadingMore || !hasMore) return;
+    
+    setLoadingMore(true);
+    // Simulate loading delay for smooth UX
+    setTimeout(() => {
+      setDisplayedCount(prev => Math.min(prev + ITEMS_PER_PAGE, filteredVehicles.length));
+      setLoadingMore(false);
+    }, 300);
+  }, [loadingMore, hasMore, filteredVehicles.length]);
+
+  // Infinite scroll observer
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting && hasMore && !loadingMore) {
+          loadMore();
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    const currentTarget = observerTarget.current;
+    if (currentTarget) {
+      observer.observe(currentTarget);
+    }
+
+    return () => {
+      if (currentTarget) {
+        observer.unobserve(currentTarget);
+      }
+    };
+  }, [hasMore, loadingMore, loadMore]);
+
+  // Reset displayed count when filters change
+  useEffect(() => {
+    setDisplayedCount(ITEMS_PER_PAGE);
+  }, [filters]);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white">
@@ -90,152 +128,161 @@ export default function ShopPage() {
       </section>
 
       <div className="container mx-auto px-4 py-10">
-        {loading ? (
-          <div className="text-center py-20">
-            <div className="inline-block animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500 mb-4"></div>
-            <p className="text-gray-400">Loading inventory...</p>
-          </div>
-        ) : (
-          <div className="grid lg:grid-cols-4 gap-8">
-            {/* Filters Sidebar */}
-            <aside className="lg:col-span-1">
-              <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 border border-gray-700 sticky top-4">
-                <h2 className="text-2xl font-bold mb-6">Filters</h2>
+        <div className="grid lg:grid-cols-4 gap-8">
+          {/* Filters Sidebar */}
+          <aside className="lg:col-span-1">
+            <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 border border-gray-700 sticky top-4">
+              <h2 className="text-2xl font-bold mb-6">Filters</h2>
 
-                {/* Make Filter */}
-                <div className="mb-6">
-                  <label className="block text-sm font-semibold mb-2">Make</label>
-                  <select
-                    value={filters.make}
-                    onChange={(e) => setFilters({ ...filters, make: e.target.value })}
-                    className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500"
-                  >
-                    <option value="all">All Makes</option>
-                    {makes.map((make) => (
-                      <option key={make} value={make}>
-                        {make}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-
-                {/* Price Range */}
-                <div className="mb-6">
-                  <label className="block text-sm font-semibold mb-2">
-                    Price Range: ${filters.minPrice.toLocaleString()} - {filters.maxPrice >= 600000 ? '$600,000+' : '$' + filters.maxPrice.toLocaleString()}
-                  </label>
-                  <input
-                    type="range"
-                    min="0"
-                    max="600000"
-                    step="10000"
-                    value={filters.maxPrice}
-                    onChange={(e) => setFilters({ ...filters, maxPrice: parseInt(e.target.value) })}
-                    className="w-full"
-                  />
-                </div>
-
-                {/* Year Range */}
-                <div className="mb-6">
-                  <label className="block text-sm font-semibold mb-2">
-                    Year: {filters.minYear} - {filters.maxYear}
-                  </label>
-                  <div className="flex gap-2">
-                    <input
-                      type="number"
-                      value={filters.minYear}
-                      onChange={(e) => setFilters({ ...filters, minYear: parseInt(e.target.value) })}
-                      className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-2"
-                      min="2000"
-                      max="2024"
-                    />
-                    <input
-                      type="number"
-                      value={filters.maxYear}
-                      onChange={(e) => setFilters({ ...filters, maxYear: parseInt(e.target.value) })}
-                      className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-2"
-                      min="2000"
-                      max="2024"
-                    />
-                  </div>
-                </div>
-
-                {/* Mileage */}
-                <div className="mb-6">
-                  <label className="block text-sm font-semibold mb-2">
-                    Max Mileage: {filters.maxMileage.toLocaleString()} mi
-                  </label>
-                  <input
-                    type="range"
-                    min="10000"
-                    max="100000"
-                    step="5000"
-                    value={filters.maxMileage}
-                    onChange={(e) => setFilters({ ...filters, maxMileage: parseInt(e.target.value) })}
-                    className="w-full"
-                  />
-                </div>
-
-                {/* Condition */}
-                <div className="mb-6">
-                  <label className="block text-sm font-semibold mb-2">Condition</label>
-                  <div className="space-y-2">
-                    <label className="flex items-center">
-                      <input
-                        type="radio"
-                        name="condition"
-                        value="all"
-                        checked={filters.condition === "all"}
-                        onChange={(e) => setFilters({ ...filters, condition: e.target.value as any })}
-                        className="mr-2"
-                      />
-                      All
-                    </label>
-                    <label className="flex items-center">
-                      <input
-                        type="radio"
-                        name="condition"
-                        value="new"
-                        checked={filters.condition === "new"}
-                        onChange={(e) => setFilters({ ...filters, condition: e.target.value as any })}
-                        className="mr-2"
-                      />
-                      New
-                    </label>
-                    <label className="flex items-center">
-                      <input
-                        type="radio"
-                        name="condition"
-                        value="used"
-                        checked={filters.condition === "used"}
-                        onChange={(e) => setFilters({ ...filters, condition: e.target.value as any })}
-                        className="mr-2"
-                      />
-                      Used
-                    </label>
-                  </div>
-                </div>
-
-                <button
-                  onClick={resetFilters}
-                  className="w-full bg-gray-700 hover:bg-gray-600 text-white py-2 rounded-lg transition-colors"
+              {/* Make Filter */}
+              <div className="mb-6">
+                <label className="block text-sm font-semibold mb-2">Make</label>
+                <select
+                  value={filters.make}
+                  onChange={(e) => setFilters({ ...filters, make: e.target.value })}
+                  className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500"
                 >
-                  Reset Filters
-                </button>
-              </div>
-            </aside>
-
-            {/* Vehicle Grid */}
-            <main className="lg:col-span-3">
-              <div className="flex justify-between items-center mb-6">
-                <h2 className="text-2xl font-bold">
-                  {filteredVehicles.length} Vehicle{filteredVehicles.length !== 1 ? "s" : ""} Found
-                </h2>
+                  <option value="all">All Makes</option>
+                  {makes.map((make) => (
+                    <option key={make} value={make}>
+                      {make}
+                    </option>
+                  ))}
+                </select>
               </div>
 
-              {filteredVehicles.length > 0 ? (
+              {/* Price Range */}
+              <div className="mb-6">
+                <label className="block text-sm font-semibold mb-2">
+                  Price Range: ${filters.minPrice.toLocaleString()} - {filters.maxPrice >= 600000 ? '$600,000+' : '$' + filters.maxPrice.toLocaleString()}
+                </label>
+                <input
+                  type="range"
+                  min="0"
+                  max="600000"
+                  step="10000"
+                  value={filters.maxPrice}
+                  onChange={(e) => setFilters({ ...filters, maxPrice: parseInt(e.target.value) })}
+                  className="w-full"
+                />
+              </div>
+
+              {/* Year Range */}
+              <div className="mb-6">
+                <label className="block text-sm font-semibold mb-2">
+                  Year: {filters.minYear} - {filters.maxYear}
+                </label>
+                <div className="flex gap-2">
+                  <input
+                    type="number"
+                    value={filters.minYear}
+                    onChange={(e) => setFilters({ ...filters, minYear: parseInt(e.target.value) })}
+                    className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-2"
+                    min="2000"
+                    max="2024"
+                  />
+                  <input
+                    type="number"
+                    value={filters.maxYear}
+                    onChange={(e) => setFilters({ ...filters, maxYear: parseInt(e.target.value) })}
+                    className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-2"
+                    min="2000"
+                    max="2024"
+                  />
+                </div>
+              </div>
+
+              {/* Mileage */}
+              <div className="mb-6">
+                <label className="block text-sm font-semibold mb-2">
+                  Max Mileage: {filters.maxMileage.toLocaleString()} mi
+                </label>
+                <input
+                  type="range"
+                  min="10000"
+                  max="100000"
+                  step="5000"
+                  value={filters.maxMileage}
+                  onChange={(e) => setFilters({ ...filters, maxMileage: parseInt(e.target.value) })}
+                  className="w-full"
+                />
+              </div>
+
+              {/* Condition */}
+              <div className="mb-6">
+                <label className="block text-sm font-semibold mb-2">Condition</label>
+                <div className="space-y-2">
+                  <label className="flex items-center">
+                    <input
+                      type="radio"
+                      name="condition"
+                      value="all"
+                      checked={filters.condition === "all"}
+                      onChange={(e) => setFilters({ ...filters, condition: e.target.value as any })}
+                      className="mr-2"
+                    />
+                    All
+                  </label>
+                  <label className="flex items-center">
+                    <input
+                      type="radio"
+                      name="condition"
+                      value="new"
+                      checked={filters.condition === "new"}
+                      onChange={(e) => setFilters({ ...filters, condition: e.target.value as any })}
+                      className="mr-2"
+                    />
+                    New
+                  </label>
+                  <label className="flex items-center">
+                    <input
+                      type="radio"
+                      name="condition"
+                      value="used"
+                      checked={filters.condition === "used"}
+                      onChange={(e) => setFilters({ ...filters, condition: e.target.value as any })}
+                      className="mr-2"
+                    />
+                    Used
+                  </label>
+                </div>
+              </div>
+
+              <button
+                onClick={() => setFilters({
+                  make: "all",
+                  minPrice: 0,
+                  maxPrice: 600000,
+                  minYear: 2015,
+                  maxYear: 2024,
+                  maxMileage: 100000,
+                  condition: "all",
+                })}
+                className="w-full bg-gray-700 hover:bg-gray-600 text-white py-2 rounded-lg transition-colors"
+              >
+                Reset Filters
+              </button>
+            </div>
+          </aside>
+
+          {/* Vehicle Grid */}
+          <main className="lg:col-span-3">
+            <div className="flex justify-between items-center mb-6">
+              <h2 className="text-2xl font-bold">
+                {filteredVehicles.length} Vehicle{filteredVehicles.length !== 1 ? "s" : ""} Found
+                {displayedCount < filteredVehicles.length && ` (Showing ${displayedCount})`}
+              </h2>
+            </div>
+
+            {loading ? (
+              <div className="text-center py-20">
+                <div className="inline-block animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div>
+                <p className="mt-4 text-gray-400">Loading inventory...</p>
+              </div>
+            ) : (
+              <>
                 <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
-                  {filteredVehicles.map((vehicle) => (
+                  {displayedVehicles.map((vehicle) => (
                     <Link
                       key={vehicle.id}
                       href={`/shop/${vehicle.slug}`}
@@ -275,20 +322,47 @@ export default function ShopPage() {
                     </Link>
                   ))}
                 </div>
-              ) : (
-                <div className="text-center py-20">
-                  <p className="text-2xl text-gray-400 mb-4">No vehicles found matching your filters</p>
-                  <button
-                    onClick={resetFilters}
-                    className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg"
-                  >
-                    Reset Filters
-                  </button>
-                </div>
-              )}
-            </main>
-          </div>
-        )}
+
+                {/* Infinite Scroll Trigger */}
+                {hasMore && (
+                  <div ref={observerTarget} className="text-center py-8">
+                    {loadingMore && (
+                      <div className="inline-block animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-blue-500"></div>
+                    )}
+                  </div>
+                )}
+
+                {/* End Message */}
+                {!hasMore && displayedVehicles.length > 0 && (
+                  <div className="text-center py-8 text-gray-400">
+                    <p>You've reached the end! 🎉</p>
+                  </div>
+                )}
+
+                {/* No Results */}
+                {filteredVehicles.length === 0 && (
+                  <div className="text-center py-20">
+                    <p className="text-2xl text-gray-400 mb-4">No vehicles found matching your filters</p>
+                    <button
+                      onClick={() => setFilters({
+                        make: "all",
+                        minPrice: 0,
+                        maxPrice: 600000,
+                        minYear: 2015,
+                        maxYear: 2024,
+                        maxMileage: 100000,
+                        condition: "all",
+                      })}
+                      className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg"
+                    >
+                      Reset Filters
+                    </button>
+                  </div>
+                )}
+              </>
+            )}
+          </main>
+        </div>
       </div>
     </div>
   );

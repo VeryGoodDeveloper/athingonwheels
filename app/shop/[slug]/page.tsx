@@ -5,13 +5,9 @@ import { Vehicle } from "@/types/vehicle";
 import ImageGallery from "@/app/components/ImageGallery";
 import InquiryForm from "@/app/components/InquiryForm";
 
-// Generate static params for all vehicles (optional, for SSG)
-export async function generateStaticParams() {
-  const { vehicles } = await fetchVehicles();
-  return vehicles.map((vehicle) => ({
-    slug: vehicle.slug,
-  }));
-}
+// ISR Configuration: Revalidate every hour, generate pages on-demand
+export const revalidate = 3600; // 1 hour
+export const dynamicParams = true; // Allow dynamic slugs
 
 // Metadata for SEO
 export async function generateMetadata({

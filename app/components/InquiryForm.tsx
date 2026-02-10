@@ -182,7 +182,7 @@ export default function InquiryForm({ vehicle }: InquiryFormProps) {
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <a
-                href="tel:6092456634"
+                href="tel:00000000"
                 className="flex-1 bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 rounded-lg transition-all text-center"
               >
                 📞 Call Us

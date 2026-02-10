@@ -194,10 +194,10 @@ export default async function VehicleDetailPage({
             {/* Quick Contact */}
             <div className="space-y-3 mb-6">
               <a
-                href="tel:6092456634"
+                href="tel:00000000"
                 className="block w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-4 rounded-lg transition-all text-center text-lg"
               >
-                📞 Call Now: (609) 245-6634
+                📞 Call Now: 00000000
               </a>
             </div>
 

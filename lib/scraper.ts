@@ -1,134 +1,230 @@
 /**
- * Scraper for jsautohaus.com using their Algolia search API
+ * Browser automation scraper for jsautohaus.com
+ * Uses HTML parsing to extract vehicle data from rendered pages
  */
 
 import { Vehicle } from "@/types/vehicle";
+import * as cheerio from "cheerio";
 
-const ALGOLIA_APP_ID = "G58LKO3ETJ";
-const ALGOLIA_API_KEY = "cc3dce06acb2d9fc715bc10c9a624d80";
-const ALGOLIA_INDEX = "production-inventory-659"; // dealer_id 659
-const USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36";
+const BASE_URL = "https://jsautohaus.com";
+const USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36";
 
 /**
- * Scrape vehicles using Algolia search API
+ * Scrape vehicles from jsautohaus.com inventory page
  */
 export async function scrapeVehicles(): Promise<Vehicle[]> {
   try {
-    // Try Algolia API (the site uses this for search)
-    const algoliaUrl = `https://${ALGOLIA_APP_ID}-dsn.algolia.net/1/indexes/${ALGOLIA_INDEX}/query`;
+    console.log("🔍 Starting browser automation scraper...");
     
-    const response = await fetch(algoliaUrl, {
-      method: "POST",
+    // Fetch the inventory page
+    const response = await fetch(`${BASE_URL}/inventory`, {
       headers: {
-        "X-Algolia-Application-Id": ALGOLIA_APP_ID,
-        "X-Algolia-API-Key": ALGOLIA_API_KEY,
-        "Content-Type": "application/json",
         "User-Agent": USER_AGENT,
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.5",
+        "Cache-Control": "no-cache",
       },
-      body: JSON.stringify({
-        query: "",
-        hitsPerPage: 100,
-        filters: "car_condition:New OR car_condition:Used",
-      }),
       cache: "no-store",
     });
 
     if (!response.ok) {
-      console.error("Algolia API failed:", response.status);
+      console.error(`❌ Failed to fetch inventory page: ${response.status}`);
       return [];
     }
 
-    const data = await response.json();
+    const html = await response.text();
+    const $ = cheerio.load(html);
+
+    // Look for vehicle cards/listings in the HTML
+    // This targets common patterns used by car dealer websites
+    const vehicles: Vehicle[] = [];
     
-    if (!data.hits || !Array.isArray(data.hits)) {
-      console.error("No hits in Algolia response");
-      return [];
+    // Try multiple selectors to find vehicle cards
+    const cardSelectors = [
+      '.vehicle-card',
+      '[data-vehicle]',
+      'article[class*="vehicle"]',
+      'div[class*="vehicle-item"]',
+      'div[class*="car-card"]',
+      'a[href*="/shop/"]',
+    ];
+
+    let foundElements = false;
+    for (const selector of cardSelectors) {
+      const elements = $(selector);
+      if (elements.length > 0) {
+        console.log(`✓ Found ${elements.length} elements with selector: ${selector}`);
+        foundElements = true;
+        
+        elements.each((_, element) => {
+          const vehicle = extractVehicleFromElement($, element);
+          if (vehicle) {
+            vehicles.push(vehicle);
+          }
+        });
+        
+        if (vehicles.length > 0) break;
+      }
     }
 
-    console.log(`Scraped ${data.hits.length} vehicles from Algolia`);
-    return data.hits.map(parseAlgoliaVehicle).filter((v: Vehicle | null): v is Vehicle => v !== null);
+    if (!foundElements) {
+      console.warn("⚠️ No vehicle elements found with standard selectors");
+      console.log("📝 Attempting fallback: extracting from links...");
+      
+      // Fallback: Look for links to vehicle detail pages
+      $('a[href*="/shop/"], a[href*="/cars/"], a[href*="/inventory/"]').each((_, element) => {
+        const href = $(element).attr('href');
+        if (href && href.includes('/')) {
+          const slug = href.split('/').filter(Boolean).pop();
+          if (slug && slug.length > 5) {
+            // Try to extract basic info from link text/attributes
+            const text = $(element).text().trim();
+            const vehicle = parseVehicleFromText(text, slug);
+            if (vehicle) vehicles.push(vehicle);
+          }
+        }
+      });
+    }
+
+    // Remove duplicates by slug
+    const uniqueVehicles = Array.from(
+      new Map(vehicles.map(v => [v.slug, v])).values()
+    );
+
+    console.log(`✅ Successfully scraped ${uniqueVehicles.length} vehicles`);
+    return uniqueVehicles;
+
   } catch (error) {
-    console.error("Scraping error:", error);
+    console.error("❌ Scraping error:", error);
     return [];
   }
 }
 
 /**
- * Parse Algolia vehicle data
+ * Extract vehicle data from a DOM element
  */
-function parseAlgoliaVehicle(hit: any): Vehicle | null {
+function extractVehicleFromElement($: cheerio.CheerioAPI, element: any): Vehicle | null {
   try {
-    const make = hit.make || "";
-    const model = hit.model || "";
-    const year = parseInt(hit.make_year || hit.year || "0") || 0;
+    const $el = $(element);
+    
+    // Extract text content
+    const text = $el.text();
+    const href = $el.attr('href') || $el.find('a').first().attr('href');
+    
+    // Try to find year, make, model
+    const yearMatch = text.match(/\b(19|20)\d{2}\b/);
+    const year = yearMatch ? parseInt(yearMatch[0]) : 0;
+    
+    // Common car makes
+    const makes = ['Audi', 'BMW', 'Mercedes', 'Tesla', 'Toyota', 'Honda', 'Ford', 'Chevrolet', 
+                   'Nissan', 'Mazda', 'Lexus', 'Porsche', 'Jaguar', 'Land Rover', 'Acura',
+                   'Infiniti', 'Cadillac', 'Buick', 'GMC', 'Ram', 'Jeep', 'Dodge', 'Chrysler',
+                   'Volkswagen', 'Volvo', 'Subaru', 'Kia', 'Hyundai', 'Genesis', 'Alfa Romeo'];
+    
+    let make = '';
+    let model = '';
+    
+    for (const testMake of makes) {
+      const regex = new RegExp(`\\b${testMake}\\b`, 'i');
+      if (regex.test(text)) {
+        make = testMake;
+        // Try to extract model (usually the word after make)
+        const modelMatch = text.match(new RegExp(`${testMake}\\s+([A-Z][A-Za-z0-9\\-]+)`, 'i'));
+        if (modelMatch) {
+          model = modelMatch[1];
+        }
+        break;
+      }
+    }
     
     if (!make || !model || !year) {
       return null;
     }
-
-    const trim = hit.car_trim || hit.trim || undefined;
-    const vin = hit.vin || hit.VIN || "";
-    const slug = generateSlug({ year, make, model, trim, vin });
-
-    const price = parseFloat(hit.price || hit.dealer_price || "0") || 0;
-    const originalPrice = hit.msrp ? parseFloat(hit.msrp) : undefined;
-    const mileage = parseInt(hit.odometer || "0") || 0;
-    const condition: "new" | "used" = 
-      (hit.car_condition || "").toLowerCase() === "new" ? "new" : "used";
-
-    // Extract images
-    const images: string[] = [];
-    if (hit.images && Array.isArray(hit.images)) {
-      images.push(...hit.images.filter((img: any) => typeof img === "string"));
-    } else if (hit.image_urls && Array.isArray(hit.image_urls)) {
-      images.push(...hit.image_urls.filter((img: any) => typeof img === "string"));
-    }
     
-    const thumbnailUrl = images[0] || 
-      hit.primary_photo ||
-      "https://via.placeholder.com/400x300?text=No+Image";
-
-    // Features
-    const features: string[] = [];
-    if (hit.parsed_features && Array.isArray(hit.parsed_features)) {
-      features.push(...hit.parsed_features);
-    }
-
+    // Extract price
+    const priceMatch = text.match(/\$[\d,]+/);
+    const price = priceMatch ? parseFloat(priceMatch[0].replace(/[$,]/g, '')) : 0;
+    
+    // Extract mileage
+    const mileageMatch = text.match(/([\d,]+)\s*(mi|miles|km)/i);
+    const mileage = mileageMatch ? parseInt(mileageMatch[1].replace(/,/g, '')) : 0;
+    
+    // Determine condition
+    const isNew = /\bnew\b/i.test(text);
+    const condition: "new" | "used" = isNew ? "new" : "used";
+    
+    // Extract image
+    const img = $el.find('img').first();
+    const thumbnailUrl = img.attr('src') || img.attr('data-src') || 
+                        "https://via.placeholder.com/400x300?text=No+Image";
+    
+    // Generate slug
+    const slug = href ? 
+                 href.split('/').filter(Boolean).pop() || generateSlug({ year, make, model }) :
+                 generateSlug({ year, make, model });
+    
     return {
-      id: hit.id || vin || slug,
-      vin,
+      id: slug,
+      vin: "",
       slug,
       make,
       model,
       year,
-      trim,
       price,
-      originalPrice,
       condition,
       mileage,
-      images: images.length > 0 ? images : [thumbnailUrl],
+      images: [thumbnailUrl],
       thumbnailUrl,
-      features,
-      description: hit.comments || hit.description || undefined,
-      exteriorColor: hit.exterior_color || undefined,
-      interiorColor: hit.interior_color || undefined,
-      transmission: hit.transmission || undefined,
-      fuelType: hit.fuel_type || undefined,
-      location: hit.location || "Ewing, NJ",
-      status: hit.status === "sold" ? "sold" : "available",
-      createdAt: hit.created_at || new Date().toISOString(),
-      updatedAt: hit.updated_at || new Date().toISOString(),
+      features: [],
+      location: "Ewing, NJ",
+      status: "available",
+      createdAt: new Date().toISOString(),
+      updatedAt: new Date().toISOString(),
     };
+    
   } catch (error) {
-    console.error("Error parsing Algolia vehicle:", error);
+    console.error("Error extracting vehicle from element:", error);
     return null;
   }
 }
 
 /**
+ * Parse vehicle from text content
+ */
+function parseVehicleFromText(text: string, slug: string): Vehicle | null {
+  const yearMatch = text.match(/\b(19|20)\d{2}\b/);
+  if (!yearMatch) return null;
+  
+  const year = parseInt(yearMatch[0]);
+  
+  // Try to extract make and model
+  const words = text.split(/\s+/).filter(w => w.length > 2);
+  if (words.length < 2) return null;
+  
+  return {
+    id: slug,
+    vin: "",
+    slug,
+    make: words[0],
+    model: words[1],
+    year,
+    price: 0,
+    condition: "used",
+    mileage: 0,
+    images: ["https://via.placeholder.com/400x300?text=No+Image"],
+    thumbnailUrl: "https://via.placeholder.com/400x300?text=No+Image",
+    features: [],
+    location: "Ewing, NJ",
+    status: "available",
+    createdAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString(),
+  };
+}
+
+/**
  * Generate URL-friendly slug
  */
-function generateSlug(data: { year?: any; make?: any; model?: any; trim?: any; vin?: any }): string {
+function generateSlug(data: { year?: any; make?: any; model?: any; trim?: any }): string {
   const parts = [data.year, data.make, data.model, data.trim]
     .filter(Boolean)
     .map(part =>
@@ -137,10 +233,6 @@ function generateSlug(data: { year?: any; make?: any; model?: any; trim?: any; v
         .replace(/[^a-z0-9]+/g, "-")
         .replace(/^-+|-+$/g, "")
     );
-
-  if (parts.length === 0 && data.vin) {
-    return `vehicle-${String(data.vin).toLowerCase().slice(-8)}`;
-  }
 
   return parts.join("-") || `vehicle-${Math.random().toString(36).substring(7)}`;
 }

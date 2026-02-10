@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "J&S AutoHaus Group | Built to Impress",
-  description: "Welcome to J&S AutoHaus, where every ride is handpicked for style, power, and performance. Buy, sell, or service your vehicle with us.",
+  title: "ATOW | A Thing On Wheels",
+  description: "Premium vehicles at unbeatable prices. Shop our curated inventory of luxury and performance cars.",
 };
 
 export default function RootLayout({

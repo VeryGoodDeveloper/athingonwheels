@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, TouchEvent, MouseEvent } from "react";
+import { useState, MouseEvent } from "react";
 
 interface ImageGalleryProps {
   images: string[];
@@ -9,8 +9,6 @@ interface ImageGalleryProps {
 
 export default function ImageGallery({ images, alt }: ImageGalleryProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const touchStartX = useRef<number>(0);
-  const touchEndX = useRef<number>(0);
 
   if (images.length === 0) {
     return (
@@ -28,56 +26,25 @@ export default function ImageGallery({ images, alt }: ImageGalleryProps) {
     setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
   };
 
-  // Touch handlers for swipe gestures
-  const handleTouchStart = (e: TouchEvent<HTMLDivElement>) => {
-    touchStartX.current = e.touches[0].clientX;
-  };
-
-  const handleTouchMove = (e: TouchEvent<HTMLDivElement>) => {
-    touchEndX.current = e.touches[0].clientX;
-  };
-
-  const handleTouchEnd = () => {
-    const swipeThreshold = 50;
-    const diff = touchStartX.current - touchEndX.current;
-
-    if (Math.abs(diff) > swipeThreshold) {
-      if (diff > 0) {
-        goToNext();
-      } else {
-        goToPrevious();
-      }
-    }
-
-    touchStartX.current = 0;
-    touchEndX.current = 0;
-  };
-
-  // Click handler for left/right navigation
+  // Click handler - 50% left/right split
   const handleImageClick = (e: MouseEvent<HTMLDivElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const width = rect.width;
     
-    // If clicked on left 40% of image, go previous
-    if (x < width * 0.4) {
+    // Left 50% = previous, Right 50% = next
+    if (x < width * 0.5) {
       goToPrevious();
-    }
-    // If clicked on right 40% of image, go next
-    else if (x > width * 0.6) {
+    } else {
       goToNext();
     }
-    // Middle 20% does nothing (or you could make it do something else)
   };
 
   return (
     <div className="space-y-3">
-      {/* Main Image Display */}
+      {/* Main Image Display - Click Only */}
       <div 
         className="relative bg-gray-900 rounded-lg overflow-hidden group select-none cursor-pointer"
-        onTouchStart={handleTouchStart}
-        onTouchMove={handleTouchMove}
-        onTouchEnd={handleTouchEnd}
         onClick={handleImageClick}
       >
         <div className="relative w-full" style={{ paddingBottom: '75%' }}>
@@ -89,11 +56,11 @@ export default function ImageGallery({ images, alt }: ImageGalleryProps) {
           />
         </div>
 
-        {/* Invisible click zones overlay - visible on hover */}
+        {/* Click zones overlay */}
         {images.length > 1 && (
           <>
-            {/* Left zone */}
-            <div className="absolute left-0 top-0 bottom-0 w-2/5 hover:bg-black/10 transition-colors flex items-center justify-start pl-4">
+            {/* Left half */}
+            <div className="absolute left-0 top-0 bottom-0 w-1/2 hover:bg-black/10 transition-colors flex items-center justify-start pl-4">
               <div className="opacity-0 group-hover:opacity-100 transition-opacity bg-black/30 rounded-full p-2">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -101,8 +68,8 @@ export default function ImageGallery({ images, alt }: ImageGalleryProps) {
               </div>
             </div>
 
-            {/* Right zone */}
-            <div className="absolute right-0 top-0 bottom-0 w-2/5 hover:bg-black/10 transition-colors flex items-center justify-end pr-4">
+            {/* Right half */}
+            <div className="absolute right-0 top-0 bottom-0 w-1/2 hover:bg-black/10 transition-colors flex items-center justify-end pr-4">
               <div className="opacity-0 group-hover:opacity-100 transition-opacity bg-black/30 rounded-full p-2">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

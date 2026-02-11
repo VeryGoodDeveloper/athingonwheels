@@ -5,9 +5,9 @@ import { Vehicle } from "@/types/vehicle";
 import ImageGallery from "@/app/components/ImageGallery";
 import InquiryForm from "@/app/components/InquiryForm";
 
-// ISR Configuration: Revalidate every hour, generate pages on-demand
-export const revalidate = 3600; // 1 hour
-export const dynamicParams = true; // Allow dynamic slugs
+// ISR Configuration
+export const revalidate = 3600;
+export const dynamicParams = true;
 
 // Metadata for SEO
 export async function generateMetadata({
@@ -42,7 +42,7 @@ export default async function VehicleDetailPage({
     notFound();
   }
 
-  // Get similar vehicles (same make or similar price range)
+  // Get similar vehicles
   const { vehicles: allVehicles } = await fetchVehicles();
   const similarVehicles = allVehicles
     .filter(
@@ -65,16 +65,10 @@ export default async function VehicleDetailPage({
             ATOW
           </Link>
           <div className="flex gap-6 items-center">
-            <Link
-              href="/shop"
-              className="text-blue-400 font-semibold"
-            >
+            <Link href="/shop" className="text-blue-400 font-semibold">
               Shop
             </Link>
-            <Link
-              href="/sell"
-              className="hover:text-purple-400 transition-colors"
-            >
+            <Link href="/sell" className="hover:text-purple-400 transition-colors">
               Sell
             </Link>
           </div>
@@ -84,13 +78,9 @@ export default async function VehicleDetailPage({
       <div className="container mx-auto px-4 py-6 md:py-10">
         {/* Breadcrumb */}
         <div className="mb-4 text-sm text-gray-400">
-          <Link href="/" className="hover:text-gray-300">
-            Home
-          </Link>
+          <Link href="/" className="hover:text-gray-300">Home</Link>
           {" / "}
-          <Link href="/shop" className="hover:text-gray-300">
-            Shop
-          </Link>
+          <Link href="/shop" className="hover:text-gray-300">Shop</Link>
           {" / "}
           <span className="text-white">
             {vehicle.year} {vehicle.make} {vehicle.model}
@@ -117,14 +107,14 @@ export default async function VehicleDetailPage({
             )}
           </div>
 
-          {/* Price - Big & Prominent */}
-          <div className="bg-gradient-to-br from-blue-600/20 to-purple-600/20 backdrop-blur-sm rounded-lg p-6 border border-blue-500/30">
+          {/* Price - iOS Glassy Style */}
+          <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 shadow-2xl">
             <div className="flex items-baseline gap-3 mb-2">
-              <span className="text-5xl md:text-6xl font-bold text-blue-400">
+              <span className="text-5xl md:text-6xl font-bold text-white">
                 ${vehicle.price.toLocaleString()}
               </span>
               {vehicle.originalPrice && vehicle.originalPrice > vehicle.price && (
-                <span className="text-2xl text-gray-500 line-through">
+                <span className="text-2xl text-gray-400 line-through">
                   ${vehicle.originalPrice.toLocaleString()}
                 </span>
               )}
@@ -136,112 +126,108 @@ export default async function VehicleDetailPage({
             )}
           </div>
 
-          {/* Basic Information - Bento Grid Style */}
+          {/* Basic Information - iOS Glassy Style */}
           <div>
-            <h2 className="text-xl font-bold mb-3">Basic Information</h2>
+            <div className="flex items-center justify-between mb-3">
+              <h2 className="text-xl font-bold text-white">Basic Information</h2>
+              {vehicle.stock && (
+                <span className="text-sm text-gray-400">Stock # {vehicle.stock}</span>
+              )}
+            </div>
             
             <div className="grid grid-cols-2 gap-3">
               {/* Mileage */}
-              <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-4 border border-gray-700">
-                <p className="text-gray-400 text-sm mb-1">Mileage</p>
-                <p className="text-xl font-bold">{vehicle.mileage.toLocaleString()} mi</p>
+              <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20">
+                <p className="text-gray-300 text-sm mb-1">Mileage</p>
+                <p className="text-xl font-bold text-white">{vehicle.mileage.toLocaleString()} mi</p>
               </div>
               
               {/* Condition */}
-              <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-4 border border-gray-700">
-                <p className="text-gray-400 text-sm mb-1">Condition</p>
-                <p className="text-xl font-bold capitalize">{vehicle.condition}</p>
+              <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20">
+                <p className="text-gray-300 text-sm mb-1">Condition</p>
+                <p className="text-xl font-bold text-white capitalize">{vehicle.condition}</p>
               </div>
 
-              {/* Stock Number */}
-              {vehicle.stock && (
-                <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-4 border border-gray-700">
-                  <p className="text-gray-400 text-sm mb-1">Stock #</p>
-                  <p className="text-xl font-bold">{vehicle.stock}</p>
-                </div>
-              )}
-              
               {/* Body Type */}
               {vehicle.bodyType && (
-                <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-4 border border-gray-700">
-                  <p className="text-gray-400 text-sm mb-1">Body Type</p>
-                  <p className="text-xl font-bold">{vehicle.bodyType}</p>
-                </div>
-              )}
-              
-              {/* Engine */}
-              {vehicle.engine && (
-                <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-4 border border-gray-700 col-span-2">
-                  <p className="text-gray-400 text-sm mb-1">Engine</p>
-                  <p className="text-lg font-bold">{vehicle.engine}</p>
+                <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20">
+                  <p className="text-gray-300 text-sm mb-1">Body Type</p>
+                  <p className="text-xl font-bold text-white">{vehicle.bodyType}</p>
                 </div>
               )}
               
               {/* Transmission */}
               {vehicle.transmission && (
-                <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-4 border border-gray-700">
-                  <p className="text-gray-400 text-sm mb-1">Transmission</p>
-                  <p className="text-lg font-bold">{vehicle.transmission}</p>
+                <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20">
+                  <p className="text-gray-300 text-sm mb-1">Transmission</p>
+                  <p className="text-lg font-bold text-white">{vehicle.transmission}</p>
+                </div>
+              )}
+              
+              {/* Engine - Full Width */}
+              {vehicle.engine && (
+                <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20 col-span-2">
+                  <p className="text-gray-300 text-sm mb-1">Engine</p>
+                  <p className="text-lg font-bold text-white">{vehicle.engine}</p>
                 </div>
               )}
               
               {/* Drivetrain */}
               {vehicle.drivetrain && (
-                <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-4 border border-gray-700">
-                  <p className="text-gray-400 text-sm mb-1">Drivetrain</p>
-                  <p className="text-lg font-bold">{vehicle.drivetrain}</p>
+                <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20">
+                  <p className="text-gray-300 text-sm mb-1">Drivetrain</p>
+                  <p className="text-lg font-bold text-white">{vehicle.drivetrain}</p>
                 </div>
               )}
               
               {/* Fuel Type */}
               {vehicle.fuelType && (
-                <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-4 border border-gray-700">
-                  <p className="text-gray-400 text-sm mb-1">Fuel Type</p>
-                  <p className="text-lg font-bold">{vehicle.fuelType}</p>
+                <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20">
+                  <p className="text-gray-300 text-sm mb-1">Fuel Type</p>
+                  <p className="text-lg font-bold text-white">{vehicle.fuelType}</p>
                 </div>
               )}
               
               {/* MPG */}
               {(vehicle.mpgCity !== undefined && vehicle.mpgCity > 0) || (vehicle.mpgHighway !== undefined && vehicle.mpgHighway > 0) ? (
-                <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-4 border border-gray-700">
-                  <p className="text-gray-400 text-sm mb-1">MPG</p>
-                  <p className="text-lg font-bold">
-                    {vehicle.mpgCity || 0} city / {vehicle.mpgHighway || 0} hwy
+                <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20 col-span-2">
+                  <p className="text-gray-300 text-sm mb-1">Fuel Economy</p>
+                  <p className="text-lg font-bold text-white">
+                    {vehicle.mpgCity || 0} city / {vehicle.mpgHighway || 0} highway MPG
                   </p>
                 </div>
               ) : null}
               
               {/* Exterior Color */}
               {vehicle.exteriorColor && (
-                <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-4 border border-gray-700">
-                  <p className="text-gray-400 text-sm mb-1">Exterior</p>
-                  <p className="text-lg font-bold">{vehicle.exteriorColor}</p>
+                <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20">
+                  <p className="text-gray-300 text-sm mb-1">Exterior</p>
+                  <p className="text-lg font-bold text-white">{vehicle.exteriorColor}</p>
                 </div>
               )}
               
               {/* Interior Color */}
               {vehicle.interiorColor && (
-                <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-4 border border-gray-700">
-                  <p className="text-gray-400 text-sm mb-1">Interior</p>
-                  <p className="text-lg font-bold">{vehicle.interiorColor}</p>
+                <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20">
+                  <p className="text-gray-300 text-sm mb-1">Interior</p>
+                  <p className="text-lg font-bold text-white">{vehicle.interiorColor}</p>
                 </div>
               )}
               
               {/* Doors */}
               {vehicle.doors && (
-                <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-4 border border-gray-700">
-                  <p className="text-gray-400 text-sm mb-1">Doors</p>
-                  <p className="text-lg font-bold">{vehicle.doors}</p>
+                <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20">
+                  <p className="text-gray-300 text-sm mb-1">Doors</p>
+                  <p className="text-lg font-bold text-white">{vehicle.doors}</p>
                 </div>
               )}
             </div>
 
-            {/* VIN - Small at bottom */}
+            {/* VIN - Own Bar */}
             {vehicle.vin && (
-              <div className="mt-4 text-center">
-                <p className="text-gray-500 text-xs">
-                  VIN: <span className="font-mono">{vehicle.vin}</span>
-                </p>
+              <div className="mt-3 bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20">
+                <p className="text-gray-300 text-sm mb-1">VIN</p>
+                <p className="text-white font-mono text-xs">{vehicle.vin}</p>
               </div>
             )}
           </div>
@@ -250,7 +236,7 @@ export default async function VehicleDetailPage({
           <div className="space-y-3">
             <a
               href="tel:00000000"
-              className="block w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-4 rounded-lg transition-all text-center text-lg"
+              className="block w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-4 rounded-xl transition-all text-center text-lg shadow-lg"
             >
               📞 Call Now: 00000000
             </a>
@@ -261,9 +247,9 @@ export default async function VehicleDetailPage({
 
           {/* Description */}
           {vehicle.description && (
-            <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 border border-gray-700">
-              <h2 className="text-xl font-bold mb-3">Description</h2>
-              <p className="text-gray-300 leading-relaxed whitespace-pre-line text-sm">
+            <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20">
+              <h2 className="text-xl font-bold mb-3 text-white">Description</h2>
+              <p className="text-gray-200 leading-relaxed whitespace-pre-line text-sm">
                 {vehicle.description}
               </p>
             </div>
@@ -271,13 +257,13 @@ export default async function VehicleDetailPage({
 
           {/* Features */}
           {vehicle.features.length > 0 && (
-            <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 border border-gray-700">
-              <h2 className="text-xl font-bold mb-4">Features & Options</h2>
+            <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20">
+              <h2 className="text-xl font-bold mb-4 text-white">Features & Options</h2>
               <div className="grid sm:grid-cols-2 gap-3">
                 {vehicle.features.map((feature, index) => (
                   <div key={index} className="flex items-center gap-2 text-sm">
                     <span className="text-blue-400">✓</span>
-                    <span className="text-gray-300">{feature}</span>
+                    <span className="text-gray-200">{feature}</span>
                   </div>
                 ))}
               </div>
@@ -292,13 +278,13 @@ export default async function VehicleDetailPage({
           {/* Similar Vehicles */}
           {similarVehicles.length > 0 && (
             <div className="mt-10">
-              <h2 className="text-2xl font-bold mb-6">Similar Vehicles</h2>
+              <h2 className="text-2xl font-bold mb-6 text-white">Similar Vehicles</h2>
               <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {similarVehicles.map((similar) => (
                   <Link
                     key={similar.id}
                     href={`/shop/${similar.slug}`}
-                    className="bg-gray-800/50 backdrop-blur-sm rounded-lg overflow-hidden border border-gray-700 hover:border-blue-500 transition-all transform hover:scale-105"
+                    className="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden border border-white/20 hover:border-blue-500 transition-all transform hover:scale-105"
                   >
                     <div className="aspect-video bg-gray-900 relative overflow-hidden">
                       <img
@@ -313,14 +299,14 @@ export default async function VehicleDetailPage({
                       )}
                     </div>
                     <div className="p-4">
-                      <h3 className="text-lg font-bold mb-2">
+                      <h3 className="text-lg font-bold mb-2 text-white">
                         {similar.year} {similar.make} {similar.model}
                       </h3>
                       <div className="flex justify-between items-center">
                         <span className="text-xl font-bold text-blue-400">
                           ${similar.price.toLocaleString()}
                         </span>
-                        <span className="text-gray-400 text-xs">
+                        <span className="text-gray-300 text-xs">
                           {similar.mileage.toLocaleString()} mi
                         </span>
                       </div>

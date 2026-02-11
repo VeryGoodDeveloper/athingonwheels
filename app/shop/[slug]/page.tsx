@@ -81,9 +81,9 @@ export default async function VehicleDetailPage({
         </nav>
       </header>
 
-      <div className="container mx-auto px-4 py-10">
+      <div className="container mx-auto px-4 py-6 md:py-10">
         {/* Breadcrumb */}
-        <div className="mb-6 text-sm text-gray-400">
+        <div className="mb-4 text-sm text-gray-400">
           <Link href="/" className="hover:text-gray-300">
             Home
           </Link>
@@ -97,7 +97,8 @@ export default async function VehicleDetailPage({
           </span>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-10 mb-10">
+        {/* Mobile-First Layout */}
+        <div className="space-y-6">
           {/* Image Gallery */}
           <div>
             <ImageGallery
@@ -106,358 +107,259 @@ export default async function VehicleDetailPage({
             />
           </div>
 
-          {/* Vehicle Info */}
+          {/* Car Name & Trim */}
           <div>
-            <h1 className="text-4xl font-bold mb-2">
+            <h1 className="text-3xl md:text-4xl font-bold mb-1">
               {vehicle.year} {vehicle.make} {vehicle.model}
             </h1>
             {vehicle.trim && (
-              <p className="text-xl text-gray-400 mb-6">{vehicle.trim}</p>
+              <p className="text-lg text-gray-400">{vehicle.trim}</p>
             )}
+          </div>
 
-            {/* Condition Badge */}
-            {vehicle.condition === "new" && (
-              <div className="inline-block bg-green-500 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
-                NEW VEHICLE
-              </div>
-            )}
-
+          {/* Basic Information - Consolidated */}
+          <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 border border-gray-700">
+            <h2 className="text-xl font-bold mb-4">Basic Information</h2>
+            
             {/* Price */}
-            <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 mb-6 border border-gray-700">
-              <div className="flex items-baseline gap-3 mb-2">
-                <span className="text-5xl font-bold text-blue-400">
+            <div className="mb-6 pb-6 border-b border-gray-700">
+              <div className="flex items-baseline gap-3 mb-1">
+                <span className="text-4xl md:text-5xl font-bold text-blue-400">
                   ${vehicle.price.toLocaleString()}
                 </span>
-                {vehicle.originalPrice &&
-                  vehicle.originalPrice > vehicle.price && (
-                    <span className="text-2xl text-gray-500 line-through">
-                      ${vehicle.originalPrice.toLocaleString()}
-                    </span>
-                  )}
-              </div>
-              {vehicle.originalPrice &&
-                vehicle.originalPrice > vehicle.price && (
-                  <p className="text-green-400 font-semibold">
-                    Save ${(vehicle.originalPrice - vehicle.price).toLocaleString()}!
-                  </p>
+                {vehicle.originalPrice && vehicle.originalPrice > vehicle.price && (
+                  <span className="text-xl text-gray-500 line-through">
+                    ${vehicle.originalPrice.toLocaleString()}
+                  </span>
                 )}
+              </div>
+              {vehicle.originalPrice && vehicle.originalPrice > vehicle.price && (
+                <p className="text-green-400 font-semibold text-sm">
+                  Save ${(vehicle.originalPrice - vehicle.price).toLocaleString()}!
+                </p>
+              )}
             </div>
 
-            {/* Key Specs Grid */}
-            <div className="grid grid-cols-2 gap-4 mb-6">
-              <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-4 border border-gray-700">
-                <p className="text-gray-400 text-sm mb-1">Mileage</p>
-                <p className="text-xl font-bold">
-                  {vehicle.mileage.toLocaleString()} mi
-                </p>
+            {/* Info Grid */}
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm">
+              {/* Stock Number */}
+              {vehicle.stock && (
+                <div>
+                  <p className="text-gray-400 mb-1">Stock #</p>
+                  <p className="text-white font-semibold">{vehicle.stock}</p>
+                </div>
+              )}
+              
+              {/* Body Type */}
+              {vehicle.bodyType && (
+                <div>
+                  <p className="text-gray-400 mb-1">Body Type</p>
+                  <p className="text-white font-semibold">{vehicle.bodyType}</p>
+                </div>
+              )}
+              
+              {/* Condition */}
+              <div>
+                <p className="text-gray-400 mb-1">Condition</p>
+                <p className="text-white font-semibold capitalize">{vehicle.condition}</p>
               </div>
-              <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-4 border border-gray-700">
-                <p className="text-gray-400 text-sm mb-1">Condition</p>
-                <p className="text-xl font-bold capitalize">
-                  {vehicle.condition}
-                </p>
+              
+              {/* Mileage */}
+              <div>
+                <p className="text-gray-400 mb-1">Mileage</p>
+                <p className="text-white font-semibold">{vehicle.mileage.toLocaleString()} mi</p>
               </div>
+              
+              {/* Engine */}
+              {vehicle.engine && (
+                <div>
+                  <p className="text-gray-400 mb-1">Engine</p>
+                  <p className="text-white font-semibold">{vehicle.engine}</p>
+                </div>
+              )}
+              
+              {/* Transmission */}
               {vehicle.transmission && (
-                <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-4 border border-gray-700">
-                  <p className="text-gray-400 text-sm mb-1">Transmission</p>
-                  <p className="text-xl font-bold">{vehicle.transmission}</p>
+                <div>
+                  <p className="text-gray-400 mb-1">Transmission</p>
+                  <p className="text-white font-semibold">{vehicle.transmission}</p>
                 </div>
               )}
+              
+              {/* Drivetrain */}
+              {vehicle.drivetrain && (
+                <div>
+                  <p className="text-gray-400 mb-1">Drivetrain</p>
+                  <p className="text-white font-semibold">{vehicle.drivetrain}</p>
+                </div>
+              )}
+              
+              {/* Fuel Type */}
               {vehicle.fuelType && (
-                <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-4 border border-gray-700">
-                  <p className="text-gray-400 text-sm mb-1">Fuel Type</p>
-                  <p className="text-xl font-bold">{vehicle.fuelType}</p>
+                <div>
+                  <p className="text-gray-400 mb-1">Fuel Type</p>
+                  <p className="text-white font-semibold">{vehicle.fuelType}</p>
                 </div>
               )}
+              
+              {/* City MPG */}
+              {vehicle.mpgCity !== undefined && vehicle.mpgCity > 0 && (
+                <div>
+                  <p className="text-gray-400 mb-1">City MPG</p>
+                  <p className="text-white font-semibold">{vehicle.mpgCity}</p>
+                </div>
+              )}
+              
+              {/* Highway MPG */}
+              {vehicle.mpgHighway !== undefined && vehicle.mpgHighway > 0 && (
+                <div>
+                  <p className="text-gray-400 mb-1">Highway MPG</p>
+                  <p className="text-white font-semibold">{vehicle.mpgHighway}</p>
+                </div>
+              )}
+              
+              {/* Exterior Color */}
               {vehicle.exteriorColor && (
-                <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-4 border border-gray-700">
-                  <p className="text-gray-400 text-sm mb-1">Exterior</p>
-                  <p className="text-xl font-bold">{vehicle.exteriorColor}</p>
+                <div>
+                  <p className="text-gray-400 mb-1">Exterior Color</p>
+                  <p className="text-white font-semibold">{vehicle.exteriorColor}</p>
                 </div>
               )}
+              
+              {/* Interior Color */}
               {vehicle.interiorColor && (
-                <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-4 border border-gray-700">
-                  <p className="text-gray-400 text-sm mb-1">Interior</p>
-                  <p className="text-xl font-bold">{vehicle.interiorColor}</p>
+                <div>
+                  <p className="text-gray-400 mb-1">Interior Color</p>
+                  <p className="text-white font-semibold">{vehicle.interiorColor}</p>
+                </div>
+              )}
+              
+              {/* Doors */}
+              {vehicle.doors && (
+                <div>
+                  <p className="text-gray-400 mb-1">Doors</p>
+                  <p className="text-white font-semibold">{vehicle.doors}</p>
                 </div>
               )}
             </div>
 
-            {/* VIN */}
+            {/* VIN - Small at bottom */}
             {vehicle.vin && (
-              <div className="mb-6 text-sm bg-gray-800/30 rounded-lg p-3 border border-gray-700">
-                <span className="text-gray-400">VIN:</span>{" "}
-                <span className="font-mono text-gray-300">{vehicle.vin}</span>
+              <div className="mt-6 pt-4 border-t border-gray-700">
+                <p className="text-gray-500 text-xs">
+                  VIN: <span className="font-mono">{vehicle.vin}</span>
+                </p>
               </div>
             )}
+          </div>
 
-            {/* Quick Contact */}
-            <div className="space-y-3 mb-6">
-              <a
-                href="tel:00000000"
-                className="block w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-4 rounded-lg transition-all text-center text-lg"
-              >
-                📞 Call Now: 00000000
-              </a>
-            </div>
-
-            {/* Location */}
+          {/* Quick Contact */}
+          <div className="space-y-3">
+            <a
+              href="tel:00000000"
+              className="block w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-4 rounded-lg transition-all text-center text-lg"
+            >
+              📞 Call Now: 00000000
+            </a>
             <p className="text-gray-400 text-sm text-center">
               📍 Located in {vehicle.location}
             </p>
           </div>
-        </div>
 
-        {/* Basic Information */}
-        <div className="mb-10 bg-gray-800/50 backdrop-blur-sm rounded-lg p-8 border border-gray-700">
-          <h2 className="text-2xl font-bold mb-6">Basic Information</h2>
-          
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Stock Number */}
-            {vehicle.stock && (
-              <div className="flex items-start gap-3">
-                <div className="text-blue-400 text-xl mt-1">📋</div>
-                <div>
-                  <p className="text-gray-400 text-sm">Stock #</p>
-                  <p className="text-white font-semibold">{vehicle.stock}</p>
-                </div>
-              </div>
-            )}
-            
-            {/* VIN */}
-            {vehicle.vin && (
-              <div className="flex items-start gap-3">
-                <div className="text-blue-400 text-xl mt-1">🔑</div>
-                <div>
-                  <p className="text-gray-400 text-sm">VIN</p>
-                  <p className="text-white font-semibold font-mono text-xs break-all">{vehicle.vin}</p>
-                </div>
-              </div>
-            )}
-            
-            {/* Body Type */}
-            {vehicle.bodyType && (
-              <div className="flex items-start gap-3">
-                <div className="text-blue-400 text-xl mt-1">🚗</div>
-                <div>
-                  <p className="text-gray-400 text-sm">Body Type</p>
-                  <p className="text-white font-semibold">{vehicle.bodyType}</p>
-                </div>
-              </div>
-            )}
-            
-            {/* Condition */}
-            <div className="flex items-start gap-3">
-              <div className="text-blue-400 text-xl mt-1">✨</div>
-              <div>
-                <p className="text-gray-400 text-sm">Condition</p>
-                <p className="text-white font-semibold capitalize">{vehicle.condition}</p>
-              </div>
+          {/* Description */}
+          {vehicle.description && (
+            <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 border border-gray-700">
+              <h2 className="text-xl font-bold mb-3">Description</h2>
+              <p className="text-gray-300 leading-relaxed whitespace-pre-line text-sm">
+                {vehicle.description}
+              </p>
             </div>
-            
-            {/* Miles */}
-            <div className="flex items-start gap-3">
-              <div className="text-blue-400 text-xl mt-1">📍</div>
-              <div>
-                <p className="text-gray-400 text-sm">Mileage</p>
-                <p className="text-white font-semibold">{vehicle.mileage.toLocaleString()} mi</p>
-              </div>
-            </div>
-            
-            {/* Engine */}
-            {vehicle.engine && (
-              <div className="flex items-start gap-3">
-                <div className="text-blue-400 text-xl mt-1">⚙️</div>
-                <div>
-                  <p className="text-gray-400 text-sm">Engine</p>
-                  <p className="text-white font-semibold">{vehicle.engine}</p>
-                </div>
-              </div>
-            )}
-            
-            {/* Transmission */}
-            {vehicle.transmission && (
-              <div className="flex items-start gap-3">
-                <div className="text-blue-400 text-xl mt-1">🔧</div>
-                <div>
-                  <p className="text-gray-400 text-sm">Transmission</p>
-                  <p className="text-white font-semibold">{vehicle.transmission}</p>
-                </div>
-              </div>
-            )}
-            
-            {/* Drivetrain */}
-            {vehicle.drivetrain && (
-              <div className="flex items-start gap-3">
-                <div className="text-blue-400 text-xl mt-1">🎯</div>
-                <div>
-                  <p className="text-gray-400 text-sm">Drivetrain</p>
-                  <p className="text-white font-semibold">{vehicle.drivetrain}</p>
-                </div>
-              </div>
-            )}
-            
-            {/* Fuel Type */}
-            {vehicle.fuelType && (
-              <div className="flex items-start gap-3">
-                <div className="text-blue-400 text-xl mt-1">⛽</div>
-                <div>
-                  <p className="text-gray-400 text-sm">Fuel Type</p>
-                  <p className="text-white font-semibold">{vehicle.fuelType}</p>
-                </div>
-              </div>
-            )}
-            
-            {/* City MPG */}
-            {vehicle.mpgCity !== undefined && vehicle.mpgCity > 0 && (
-              <div className="flex items-start gap-3">
-                <div className="text-blue-400 text-xl mt-1">🏙️</div>
-                <div>
-                  <p className="text-gray-400 text-sm">City MPG</p>
-                  <p className="text-white font-semibold">{vehicle.mpgCity}</p>
-                </div>
-              </div>
-            )}
-            
-            {/* Highway MPG */}
-            {vehicle.mpgHighway !== undefined && vehicle.mpgHighway > 0 && (
-              <div className="flex items-start gap-3">
-                <div className="text-blue-400 text-xl mt-1">🛣️</div>
-                <div>
-                  <p className="text-gray-400 text-sm">Highway MPG</p>
-                  <p className="text-white font-semibold">{vehicle.mpgHighway}</p>
-                </div>
-              </div>
-            )}
-            
-            {/* Exterior Color */}
-            {vehicle.exteriorColor && (
-              <div className="flex items-start gap-3">
-                <div className="text-blue-400 text-xl mt-1">🎨</div>
-                <div>
-                  <p className="text-gray-400 text-sm">Exterior Color</p>
-                  <p className="text-white font-semibold">{vehicle.exteriorColor}</p>
-                </div>
-              </div>
-            )}
-            
-            {/* Interior Color */}
-            {vehicle.interiorColor && (
-              <div className="flex items-start gap-3">
-                <div className="text-blue-400 text-xl mt-1">🪑</div>
-                <div>
-                  <p className="text-gray-400 text-sm">Interior Color</p>
-                  <p className="text-white font-semibold">{vehicle.interiorColor}</p>
-                </div>
-              </div>
-            )}
-            
-            {/* Doors */}
-            {vehicle.doors && (
-              <div className="flex items-start gap-3">
-                <div className="text-blue-400 text-xl mt-1">🚪</div>
-                <div>
-                  <p className="text-gray-400 text-sm">Doors</p>
-                  <p className="text-white font-semibold">{vehicle.doors}</p>
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
+          )}
 
-        {/* Description */}
-        {vehicle.description && (
-          <div className="mb-10 bg-gray-800/50 backdrop-blur-sm rounded-lg p-8 border border-gray-700">
-            <h2 className="text-2xl font-bold mb-4">Description</h2>
-            <p className="text-gray-300 leading-relaxed whitespace-pre-line">
-              {vehicle.description}
-            </p>
-          </div>
-        )}
-
-        {/* Features */}
-        {vehicle.features.length > 0 && (
-          <div className="mb-10 bg-gray-800/50 backdrop-blur-sm rounded-lg p-8 border border-gray-700">
-            <h2 className="text-2xl font-bold mb-6">Features & Options</h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {vehicle.features.map((feature, index) => (
-                <div key={index} className="flex items-center gap-2">
-                  <span className="text-blue-400 text-xl">✓</span>
-                  <span className="text-gray-300">{feature}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {/* Inquiry Form */}
-        <div className="mb-10">
-          <InquiryForm vehicle={vehicle} />
-        </div>
-
-        {/* Similar Vehicles */}
-        {similarVehicles.length > 0 && (
-          <div className="mb-10">
-            <h2 className="text-3xl font-bold mb-8">Similar Vehicles</h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              {similarVehicles.map((similar) => (
-                <Link
-                  key={similar.id}
-                  href={`/shop/${similar.slug}`}
-                  className="bg-gray-800/50 backdrop-blur-sm rounded-lg overflow-hidden border border-gray-700 hover:border-blue-500 transition-all transform hover:scale-105"
-                >
-                  <div className="aspect-video bg-gray-900 relative overflow-hidden">
-                    <img
-                      src={similar.thumbnailUrl}
-                      alt={`${similar.year} ${similar.make} ${similar.model}`}
-                      className="w-full h-full object-cover"
-                    />
-                    {similar.condition === "new" && (
-                      <span className="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold">
-                        NEW
-                      </span>
-                    )}
+          {/* Features */}
+          {vehicle.features.length > 0 && (
+            <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 border border-gray-700">
+              <h2 className="text-xl font-bold mb-4">Features & Options</h2>
+              <div className="grid sm:grid-cols-2 gap-3">
+                {vehicle.features.map((feature, index) => (
+                  <div key={index} className="flex items-center gap-2 text-sm">
+                    <span className="text-blue-400">✓</span>
+                    <span className="text-gray-300">{feature}</span>
                   </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold mb-2">
-                      {similar.year} {similar.make} {similar.model}
-                    </h3>
-                    <div className="flex justify-between items-center">
-                      <span className="text-2xl font-bold text-blue-400">
-                        ${similar.price.toLocaleString()}
-                      </span>
-                      <span className="text-gray-400 text-sm">
-                        {similar.mileage.toLocaleString()} mi
-                      </span>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Inquiry Form */}
+          <div>
+            <InquiryForm vehicle={vehicle} />
+          </div>
+
+          {/* Similar Vehicles */}
+          {similarVehicles.length > 0 && (
+            <div className="mt-10">
+              <h2 className="text-2xl font-bold mb-6">Similar Vehicles</h2>
+              <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+                {similarVehicles.map((similar) => (
+                  <Link
+                    key={similar.id}
+                    href={`/shop/${similar.slug}`}
+                    className="bg-gray-800/50 backdrop-blur-sm rounded-lg overflow-hidden border border-gray-700 hover:border-blue-500 transition-all transform hover:scale-105"
+                  >
+                    <div className="aspect-video bg-gray-900 relative overflow-hidden">
+                      <img
+                        src={similar.thumbnailUrl}
+                        alt={`${similar.year} ${similar.make} ${similar.model}`}
+                        className="w-full h-full object-cover"
+                      />
+                      {similar.condition === "new" && (
+                        <span className="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-bold">
+                          NEW
+                        </span>
+                      )}
                     </div>
-                  </div>
-                </Link>
-              ))}
+                    <div className="p-4">
+                      <h3 className="text-lg font-bold mb-2">
+                        {similar.year} {similar.make} {similar.model}
+                      </h3>
+                      <div className="flex justify-between items-center">
+                        <span className="text-xl font-bold text-blue-400">
+                          ${similar.price.toLocaleString()}
+                        </span>
+                        <span className="text-gray-400 text-xs">
+                          {similar.mileage.toLocaleString()} mi
+                        </span>
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
             </div>
-          </div>
-        )}
+          )}
 
-        {/* Back to Shop */}
-        <div className="text-center">
-          <Link
-            href="/shop"
-            className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 font-semibold text-lg transition-colors"
-          >
-            <svg
-              className="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+          {/* Back to Shop */}
+          <div className="text-center py-6">
+            <Link
+              href="/shop"
+              className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 font-semibold transition-colors"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M15 19l-7-7 7-7"
-              />
-            </svg>
-            Back to Inventory
-          </Link>
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+              Back to Inventory
+            </Link>
+          </div>
         </div>
       </div>
     </div>

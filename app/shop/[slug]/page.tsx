@@ -221,15 +221,15 @@ export default async function VehicleDetailPage({
                   <p className="text-lg font-bold text-white">{vehicle.doors}</p>
                 </div>
               )}
+              
+              {/* VIN */}
+              {vehicle.vin && (
+                <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20">
+                  <p className="text-gray-300 text-sm mb-1">VIN</p>
+                  <p className="text-white font-mono text-xs break-all">{vehicle.vin}</p>
+                </div>
+              )}
             </div>
-
-            {/* VIN - Own Bar */}
-            {vehicle.vin && (
-              <div className="mt-3 bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20">
-                <p className="text-gray-300 text-sm mb-1">VIN</p>
-                <p className="text-white font-mono text-xs">{vehicle.vin}</p>
-              </div>
-            )}
           </div>
 
           {/* Quick Contact */}

@@ -208,6 +208,163 @@ export default async function VehicleDetailPage({
           </div>
         </div>
 
+        {/* Basic Information */}
+        <div className="mb-10 bg-gray-800/50 backdrop-blur-sm rounded-lg p-8 border border-gray-700">
+          <h2 className="text-2xl font-bold mb-6">Basic Information</h2>
+          
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Stock Number */}
+            {vehicle.stock && (
+              <div className="flex items-start gap-3">
+                <div className="text-blue-400 text-xl mt-1">📋</div>
+                <div>
+                  <p className="text-gray-400 text-sm">Stock #</p>
+                  <p className="text-white font-semibold">{vehicle.stock}</p>
+                </div>
+              </div>
+            )}
+            
+            {/* VIN */}
+            {vehicle.vin && (
+              <div className="flex items-start gap-3">
+                <div className="text-blue-400 text-xl mt-1">🔑</div>
+                <div>
+                  <p className="text-gray-400 text-sm">VIN</p>
+                  <p className="text-white font-semibold font-mono text-xs break-all">{vehicle.vin}</p>
+                </div>
+              </div>
+            )}
+            
+            {/* Body Type */}
+            {vehicle.bodyType && (
+              <div className="flex items-start gap-3">
+                <div className="text-blue-400 text-xl mt-1">🚗</div>
+                <div>
+                  <p className="text-gray-400 text-sm">Body Type</p>
+                  <p className="text-white font-semibold">{vehicle.bodyType}</p>
+                </div>
+              </div>
+            )}
+            
+            {/* Condition */}
+            <div className="flex items-start gap-3">
+              <div className="text-blue-400 text-xl mt-1">✨</div>
+              <div>
+                <p className="text-gray-400 text-sm">Condition</p>
+                <p className="text-white font-semibold capitalize">{vehicle.condition}</p>
+              </div>
+            </div>
+            
+            {/* Miles */}
+            <div className="flex items-start gap-3">
+              <div className="text-blue-400 text-xl mt-1">📍</div>
+              <div>
+                <p className="text-gray-400 text-sm">Mileage</p>
+                <p className="text-white font-semibold">{vehicle.mileage.toLocaleString()} mi</p>
+              </div>
+            </div>
+            
+            {/* Engine */}
+            {vehicle.engine && (
+              <div className="flex items-start gap-3">
+                <div className="text-blue-400 text-xl mt-1">⚙️</div>
+                <div>
+                  <p className="text-gray-400 text-sm">Engine</p>
+                  <p className="text-white font-semibold">{vehicle.engine}</p>
+                </div>
+              </div>
+            )}
+            
+            {/* Transmission */}
+            {vehicle.transmission && (
+              <div className="flex items-start gap-3">
+                <div className="text-blue-400 text-xl mt-1">🔧</div>
+                <div>
+                  <p className="text-gray-400 text-sm">Transmission</p>
+                  <p className="text-white font-semibold">{vehicle.transmission}</p>
+                </div>
+              </div>
+            )}
+            
+            {/* Drivetrain */}
+            {vehicle.drivetrain && (
+              <div className="flex items-start gap-3">
+                <div className="text-blue-400 text-xl mt-1">🎯</div>
+                <div>
+                  <p className="text-gray-400 text-sm">Drivetrain</p>
+                  <p className="text-white font-semibold">{vehicle.drivetrain}</p>
+                </div>
+              </div>
+            )}
+            
+            {/* Fuel Type */}
+            {vehicle.fuelType && (
+              <div className="flex items-start gap-3">
+                <div className="text-blue-400 text-xl mt-1">⛽</div>
+                <div>
+                  <p className="text-gray-400 text-sm">Fuel Type</p>
+                  <p className="text-white font-semibold">{vehicle.fuelType}</p>
+                </div>
+              </div>
+            )}
+            
+            {/* City MPG */}
+            {vehicle.mpgCity !== undefined && vehicle.mpgCity > 0 && (
+              <div className="flex items-start gap-3">
+                <div className="text-blue-400 text-xl mt-1">🏙️</div>
+                <div>
+                  <p className="text-gray-400 text-sm">City MPG</p>
+                  <p className="text-white font-semibold">{vehicle.mpgCity}</p>
+                </div>
+              </div>
+            )}
+            
+            {/* Highway MPG */}
+            {vehicle.mpgHighway !== undefined && vehicle.mpgHighway > 0 && (
+              <div className="flex items-start gap-3">
+                <div className="text-blue-400 text-xl mt-1">🛣️</div>
+                <div>
+                  <p className="text-gray-400 text-sm">Highway MPG</p>
+                  <p className="text-white font-semibold">{vehicle.mpgHighway}</p>
+                </div>
+              </div>
+            )}
+            
+            {/* Exterior Color */}
+            {vehicle.exteriorColor && (
+              <div className="flex items-start gap-3">
+                <div className="text-blue-400 text-xl mt-1">🎨</div>
+                <div>
+                  <p className="text-gray-400 text-sm">Exterior Color</p>
+                  <p className="text-white font-semibold">{vehicle.exteriorColor}</p>
+                </div>
+              </div>
+            )}
+            
+            {/* Interior Color */}
+            {vehicle.interiorColor && (
+              <div className="flex items-start gap-3">
+                <div className="text-blue-400 text-xl mt-1">🪑</div>
+                <div>
+                  <p className="text-gray-400 text-sm">Interior Color</p>
+                  <p className="text-white font-semibold">{vehicle.interiorColor}</p>
+                </div>
+              </div>
+            )}
+            
+            {/* Doors */}
+            {vehicle.doors && (
+              <div className="flex items-start gap-3">
+                <div className="text-blue-400 text-xl mt-1">🚪</div>
+                <div>
+                  <p className="text-gray-400 text-sm">Doors</p>
+                  <p className="text-white font-semibold">{vehicle.doors}</p>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+
         {/* Description */}
         {vehicle.description && (
           <div className="mb-10 bg-gray-800/50 backdrop-blur-sm rounded-lg p-8 border border-gray-700">

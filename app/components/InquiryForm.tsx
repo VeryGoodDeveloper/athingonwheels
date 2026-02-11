@@ -60,30 +60,30 @@ export default function InquiryForm({ vehicle }: InquiryFormProps) {
   };
 
   return (
-    <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-8 border border-gray-700">
-      <h2 className="text-2xl font-bold mb-6">Inquire About This Vehicle</h2>
+    <div className="bg-gradient-to-br from-gray-900/95 to-black/95 backdrop-blur-xl rounded-xl p-6 md:p-8 border border-gray-700/50 shadow-2xl">
+      <h2 className="text-2xl font-bold mb-6 text-white">Check if Your Thing is Available</h2>
       
       {status === "success" ? (
         <div className="bg-green-500/20 border border-green-500 rounded-lg p-6 text-center">
           <div className="text-green-400 text-5xl mb-4">✓</div>
-          <h3 className="text-xl font-bold text-green-400 mb-2">Thank You!</h3>
+          <h3 className="text-xl font-bold text-green-400 mb-2">Thing Status: Checking!</h3>
           <p className="text-gray-300">
-            We've received your inquiry about the {vehicle.year} {vehicle.make} {vehicle.model}.
-            Our team will contact you within 24 hours.
+            We're checking on your {vehicle.year} {vehicle.make} {vehicle.model}.
+            Our team will contact you within 24 hours with availability.
           </p>
           <button
             onClick={() => setStatus("idle")}
             className="mt-6 text-blue-400 hover:text-blue-300 font-semibold"
           >
-            Send Another Inquiry
+            Check Another Thing
           </button>
         </div>
       ) : (
         <form onSubmit={handleSubmit} className="space-y-4">
           {/* Vehicle Info Display */}
-          <div className="bg-gray-900/50 rounded-lg p-4 mb-6 border border-gray-700">
-            <p className="text-sm text-gray-400 mb-1">Inquiring about:</p>
-            <p className="text-lg font-bold">
+          <div className="bg-gray-800/70 rounded-lg p-4 mb-6 border border-gray-600">
+            <p className="text-sm text-gray-400 mb-1">Your thing:</p>
+            <p className="text-lg font-bold text-white">
               {vehicle.year} {vehicle.make} {vehicle.model}
               {vehicle.trim && <span className="text-gray-400"> {vehicle.trim}</span>}
             </p>
@@ -94,7 +94,7 @@ export default function InquiryForm({ vehicle }: InquiryFormProps) {
 
           {/* Name */}
           <div>
-            <label htmlFor="name" className="block text-sm font-semibold mb-2">
+            <label htmlFor="name" className="block text-sm font-semibold mb-2 text-gray-300">
               Full Name *
             </label>
             <input
@@ -104,14 +104,14 @@ export default function InquiryForm({ vehicle }: InquiryFormProps) {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors"
+              className="w-full bg-gray-800/50 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
               placeholder="John Doe"
             />
           </div>
 
           {/* Email */}
           <div>
-            <label htmlFor="email" className="block text-sm font-semibold mb-2">
+            <label htmlFor="email" className="block text-sm font-semibold mb-2 text-gray-300">
               Email Address *
             </label>
             <input
@@ -121,14 +121,14 @@ export default function InquiryForm({ vehicle }: InquiryFormProps) {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors"
+              className="w-full bg-gray-800/50 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
               placeholder="john@example.com"
             />
           </div>
 
           {/* Phone */}
           <div>
-            <label htmlFor="phone" className="block text-sm font-semibold mb-2">
+            <label htmlFor="phone" className="block text-sm font-semibold mb-2 text-gray-300">
               Phone Number *
             </label>
             <input
@@ -138,14 +138,14 @@ export default function InquiryForm({ vehicle }: InquiryFormProps) {
               value={formData.phone}
               onChange={handleChange}
               required
-              className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors"
+              className="w-full bg-gray-800/50 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
               placeholder="(123) 456-7890"
             />
           </div>
 
           {/* Message */}
           <div>
-            <label htmlFor="message" className="block text-sm font-semibold mb-2">
+            <label htmlFor="message" className="block text-sm font-semibold mb-2 text-gray-300">
               Message (Optional)
             </label>
             <textarea
@@ -154,8 +154,8 @@ export default function InquiryForm({ vehicle }: InquiryFormProps) {
               value={formData.message}
               onChange={handleChange}
               rows={4}
-              className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors resize-none"
-              placeholder="Any questions or special requests..."
+              className="w-full bg-gray-800/50 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all resize-none"
+              placeholder="Any questions about your thing..."
             />
           </div>
 
@@ -170,9 +170,9 @@ export default function InquiryForm({ vehicle }: InquiryFormProps) {
           <button
             type="submit"
             disabled={status === "submitting"}
-            className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 disabled:from-gray-600 disabled:to-gray-600 text-white font-bold py-4 rounded-lg transition-all"
+            className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 disabled:from-gray-600 disabled:to-gray-600 text-white font-bold py-4 rounded-lg transition-all shadow-lg"
           >
-            {status === "submitting" ? "Sending..." : "Send Inquiry"}
+            {status === "submitting" ? "Checking..." : "Check on My Thing"}
           </button>
 
           {/* Additional Contact Options */}
@@ -183,13 +183,13 @@ export default function InquiryForm({ vehicle }: InquiryFormProps) {
             <div className="flex flex-col sm:flex-row gap-3">
               <a
                 href="tel:00000000"
-                className="flex-1 bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 rounded-lg transition-all text-center"
+                className="flex-1 bg-gray-700/80 hover:bg-gray-600 text-white font-bold py-3 rounded-lg transition-all text-center"
               >
                 📞 Call Us
               </a>
               <a
                 href="mailto:sales@jsautohaus.com"
-                className="flex-1 bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 rounded-lg transition-all text-center"
+                className="flex-1 bg-gray-700/80 hover:bg-gray-600 text-white font-bold py-3 rounded-lg transition-all text-center"
               >
                 ✉️ Email Us
               </a>

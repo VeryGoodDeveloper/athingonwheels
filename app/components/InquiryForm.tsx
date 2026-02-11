@@ -60,7 +60,7 @@ export default function InquiryForm({ vehicle }: InquiryFormProps) {
   };
 
   return (
-    <div className="bg-gradient-to-br from-gray-900/95 to-black/95 backdrop-blur-xl rounded-xl p-6 md:p-8 border border-gray-700/50 shadow-2xl">
+    <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 md:p-8 border-2 border-amber-500/40 shadow-2xl">
       <h2 className="text-2xl font-bold mb-6 text-white">Check if Your Thing is Available</h2>
       
       {status === "success" ? (
@@ -174,27 +174,6 @@ export default function InquiryForm({ vehicle }: InquiryFormProps) {
           >
             {status === "submitting" ? "Checking..." : "Check on My Thing"}
           </button>
-
-          {/* Additional Contact Options */}
-          <div className="border-t border-gray-700 pt-4 mt-4">
-            <p className="text-center text-gray-400 text-sm mb-3">
-              Or contact us directly:
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <a
-                href="tel:00000000"
-                className="flex-1 bg-gray-700/80 hover:bg-gray-600 text-white font-bold py-3 rounded-lg transition-all text-center"
-              >
-                📞 Call Us
-              </a>
-              <a
-                href="mailto:sales@jsautohaus.com"
-                className="flex-1 bg-gray-700/80 hover:bg-gray-600 text-white font-bold py-3 rounded-lg transition-all text-center"
-              >
-                ✉️ Email Us
-              </a>
-            </div>
-          </div>
         </form>
       )}
     </div>

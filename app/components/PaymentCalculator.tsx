@@ -30,7 +30,7 @@ export default function PaymentCalculator({ price }: PaymentCalculatorProps) {
   const monthlyPayment = calculatePayment();
 
   return (
-    <div className="bg-gradient-to-br from-gray-900/95 to-black/95 backdrop-blur-xl rounded-xl p-6 border border-gray-700/50 shadow-2xl">
+    <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border-2 border-amber-500/40 shadow-2xl">
       <div className="flex items-center gap-2 mb-4">
         <span className="text-2xl">💳</span>
         <h3 className="text-xl font-bold text-white">Estimate Your Payment</h3>

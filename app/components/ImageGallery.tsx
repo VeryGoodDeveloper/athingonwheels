@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, TouchEvent } from "react";
+import { useState, useRef, TouchEvent, MouseEvent } from "react";
 
 interface ImageGalleryProps {
   images: string[];
@@ -28,7 +28,7 @@ export default function ImageGallery({ images, alt }: ImageGalleryProps) {
     setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
   };
 
-  // Touch handlers for swipe gestures on main image
+  // Touch handlers for swipe gestures
   const handleTouchStart = (e: TouchEvent<HTMLDivElement>) => {
     touchStartX.current = e.touches[0].clientX;
   };
@@ -53,14 +53,32 @@ export default function ImageGallery({ images, alt }: ImageGalleryProps) {
     touchEndX.current = 0;
   };
 
+  // Click handler for left/right navigation
+  const handleImageClick = (e: MouseEvent<HTMLDivElement>) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const width = rect.width;
+    
+    // If clicked on left 40% of image, go previous
+    if (x < width * 0.4) {
+      goToPrevious();
+    }
+    // If clicked on right 40% of image, go next
+    else if (x > width * 0.6) {
+      goToNext();
+    }
+    // Middle 20% does nothing (or you could make it do something else)
+  };
+
   return (
     <div className="space-y-3">
-      {/* Main Image Display - Bigger on mobile */}
+      {/* Main Image Display */}
       <div 
-        className="relative bg-gray-900 rounded-lg overflow-hidden group select-none"
+        className="relative bg-gray-900 rounded-lg overflow-hidden group select-none cursor-pointer"
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
+        onClick={handleImageClick}
       >
         <div className="relative w-full" style={{ paddingBottom: '75%' }}>
           <img
@@ -71,30 +89,29 @@ export default function ImageGallery({ images, alt }: ImageGalleryProps) {
           />
         </div>
 
-        {/* Navigation Arrows (desktop only) */}
+        {/* Invisible click zones overlay - visible on hover */}
         {images.length > 1 && (
           <>
-            <button
-              onClick={goToPrevious}
-              className="hidden md:block absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/75 text-white p-3 rounded-full transition-all opacity-0 group-hover:opacity-100"
-              aria-label="Previous image"
-            >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-              </svg>
-            </button>
-            <button
-              onClick={goToNext}
-              className="hidden md:block absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/75 text-white p-3 rounded-full transition-all opacity-0 group-hover:opacity-100"
-              aria-label="Next image"
-            >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
+            {/* Left zone */}
+            <div className="absolute left-0 top-0 bottom-0 w-2/5 hover:bg-black/10 transition-colors flex items-center justify-start pl-4">
+              <div className="opacity-0 group-hover:opacity-100 transition-opacity bg-black/30 rounded-full p-2">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+              </div>
+            </div>
+
+            {/* Right zone */}
+            <div className="absolute right-0 top-0 bottom-0 w-2/5 hover:bg-black/10 transition-colors flex items-center justify-end pr-4">
+              <div className="opacity-0 group-hover:opacity-100 transition-opacity bg-black/30 rounded-full p-2">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            </div>
 
             {/* Image Counter */}
-            <div className="absolute bottom-4 right-4 bg-black/75 text-white px-3 py-1 rounded-full text-sm font-semibold">
+            <div className="absolute bottom-4 right-4 bg-black/75 text-white px-3 py-1 rounded-full text-sm font-semibold pointer-events-none">
               {currentIndex + 1} / {images.length}
             </div>
           </>

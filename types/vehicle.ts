@@ -30,6 +30,15 @@ export interface Vehicle {
   interiorColor?: string;
   transmission?: string;
   fuelType?: string;
+  bodyType?: string;
+  engine?: string;
+  drivetrain?: string;
+  doors?: number;
+  mpgCity?: number;
+  mpgHighway?: number;
+  stock?: string;
+  carfaxUrl?: string;
+  detailUrl?: string;
   
   // Metadata
   location: string;

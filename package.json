@@ -10,10 +10,9 @@
   },
   "dependencies": {
     "cheerio": "^1.2.0",
-    "chromium": "^3.0.3",
     "next": "16.1.6",
     "nodemailer": "^8.0.1",
-    "puppeteer-core": "^24.37.2",
+    "puppeteer": "^24.37.2",
     "react": "19.2.3",
     "react-dom": "19.2.3"
   },

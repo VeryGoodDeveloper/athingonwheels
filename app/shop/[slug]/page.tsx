@@ -128,31 +128,43 @@ export default async function VehicleDetailPage({
             )}
           </div>
 
-          {/* Basic Information - iOS Glassy Style */}
+          {/* Basic Information - Bento Grid Style */}
           <div>
-            <div className="flex items-center justify-between mb-3">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3 gap-2">
               <h2 className="text-xl font-bold text-white">Basic Information</h2>
-              {vehicle.stock && (
-                <span className="text-sm text-gray-400">Stock # {vehicle.stock}</span>
-              )}
+              <div className="flex items-center gap-3 text-sm">
+                {vehicle.vin && (
+                  <a
+                    href={`https://www.ipacket.info/${vehicle.vin}#MSRP`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:text-blue-300 underline"
+                  >
+                    View iPacket Report
+                  </a>
+                )}
+                {vehicle.stock && (
+                  <span className="text-gray-400">Stock # {vehicle.stock}</span>
+                )}
+              </div>
             </div>
             
             <div className="grid grid-cols-2 gap-3">
               {/* Mileage */}
-              <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-gray-700/30">
+              <div className="bg-white/15 backdrop-blur-md rounded-xl p-4 border border-gray-700/30">
                 <p className="text-gray-300 text-sm mb-1">Mileage</p>
                 <p className="text-xl font-bold text-white">{vehicle.mileage.toLocaleString()} mi</p>
               </div>
               
               {/* Condition */}
-              <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-gray-700/30">
+              <div className="bg-white/15 backdrop-blur-md rounded-xl p-4 border border-gray-700/30">
                 <p className="text-gray-300 text-sm mb-1">Condition</p>
                 <p className="text-xl font-bold text-white capitalize">{vehicle.condition}</p>
               </div>
 
               {/* Body Type */}
               {vehicle.bodyType && (
-                <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-gray-700/30">
+                <div className="bg-white/15 backdrop-blur-md rounded-xl p-4 border border-gray-700/30">
                   <p className="text-gray-300 text-sm mb-1">Body Type</p>
                   <p className="text-xl font-bold text-white">{vehicle.bodyType}</p>
                 </div>
@@ -160,7 +172,7 @@ export default async function VehicleDetailPage({
               
               {/* Transmission */}
               {vehicle.transmission && (
-                <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-gray-700/30">
+                <div className="bg-white/15 backdrop-blur-md rounded-xl p-4 border border-gray-700/30">
                   <p className="text-gray-300 text-sm mb-1">Transmission</p>
                   <p className="text-lg font-bold text-white">{vehicle.transmission}</p>
                 </div>
@@ -168,7 +180,7 @@ export default async function VehicleDetailPage({
               
               {/* Engine - Full Width */}
               {vehicle.engine && (
-                <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-gray-700/30 col-span-2">
+                <div className="bg-white/15 backdrop-blur-md rounded-xl p-4 border border-gray-700/30 col-span-2">
                   <p className="text-gray-300 text-sm mb-1">Engine</p>
                   <p className="text-lg font-bold text-white">{vehicle.engine}</p>
                 </div>
@@ -176,7 +188,7 @@ export default async function VehicleDetailPage({
               
               {/* Drivetrain */}
               {vehicle.drivetrain && (
-                <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-gray-700/30">
+                <div className="bg-white/15 backdrop-blur-md rounded-xl p-4 border border-gray-700/30">
                   <p className="text-gray-300 text-sm mb-1">Drivetrain</p>
                   <p className="text-lg font-bold text-white">{vehicle.drivetrain}</p>
                 </div>
@@ -184,7 +196,7 @@ export default async function VehicleDetailPage({
               
               {/* Fuel Type */}
               {vehicle.fuelType && (
-                <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-gray-700/30">
+                <div className="bg-white/15 backdrop-blur-md rounded-xl p-4 border border-gray-700/30">
                   <p className="text-gray-300 text-sm mb-1">Fuel Type</p>
                   <p className="text-lg font-bold text-white">{vehicle.fuelType}</p>
                 </div>
@@ -192,7 +204,7 @@ export default async function VehicleDetailPage({
               
               {/* MPG */}
               {(vehicle.mpgCity !== undefined && vehicle.mpgCity > 0) || (vehicle.mpgHighway !== undefined && vehicle.mpgHighway > 0) ? (
-                <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-gray-700/30 col-span-2">
+                <div className="bg-white/15 backdrop-blur-md rounded-xl p-4 border border-gray-700/30 col-span-2">
                   <p className="text-gray-300 text-sm mb-1">Fuel Economy</p>
                   <p className="text-lg font-bold text-white">
                     {vehicle.mpgCity || 0} city / {vehicle.mpgHighway || 0} highway MPG
@@ -202,7 +214,7 @@ export default async function VehicleDetailPage({
               
               {/* Exterior Color */}
               {vehicle.exteriorColor && (
-                <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-gray-700/30">
+                <div className="bg-white/15 backdrop-blur-md rounded-xl p-4 border border-gray-700/30">
                   <p className="text-gray-300 text-sm mb-1">Exterior</p>
                   <p className="text-lg font-bold text-white">{vehicle.exteriorColor}</p>
                 </div>
@@ -210,7 +222,7 @@ export default async function VehicleDetailPage({
               
               {/* Interior Color */}
               {vehicle.interiorColor && (
-                <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-gray-700/30">
+                <div className="bg-white/15 backdrop-blur-md rounded-xl p-4 border border-gray-700/30">
                   <p className="text-gray-300 text-sm mb-1">Interior</p>
                   <p className="text-lg font-bold text-white">{vehicle.interiorColor}</p>
                 </div>
@@ -218,7 +230,7 @@ export default async function VehicleDetailPage({
               
               {/* Doors */}
               {vehicle.doors && (
-                <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-gray-700/30">
+                <div className="bg-white/15 backdrop-blur-md rounded-xl p-4 border border-gray-700/30">
                   <p className="text-gray-300 text-sm mb-1">Doors</p>
                   <p className="text-lg font-bold text-white">{vehicle.doors}</p>
                 </div>
@@ -226,7 +238,7 @@ export default async function VehicleDetailPage({
               
               {/* VIN */}
               {vehicle.vin && (
-                <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-gray-700/30">
+                <div className="bg-white/15 backdrop-blur-md rounded-xl p-4 border border-gray-700/30">
                   <p className="text-gray-300 text-sm mb-1">VIN</p>
                   <p className="text-white font-mono text-xs break-all">{vehicle.vin}</p>
                 </div>

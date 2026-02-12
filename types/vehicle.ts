@@ -45,6 +45,13 @@ export interface Vehicle {
   status: "available" | "sold" | "pending";
   createdAt: string;
   updatedAt: string;
+  
+  // Tracking & Data Source
+  scrapedAt?: string; // ISO timestamp of when scraped
+  sourceUrl?: string; // Original listing URL
+  importBatch?: string; // Batch identifier (e.g., "2026-02-12-full" or timestamp)
+  lastVerified?: string; // Last time verified on source site
+  isActive?: boolean; // Still exists on source site
 }
 
 export interface VehicleFilter {

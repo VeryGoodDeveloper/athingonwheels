@@ -6,19 +6,28 @@ const puppeteer = require('puppeteer');
 const URLS_FILE = '/home/ssystem/.openclaw/workspace/athingonwheels/scripts/all-vehicle-urls.txt';
 const OUTPUT_FILE = '/home/ssystem/.openclaw/workspace/athingonwheels/lib/scrapedInventory.json';
 const SAVE_INTERVAL = 10;
-const START_INDEX = 1; // We already scraped index 0
 
-// Read URLs
-const urls = fs.readFileSync(URLS_FILE, 'utf-8').trim().split('\n').slice(0, 100);
+// Read all URLs (812 total)
+const urls = fs.readFileSync(URLS_FILE, 'utf-8').trim().split('\n');
 
-// Read existing data
-let inventory = JSON.parse(fs.readFileSync(OUTPUT_FILE, 'utf-8'));
+// Start fresh with clean data structure
+let inventory = {
+  count: 0,
+  scrapedAt: new Date().toISOString(),
+  vehicles: []
+};
 
 // Extraction function to run in browser context
 function extractVehicleData() {
+  const now = new Date().toISOString();
   const data = {
     url: window.location.href,
-    detailUrl: window.location.href
+    detailUrl: window.location.href,
+    sourceUrl: window.location.href,
+    scrapedAt: now,
+    lastVerified: now,
+    isActive: true,
+    importBatch: now.split('T')[0] + '-full' // e.g., "2026-02-12-full"
   };
 
   // Extract title (year, make, model)
@@ -111,10 +120,46 @@ function extractVehicleData() {
   const carfaxLink = document.querySelector('a[href*="carfax.com"]');
   data.carfaxUrl = carfaxLink ? carfaxLink.href : null;
 
-  // Extract price
-  const priceEl = document.querySelector('h1 ~ p');
-  const priceText = priceEl ? priceEl.innerText : '';
-  data.price = priceText.toLowerCase().includes('call') ? 0 : parseInt(priceText.replace(/[^0-9]/g, '')) || 0;
+  // Extract price from visible DOM elements
+  let price = 0;
+  let priceText = null;
+  
+  // Look for "Our Price" label and the adjacent price value
+  const allParagraphs = Array.from(document.querySelectorAll('p'));
+  const priceLabel = allParagraphs.find(p => p.innerText.trim() === 'Our Price');
+  
+  if (priceLabel) {
+    // Price value is usually in the next sibling paragraph
+    const nextP = priceLabel.nextElementSibling;
+    if (nextP) {
+      priceText = nextP.innerText.trim();
+    } else {
+      // Or it might be in the parent's next sibling
+      const parent = priceLabel.parentElement;
+      const nextElement = parent.nextElementSibling;
+      if (nextElement) {
+        const priceP = nextElement.querySelector('p');
+        if (priceP) priceText = priceP.innerText.trim();
+      }
+    }
+  }
+  
+  // Check for "Call for Price"
+  const callForPrice = allParagraphs.find(p => p.innerText.trim() === 'Call for Price');
+  if (callForPrice) {
+    priceText = 'Call for Price';
+  }
+  
+  // Parse numeric price from text like "$39,995"
+  if (priceText && priceText !== 'Call for Price') {
+    const numMatch = priceText.match(/\$?([\d,]+)/);
+    if (numMatch) {
+      price = parseInt(numMatch[1].replace(/,/g, ''));
+    }
+  }
+  
+  data.price = price;
+  data.priceText = priceText || 'Not Listed';
 
   // Description (placeholder)
   data.description = '';
@@ -133,12 +178,13 @@ async function scrapeVehicles() {
 
   const page = await browser.newPage();
   
-  let successCount = inventory.count;
+  let successCount = 0;
   let failCount = 0;
+  const totalUrls = urls.length;
 
-  for (let i = START_INDEX; i < urls.length; i++) {
+  for (let i = 0; i < urls.length; i++) {
     const url = urls[i];
-    console.log(`Scraping ${i + 1}/100: ${url}`);
+    console.log(`Scraping ${i + 1}/${totalUrls}: ${url}`);
 
     try {
       await page.goto(url, { waitUntil: 'networkidle2', timeout: 30000 });
@@ -156,7 +202,7 @@ async function scrapeVehicles() {
       if (inventory.count % SAVE_INTERVAL === 0) {
         inventory.scrapedAt = new Date().toISOString();
         fs.writeFileSync(OUTPUT_FILE, JSON.stringify(inventory, null, 2));
-        console.log(`💾 Progress saved: ${inventory.count}/100 vehicles`);
+        console.log(`💾 Progress saved: ${inventory.count}/${totalUrls} vehicles`);
       }
 
       // Small delay to avoid overwhelming the server
@@ -189,7 +235,7 @@ async function scrapeVehicles() {
   await browser.disconnect();
 
   console.log('\n=== SCRAPING COMPLETE ===');
-  console.log(`✓ Successfully scraped: ${successCount}/100`);
+  console.log(`✓ Successfully scraped: ${successCount}/${totalUrls}`);
   console.log(`✗ Failed: ${failCount}`);
   console.log(`📁 Output file: ${OUTPUT_FILE}`);
 }

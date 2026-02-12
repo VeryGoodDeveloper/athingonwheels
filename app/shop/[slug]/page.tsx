@@ -56,7 +56,7 @@ export default async function VehicleDetailPage({
     .slice(0, 3);
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-gradient-to-b from-gray-950 via-black to-gray-950 text-white">
       {/* Header */}
       <header className="border-b border-gray-800">
         <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
@@ -259,23 +259,6 @@ export default async function VehicleDetailPage({
           <div>
             <InquiryForm vehicle={vehicle} />
           </div>
-
-          {/* View iPacket Report */}
-          {vehicle.vin && (
-            <a
-              href={`https://www.ipacket.info/${vehicle.vin}#MSRP`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block bg-white/10 backdrop-blur-md rounded-xl p-4 border border-gray-700/30 hover:border-blue-500/50 transition-all"
-            >
-              <div className="flex items-center justify-between text-white">
-                <span className="text-lg font-semibold">View iPacket Report</span>
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </div>
-            </a>
-          )}
 
           {/* Similar Vehicles */}
           {similarVehicles.length > 0 && (

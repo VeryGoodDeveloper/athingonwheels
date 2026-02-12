@@ -1,72 +1,7 @@
 {
-  "count": 450,
+  "count": 381,
   "scrapedAt": "2026-02-12T17:15:28.583Z",
   "vehicles": [
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2024-Ram-2500-Big_Horn-3C6UR5DJ8RG382639",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2024-Ram-2500-Big_Horn-3C6UR5DJ8RG382639",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2024-Ram-2500-Big_Horn-3C6UR5DJ8RG382639",
-      "scrapedAt": "2026-02-12T16:46:03.627Z",
-      "lastVerified": "2026-02-12T16:46:03.627Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2024,
-      "make": "Ram",
-      "model": "2500",
-      "trim": "Big Horn",
-      "vin": "3C6UR5DJ8RG382639",
-      "stock": "SX18328",
-      "mileage": 36984,
-      "specs": {
-        "engine": "6.4L V8",
-        "transmission": "8-Speed Automatic",
-        "drivetrain": "4WD",
-        "bodyType": "Truck",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/rwc6witxcs154u8k8kt0tc955eqr",
-        "https://images.app.ridemotive.com/m1fkaypol4p1cd8az0p55wfazu8o",
-        "https://images.app.ridemotive.com/d9pjvglzovv5mxmustav8oceclri",
-        "https://images.app.ridemotive.com/7dky8rryi5pysn36j5y1rhotblbh",
-        "https://images.app.ridemotive.com/duv5ef1i5sm793tdgoe709lm76e0",
-        "https://images.app.ridemotive.com/f0wbbvdopf3lam3ehjvpclgr78a0",
-        "https://images.app.ridemotive.com/tnnf88asayr3idmt0cgx9u8cttoh",
-        "https://images.app.ridemotive.com/xnylqkgul3mxmgu366eyhdxjdnmz",
-        "https://images.app.ridemotive.com/oil3gl4lva2dymz4jjsob0jvdd3k",
-        "https://images.app.ridemotive.com/luknu9amvyxxy4en5u0fshyqd051",
-        "https://images.app.ridemotive.com/ywswdeh72agp4zfqmdnv3vqdi84y",
-        "https://images.app.ridemotive.com/u5jdzmb49nqgk42qyw3mfjzic6op",
-        "https://images.app.ridemotive.com/asuxer8of1ovltfe98i565f1bb72",
-        "https://images.app.ridemotive.com/wblycr54fltia1i3kbf7xeivcx91",
-        "https://images.app.ridemotive.com/iw2m2mzy3161eas96ew1a6hy3fck",
-        "https://images.app.ridemotive.com/tsoxw9ubcntxhuifxiydg93aqxr7",
-        "https://images.app.ridemotive.com/tdbjkgpjxpmffms3vzslrujb902k",
-        "https://images.app.ridemotive.com/moqi0j25bx13rlmoxus5w6pjiwn3",
-        "https://images.app.ridemotive.com/wjxskkk6owk51alfpjfu4goyvknm",
-        "https://images.app.ridemotive.com/o08po0fsddqaul58rfxcbgp7jyca",
-        "https://images.app.ridemotive.com/hymf86cf7721gqc2oht8fvm5mmly",
-        "https://images.app.ridemotive.com/cc93whej9dxswmcj91jb8sbgxjfn",
-        "https://images.app.ridemotive.com/t8hlla2wawccg6uzoelsj1sawkk5",
-        "https://images.app.ridemotive.com/2ayto0f16nk0t1i2sa7wi1u7l8js",
-        "https://images.app.ridemotive.com/q4wcylkob52rdzwe53qmg9tf99yw",
-        "https://images.app.ridemotive.com/ntbz9qho533k76vltj465kpcfgwv",
-        "https://images.app.ridemotive.com/n1qf1rh4zlfvuzxlbfjadzcmfc26",
-        "https://images.app.ridemotive.com/2dtnuokbieitkwtc07w8s9cwo365",
-        "https://images.app.ridemotive.com/316vs7jl2wghb3tkgpobr2b0rds8",
-        "https://images.app.ridemotive.com/wk0samvxjwsxb8tsvm2o67p2f74i",
-        "https://images.app.ridemotive.com/d417pu0as6ulazmi6cpw3g998zf2",
-        "https://images.app.ridemotive.com/6qydohza8g6ltucglz4c23a4rgoz",
-        "https://images.app.ridemotive.com/igj91wlrxof9k380vltoznrl0nzf",
-        "https://images.app.ridemotive.com/faaerzg9sk1mh4borhbyfbn5cvw5",
-        "https://images.app.ridemotive.com/m2445280ay6vi2laufm4xkpdv4w0"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/Ee10LBcS-LeOdO3n5Yhx5En2JHd1Af5C0PnIgyxe4jwWbKhj4s9f34YQ431A0hNo3UZCdhXmgv3wVcw8B-0qMa1MIwOpuGBcekY",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2024-Ram-2500-Big_Horn-3C6UR5DJ8RG382639"
-    },
     {
       "url": "https://jsautohaus.com/inventory/Used-2024-Tesla-Model_Y-Performance-7SAYGDEF9RA317437",
       "detailUrl": "https://jsautohaus.com/inventory/Used-2024-Tesla-Model_Y-Performance-7SAYGDEF9RA317437",
@@ -309,37 +244,6 @@
       "priceText": "$71,995",
       "description": "",
       "id": "Used-2021-Mercedes-Benz-E-Class-E_63_S_AMG_-W1KZF8KB4MA963864"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2014-Toyota-Venza-XLE-4T3BK3BB3EU096101",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2014-Toyota-Venza-XLE-4T3BK3BB3EU096101",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2014-Toyota-Venza-XLE-4T3BK3BB3EU096101",
-      "scrapedAt": "2026-02-12T16:46:22.911Z",
-      "lastVerified": "2026-02-12T16:46:22.911Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2014,
-      "make": "Toyota",
-      "model": "Venza",
-      "trim": "XLE",
-      "vin": "4T3BK3BB3EU096101",
-      "stock": "R3752",
-      "mileage": 192984,
-      "specs": {
-        "engine": "3.5L V6 SMPI DOHC",
-        "transmission": "6-Speed Automatic Electronic w...",
-        "drivetrain": "AWD",
-        "bodyType": "SUV",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/3nl5egrtotl2ttkra50p81qpmyik"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/BT5cnyiapONTa27iaSYhDcvIR2RpXfn1pKgo7ktTqWucjHsJYbuZSclnIAMaQvZee1FmZ1ugJSK1y35-H9WLCVy0pfwAsMKuFaY",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2014-Toyota-Venza-XLE-4T3BK3BB3EU096101"
     },
     {
       "url": "https://jsautohaus.com/inventory/Used-2022-Ford-Bronco-Wildtrak-1FMEE5DP9NLB66790",
@@ -794,56 +698,6 @@
       "priceText": "$10,995",
       "description": "",
       "id": "Used-2016-Hyundai-Elantra_GT-5dr_HB_Auto-KMHD35LH7GU261406"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2018-Jeep-Cherokee-Latitude-1C4PJMCX3JD599871",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2018-Jeep-Cherokee-Latitude-1C4PJMCX3JD599871",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2018-Jeep-Cherokee-Latitude-1C4PJMCX3JD599871",
-      "scrapedAt": "2026-02-12T16:46:52.861Z",
-      "lastVerified": "2026-02-12T16:46:52.861Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2018,
-      "make": "Jeep",
-      "model": "Cherokee",
-      "trim": "Latitude",
-      "vin": "1C4PJMCX3JD599871",
-      "stock": "25412W",
-      "mileage": 85126,
-      "specs": {
-        "engine": "3.2L V6",
-        "transmission": "9-Speed 948TE Automatic",
-        "drivetrain": "4WD",
-        "bodyType": "SUV",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/w2wuu0143sooc3tunqp7tatjuxdu"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/d7IyBzy5OlMf2WVmvHxJ3Y41YVi0DHW49w-xU34S6jtHPgEQIxw9Oxrfxntcwwt0SUpxlFa4MhoHC-mgJpuHQ9GiwWppPEoflY8",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2018-Jeep-Cherokee-Latitude-1C4PJMCX3JD599871"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory?filters=%7B%22sortBy%22%3A%7B%22option%22%3A%7B%22label%22%3A%22Price%22%2C%22value%22%3A%22price%22%2C%22type%22%3A%22value%22%7D%2C%22direction%22%3A%22desc%22%7D%2C%22appliedFilters%22%3A%7B%22make%22%3A%7B%22value%22%3A%7B%22BMW%22%3Atrue%7D%7D%2C%22model%22%3A%7B%22value%22%3A%7B%22Z4%22%3Atrue%7D%7D%7D%7D",
-      "detailUrl": "https://jsautohaus.com/inventory?filters=%7B%22sortBy%22%3A%7B%22option%22%3A%7B%22label%22%3A%22Price%22%2C%22value%22%3A%22price%22%2C%22type%22%3A%22value%22%7D%2C%22direction%22%3A%22desc%22%7D%2C%22appliedFilters%22%3A%7B%22make%22%3A%7B%22value%22%3A%7B%22BMW%22%3Atrue%7D%7D%2C%22model%22%3A%7B%22value%22%3A%7B%22Z4%22%3Atrue%7D%7D%7D%7D",
-      "sourceUrl": "https://jsautohaus.com/inventory?filters=%7B%22sortBy%22%3A%7B%22option%22%3A%7B%22label%22%3A%22Price%22%2C%22value%22%3A%22price%22%2C%22type%22%3A%22value%22%7D%2C%22direction%22%3A%22desc%22%7D%2C%22appliedFilters%22%3A%7B%22make%22%3A%7B%22value%22%3A%7B%22BMW%22%3Atrue%7D%7D%2C%22model%22%3A%7B%22value%22%3A%7B%22Z4%22%3Atrue%7D%7D%7D%7D",
-      "scrapedAt": "2026-02-12T16:46:57.744Z",
-      "lastVerified": "2026-02-12T16:46:57.744Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "trim": "No makes and/or models are available because other filters are limiting your options.",
-      "vin": "",
-      "mileage": 2,
-      "specs": {},
-      "images": [],
-      "carfaxUrl": null,
-      "price": 0,
-      "priceText": "Not Listed",
-      "description": "",
-      "id": "inventory?filters=%7B%22sortBy%22%3A%7B%22option%22%3A%7B%22label%22%3A%22Price%22%2C%22value%22%3A%22price%22%2C%22type%22%3A%22value%22%7D%2C%22direction%22%3A%22desc%22%7D%2C%22appliedFilters%22%3A%7B%22make%22%3A%7B%22value%22%3A%7B%22BMW%22%3Atrue%7D%7D%2C%22model%22%3A%7B%22value%22%3A%7B%22Z4%22%3Atrue%7D%7D%7D%7D"
     },
     {
       "url": "https://jsautohaus.com/inventory/Used-2019-Mercedes-Benz-AMG__GT_63-S-WDD7X8KB1KA006481",
@@ -1805,99 +1659,6 @@
       "id": "Used-2021-Lexus-RC-300-JTHD85EC2M5006514"
     },
     {
-      "url": "https://jsautohaus.com/inventory/Used-2018-Ford-F-150-XL-1FTEW1EP1JFE06853",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2018-Ford-F-150-XL-1FTEW1EP1JFE06853",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2018-Ford-F-150-XL-1FTEW1EP1JFE06853",
-      "scrapedAt": "2026-02-12T16:48:03.348Z",
-      "lastVerified": "2026-02-12T16:48:03.348Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2018,
-      "make": "Ford",
-      "model": "F-150",
-      "trim": "XL",
-      "vin": "1FTEW1EP1JFE06853",
-      "stock": "D179",
-      "mileage": 86005,
-      "specs": {
-        "engine": "2.7L V6 EcoBoost",
-        "transmission": "10-Speed Automatic",
-        "drivetrain": "4WD",
-        "bodyType": "Truck",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/4s3edoffdw8cchqkcmytt7u3s33f"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/_Xz-zqg6aDLeACe2xNoombrn-0NpkigRX4ATLgPFFo1Byzbk9xorILw1Bp7ELphrqkGdx8zIlqAFiA0HipZ9Y-aMVrmaDWhmN2g",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2018-Ford-F-150-XL-1FTEW1EP1JFE06853"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2017-Mercedes-Benz-GLS-GLS_450-4JGDF6EE8HA816429",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2017-Mercedes-Benz-GLS-GLS_450-4JGDF6EE8HA816429",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2017-Mercedes-Benz-GLS-GLS_450-4JGDF6EE8HA816429",
-      "scrapedAt": "2026-02-12T16:48:07.334Z",
-      "lastVerified": "2026-02-12T16:48:07.334Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2017,
-      "make": "Mercedes-Benz",
-      "model": "GLS",
-      "trim": "GLS 450 4MATIC®",
-      "vin": "4JGDF6EE8HA816429",
-      "stock": "25371A",
-      "mileage": 89260,
-      "specs": {
-        "engine": "V6",
-        "transmission": "9-Speed Automatic",
-        "drivetrain": "4MATIC®",
-        "bodyType": "SUV",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/onnylh3uk4owvqhclupmbdrown9a"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/-hIUkeeXazQ3zOo8AURd0fn5sn0_3qotDbKDzdc-cAzZA_9Pru1JQCeZjpI-gWKVlBjhRmVVlMbceaO4FZfjmhMzglPVQYC9c7A",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2017-Mercedes-Benz-GLS-GLS_450-4JGDF6EE8HA816429"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2017-Honda-Pilot-EX-L-5FNYF6H75HB034065",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2017-Honda-Pilot-EX-L-5FNYF6H75HB034065",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2017-Honda-Pilot-EX-L-5FNYF6H75HB034065",
-      "scrapedAt": "2026-02-12T16:48:11.079Z",
-      "lastVerified": "2026-02-12T16:48:11.079Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2017,
-      "make": "Honda",
-      "model": "Pilot",
-      "trim": "EX-L w/Navigation",
-      "vin": "5FNYF6H75HB034065",
-      "stock": "D114",
-      "mileage": 128378,
-      "specs": {
-        "engine": "3.5L V6 24V SOHC i-VTEC",
-        "transmission": "6-Speed Automatic",
-        "drivetrain": "AWD",
-        "bodyType": "SUV",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/ptk2le6ihft5rfkpx95zgioqjktn"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/w6V-NA2Kr4ZP5sP2cHfh0MZ6H8305g_fj05UzETEr2-7NWKNUy60XEmwNr3OXzMX8BEUv0PoHNETL0vl5JV1S9kWQGXLKwmOWh4",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2017-Honda-Pilot-EX-L-5FNYF6H75HB034065"
-    },
-    {
       "url": "https://jsautohaus.com/inventory/Used-2022-Mercedes-Benz-G-Class-G_63_AMG_-W1NYC8AJ1NX454006",
       "detailUrl": "https://jsautohaus.com/inventory/Used-2022-Mercedes-Benz-G-Class-G_63_AMG_-W1NYC8AJ1NX454006",
       "sourceUrl": "https://jsautohaus.com/inventory/Used-2022-Mercedes-Benz-G-Class-G_63_AMG_-W1NYC8AJ1NX454006",
@@ -2497,68 +2258,6 @@
       "id": "Used-2022-Land_Rover-Range_Rover_Sport-HSE_Silver_Edition-SALWR2SU2NA243878"
     },
     {
-      "url": "https://jsautohaus.com/inventory/Used-2020-Jeep-Wrangler-Unlimited_Sahara-1C4HJXEN0LW258971",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2020-Jeep-Wrangler-Unlimited_Sahara-1C4HJXEN0LW258971",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2020-Jeep-Wrangler-Unlimited_Sahara-1C4HJXEN0LW258971",
-      "scrapedAt": "2026-02-12T16:48:55.345Z",
-      "lastVerified": "2026-02-12T16:48:55.345Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2020,
-      "make": "Jeep",
-      "model": "Wrangler",
-      "trim": "Unlimited Sahara",
-      "vin": "1C4HJXEN0LW258971",
-      "stock": "D167",
-      "mileage": 67462,
-      "specs": {
-        "engine": "2.0L I4 DOHC",
-        "transmission": "8-Speed Automatic",
-        "drivetrain": "4WD",
-        "bodyType": "SUV",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/o653xhum4v61g8hgaspejb60ergn"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/yo6Wl69elIdXEbCVk0PYqyG_L0yWpF8R5LHe7pCRYCaox2Yp9zFD5iL_sE2YMZt1Smbeoa5qqxJoBvvKBD5pFaLoXBtu3RyNq-8",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2020-Jeep-Wrangler-Unlimited_Sahara-1C4HJXEN0LW258971"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2007-Ferrari-F430-Spider-ZFFEW59A970156188",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2007-Ferrari-F430-Spider-ZFFEW59A970156188",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2007-Ferrari-F430-Spider-ZFFEW59A970156188",
-      "scrapedAt": "2026-02-12T16:48:58.027Z",
-      "lastVerified": "2026-02-12T16:48:58.027Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2007,
-      "make": "Ferrari",
-      "model": "F430",
-      "trim": "Spider",
-      "vin": "ZFFEW59A970156188",
-      "stock": "25415HA",
-      "mileage": 17385,
-      "specs": {
-        "engine": "4.3L V8 DOHC 40V",
-        "transmission": "6-Speed Manual",
-        "drivetrain": "RWD",
-        "bodyType": "Convertible",
-        "doors": 2
-      },
-      "images": [
-        "https://images.app.ridemotive.com/dtavu4mqge6n224one2542nupwek"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/Phfb4kLpXnyl6MF7qwfQdOeWFgTlQzpozxq1XITK5z-TpMeG6jCK9dkjULgCBoychjZhZ-wC6KariszUREED5s7tKbCBSmDchBM",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2007-Ferrari-F430-Spider-ZFFEW59A970156188"
-    },
-    {
       "url": "https://jsautohaus.com/inventory/Used-2022-Land_Rover-Range_Rover_Evoque-Dynamic-SALZT2FX8NH165293",
       "detailUrl": "https://jsautohaus.com/inventory/Used-2022-Land_Rover-Range_Rover_Evoque-Dynamic-SALZT2FX8NH165293",
       "sourceUrl": "https://jsautohaus.com/inventory/Used-2022-Land_Rover-Range_Rover_Evoque-Dynamic-SALZT2FX8NH165293",
@@ -2869,71 +2568,6 @@
       "id": "Used-2022-Mercedes-Benz-CLA-CLA_35_AMG_-W1K5J5BB0NN293722"
     },
     {
-      "url": "https://jsautohaus.com/inventory/Used-2024-Ram-2500-Big_Horn-3C6UR5DJ0RG373353",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2024-Ram-2500-Big_Horn-3C6UR5DJ0RG373353",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2024-Ram-2500-Big_Horn-3C6UR5DJ0RG373353",
-      "scrapedAt": "2026-02-12T16:49:20.338Z",
-      "lastVerified": "2026-02-12T16:49:20.338Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2024,
-      "make": "Ram",
-      "model": "2500",
-      "trim": "Big Horn",
-      "vin": "3C6UR5DJ0RG373353",
-      "stock": "SX18329",
-      "mileage": 23027,
-      "specs": {
-        "engine": "6.4L V8",
-        "transmission": "8-Speed Automatic",
-        "drivetrain": "4WD",
-        "bodyType": "Truck",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/vcq4gbtpif62o2l9wofowq8bug86",
-        "https://images.app.ridemotive.com/9xnc8k3iekypbrc5b0fkowzbbckj",
-        "https://images.app.ridemotive.com/ddiqdmp4aft0xh53x64kxm1j0ul2",
-        "https://images.app.ridemotive.com/jsadzxhug0zfijip4cm9ym1w7nvn",
-        "https://images.app.ridemotive.com/8et0ugpgliob27iujic2glk905dq",
-        "https://images.app.ridemotive.com/9jcdv7v4gs2cg7ib5ns63s1vt8q1",
-        "https://images.app.ridemotive.com/o6f0hr0peh7mnlexw3gj96th2qng",
-        "https://images.app.ridemotive.com/210733a5f3h0b1ezczdsg4k8qisk",
-        "https://images.app.ridemotive.com/nxv0td7c6oj0tjfezniayz5bmb5p",
-        "https://images.app.ridemotive.com/31fdqmhchs653upt7rcur30tzamh",
-        "https://images.app.ridemotive.com/5nrvw77de0co08ckbjhdcex8xmn5",
-        "https://images.app.ridemotive.com/xf81l7n7dqdgdg7zt3acyl46d666",
-        "https://images.app.ridemotive.com/h54k9vmgv5ujr5angwy0rzumjlvc",
-        "https://images.app.ridemotive.com/ff8v02y6kr0gbjq93c1bdsjwy897",
-        "https://images.app.ridemotive.com/30npgt485kteo3x8fcbbppvf4psk",
-        "https://images.app.ridemotive.com/51m6unl7jg21ngpubb3rt7unq59q",
-        "https://images.app.ridemotive.com/71i24uua50syseghu1m1flcbbybl",
-        "https://images.app.ridemotive.com/s537342kzq836ezo7e8ukbbssi58",
-        "https://images.app.ridemotive.com/vqouhb4suacq13t723hsv8idbwvx",
-        "https://images.app.ridemotive.com/h90f29t2qq2vlcoo7nf39jghz4w5",
-        "https://images.app.ridemotive.com/eala5hgvk0s194xqqedd6n8s70k4",
-        "https://images.app.ridemotive.com/jlmr1a0mb0z4dkjdp6mf31kckn8h",
-        "https://images.app.ridemotive.com/gpkydn7cffbc4z1x5uk3q424aeax",
-        "https://images.app.ridemotive.com/lp7qzzsz4r0usndq02q4v60kpnan",
-        "https://images.app.ridemotive.com/b97qsxlodmy8ridtf0e053hfzh9i",
-        "https://images.app.ridemotive.com/9n077eyjh2qml7jpnzaejnw88e9y",
-        "https://images.app.ridemotive.com/d8fygnqgp51sbu3zmcnnrs103j6c",
-        "https://images.app.ridemotive.com/60lipde3pznq6tv5mdkx88szv0t2",
-        "https://images.app.ridemotive.com/v3uhrb0d0zyo9w82v0qy87m7f7r4",
-        "https://images.app.ridemotive.com/uzkhgsua103soil13geevm7dmxo3",
-        "https://images.app.ridemotive.com/rmrcot5zwfz2mr7qi84oos6zjdeq",
-        "https://images.app.ridemotive.com/t56m4n360u9x1kg7k8061almrape",
-        "https://images.app.ridemotive.com/oijvmw86jiau2xtnuqq3chq8wexv",
-        "https://images.app.ridemotive.com/2m6zo43onc49qgm6x7m4ku85tb1j",
-        "https://images.app.ridemotive.com/wyo38ruun8ktmrzga33ghiwgr0mc"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/aP-5xM9EebPU2eXzwxEZcUV5FmWs81I-3kbiIS5GVRp9fnTiyZawDMR0pWztlkDJvYGD8WyDnVIiPpKl7Zeee2w96bTmgsYUIlo",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2024-Ram-2500-Big_Horn-3C6UR5DJ0RG373353"
-    },
-    {
       "url": "https://jsautohaus.com/inventory/Used-2020-BMW-X4_M-Competition-5YMUJ0C08L9B78582",
       "detailUrl": "https://jsautohaus.com/inventory/Used-2020-BMW-X4_M-Competition-5YMUJ0C08L9B78582",
       "sourceUrl": "https://jsautohaus.com/inventory/Used-2020-BMW-X4_M-Competition-5YMUJ0C08L9B78582",
@@ -3000,37 +2634,6 @@
       "priceText": "$44,995",
       "description": "",
       "id": "Used-2020-BMW-X4_M-Competition-5YMUJ0C08L9B78582"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2019-Ford-Fusion-SEL-3FA6P0CD6KR244975",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2019-Ford-Fusion-SEL-3FA6P0CD6KR244975",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2019-Ford-Fusion-SEL-3FA6P0CD6KR244975",
-      "scrapedAt": "2026-02-12T16:49:26.802Z",
-      "lastVerified": "2026-02-12T16:49:26.802Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2019,
-      "make": "Ford",
-      "model": "Fusion",
-      "trim": "SEL",
-      "vin": "3FA6P0CD6KR244975",
-      "stock": "D169",
-      "mileage": 41909,
-      "specs": {
-        "engine": "1.5L EcoBoost",
-        "transmission": "6-Speed Automatic",
-        "drivetrain": "FWD",
-        "bodyType": "Sedan",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/40ryvf7265ma8jisnbmdrqc3whff"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/u8l9D-q0ND6fgCjpajkT-i87BDjwaCDhLZBdcj5EIFrlbxcsqZxyy72zon2IG7ITaOoUZDob_59AeNZYpNxFGzfXlJGEg-Qt4XE",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2019-Ford-Fusion-SEL-3FA6P0CD6KR244975"
     },
     {
       "url": "https://jsautohaus.com/inventory/Used-2023-BMW-5_Series-530i_xDrive-WBA13BJ01PWX96994",
@@ -3174,37 +2777,6 @@
       "priceText": "$30,999",
       "description": "",
       "id": "Used-2020-Ford-Explorer-ST-1FM5K8GCXLGC20090"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2016-Audi-A3-2_0T_Premium_Plus-WAU38LFF0G1077682",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2016-Audi-A3-2_0T_Premium_Plus-WAU38LFF0G1077682",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2016-Audi-A3-2_0T_Premium_Plus-WAU38LFF0G1077682",
-      "scrapedAt": "2026-02-12T16:49:39.668Z",
-      "lastVerified": "2026-02-12T16:49:39.668Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2016,
-      "make": "Audi",
-      "model": "A3",
-      "trim": "2.0T Premium Plus quattro",
-      "vin": "WAU38LFF0G1077682",
-      "stock": "D7682",
-      "mileage": 88756,
-      "specs": {
-        "engine": "2.0L 4-Cylinder TFSI",
-        "transmission": "6-Speed S tronic® Automatic",
-        "drivetrain": "quattro",
-        "bodyType": "Convertible",
-        "doors": 2
-      },
-      "images": [
-        "https://images.app.ridemotive.com/jb00dmunmwtvvlo1k7s79obkdbjw"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/xM4twPwugDr4UDgswebt08qxZKtjzKYEtwCG1gb8XxvYNSF53hiHXsott6GrozXSSPG7vlm5kjngynjfgUECD4Bd7CRvH1iF73U",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2016-Audi-A3-2_0T_Premium_Plus-WAU38LFF0G1077682"
     },
     {
       "url": "https://jsautohaus.com/inventory/Used-2020-BMW-M2-Competition-WBS2U7C00L7F33023",
@@ -4346,37 +3918,6 @@
       "id": "Used-2020-Cadillac-CT6-V-Blackwing_Twin-1G6KW5RJ8LU109659"
     },
     {
-      "url": "https://jsautohaus.com/inventory/Used-2016-Audi-A3-2_0T_Premium_Plus-WAU38LFF0G1077682",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2016-Audi-A3-2_0T_Premium_Plus-WAU38LFF0G1077682",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2016-Audi-A3-2_0T_Premium_Plus-WAU38LFF0G1077682",
-      "scrapedAt": "2026-02-12T16:50:56.173Z",
-      "lastVerified": "2026-02-12T16:50:56.173Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2016,
-      "make": "Audi",
-      "model": "A3",
-      "trim": "2.0T Premium Plus quattro",
-      "vin": "WAU38LFF0G1077682",
-      "stock": "D7682",
-      "mileage": 88756,
-      "specs": {
-        "engine": "2.0L 4-Cylinder TFSI",
-        "transmission": "6-Speed S tronic® Automatic",
-        "drivetrain": "quattro",
-        "bodyType": "Convertible",
-        "doors": 2
-      },
-      "images": [
-        "https://images.app.ridemotive.com/jb00dmunmwtvvlo1k7s79obkdbjw"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/xM4twPwugDr4UDgswebt08qxZKtjzKYEtwCG1gb8XxvYNSF53hiHXsott6GrozXSSPG7vlm5kjngynjfgUECD4Bd7CRvH1iF73U",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2016-Audi-A3-2_0T_Premium_Plus-WAU38LFF0G1077682"
-    },
-    {
       "url": "https://jsautohaus.com/inventory/Used-2024-Volkswagen-Taos-1_5T_S-3VV5X7B2XRM016971",
       "detailUrl": "https://jsautohaus.com/inventory/Used-2024-Volkswagen-Taos-1_5T_S-3VV5X7B2XRM016971",
       "sourceUrl": "https://jsautohaus.com/inventory/Used-2024-Volkswagen-Taos-1_5T_S-3VV5X7B2XRM016971",
@@ -4759,37 +4300,6 @@
       "priceText": "$9,995",
       "description": "",
       "id": "Used-2017-Hyundai-Veloster-Value_Edition-KMHTC6AD3HU317814"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2012-Lincoln-MKZ-Base-3LNHL2JC6CR808674",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2012-Lincoln-MKZ-Base-3LNHL2JC6CR808674",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2012-Lincoln-MKZ-Base-3LNHL2JC6CR808674",
-      "scrapedAt": "2026-02-12T16:51:26.082Z",
-      "lastVerified": "2026-02-12T16:51:26.082Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2012,
-      "make": "Lincoln",
-      "model": "MKZ",
-      "trim": "Base",
-      "vin": "3LNHL2JC6CR808674",
-      "stock": "25263LA",
-      "mileage": 112794,
-      "specs": {
-        "engine": "Duratec 3.5L V6 DOHC 24V",
-        "transmission": "6-Speed Automatic with Select-...",
-        "drivetrain": "AWD",
-        "bodyType": "Sedan",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/3mdp7dvtdutel5l8y7w8cq7n7i5p"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/9JsXNG_CQzGI1DCAsFcf-nVU5H9fEUiGEyG2NjTO5RH8yUeC9bVn1QijdckG6elZOvUsCYQi6mebGnzbGnSqDluw99rd7e215os",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2012-Lincoln-MKZ-Base-3LNHL2JC6CR808674"
     },
     {
       "url": "https://jsautohaus.com/inventory/Used-2023-Ford-Transit-350-XLT-1FBAX2YG7PKA94202",
@@ -5956,68 +5466,6 @@
       "id": "Used-2022-INFINITI-QX55-SENSORY-3PCAJ5L32NF100615"
     },
     {
-      "url": "https://jsautohaus.com/inventory/Used-2019-Toyota-Tundra-Limited-5TFHY5F11KX820235",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2019-Toyota-Tundra-Limited-5TFHY5F11KX820235",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2019-Toyota-Tundra-Limited-5TFHY5F11KX820235",
-      "scrapedAt": "2026-02-12T16:52:36.903Z",
-      "lastVerified": "2026-02-12T16:52:36.903Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2019,
-      "make": "Toyota",
-      "model": "Tundra",
-      "trim": "Limited CrewMax",
-      "vin": "5TFHY5F11KX820235",
-      "stock": "R3762",
-      "mileage": 152707,
-      "specs": {
-        "engine": "i-Force 5.7L V8 DOHC 32V LEV",
-        "transmission": "6-Speed Automatic Electronic",
-        "drivetrain": "4WD",
-        "bodyType": "Truck",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/94oqix7umd3xtyhb5e11ym92suu4"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/zmc963mrT3QY_--FvLs_FmwUAAXSP528WTYTqBH-3NFkvmBdmfszYlrebWfsy6NtROkJJW8f5F8f0xkTYYAejac6HK6vAb5rrd8",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2019-Toyota-Tundra-Limited-5TFHY5F11KX820235"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2023-Acura-Integra-Base-19UDE4H25PA024672",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2023-Acura-Integra-Base-19UDE4H25PA024672",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2023-Acura-Integra-Base-19UDE4H25PA024672",
-      "scrapedAt": "2026-02-12T16:52:42.457Z",
-      "lastVerified": "2026-02-12T16:52:42.457Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2023,
-      "make": "Acura",
-      "model": "Integra",
-      "trim": "Base",
-      "vin": "19UDE4H25PA024672",
-      "stock": "R3761",
-      "mileage": 21147,
-      "specs": {
-        "engine": "1.5L I4 DOHC 16V",
-        "transmission": "CVT",
-        "drivetrain": "FWD",
-        "bodyType": "Hatchback",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/ucoiiokqth12dk0icxtvumpejr3m"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/9kZ5cQGEXmp5e7HZ-obyxkvjAlit2ZgNM9ySMt6x8lEQCv2WqaqJilKlmz4W10KG-WX6S5CPawFS7Z-4v9Qc6YQbmtZOYN6S2UI",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2023-Acura-Integra-Base-19UDE4H25PA024672"
-    },
-    {
       "url": "https://jsautohaus.com/inventory/Used-2019-Toyota-86-GT-JF1ZNAE19K9703231",
       "detailUrl": "https://jsautohaus.com/inventory/Used-2019-Toyota-86-GT-JF1ZNAE19K9703231",
       "sourceUrl": "https://jsautohaus.com/inventory/Used-2019-Toyota-86-GT-JF1ZNAE19K9703231",
@@ -6419,37 +5867,6 @@
       "priceText": "$53,995",
       "description": "",
       "id": "Used-2021-Porsche-Macan-GTS-WP1AG2A58MLB52729"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2007-Toyota-Corolla-LE-JTDBR32E070133165",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2007-Toyota-Corolla-LE-JTDBR32E070133165",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2007-Toyota-Corolla-LE-JTDBR32E070133165",
-      "scrapedAt": "2026-02-12T16:53:13.642Z",
-      "lastVerified": "2026-02-12T16:53:13.642Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2007,
-      "make": "Toyota",
-      "model": "Corolla",
-      "trim": "LE",
-      "vin": "JTDBR32E070133165",
-      "stock": "SX18263A",
-      "mileage": 194931,
-      "specs": {
-        "engine": "1.8L I4 SMPI DOHC",
-        "transmission": "4-Speed Automatic with Overdri...",
-        "drivetrain": "FWD",
-        "bodyType": "Sedan",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/ynjsuho84el05009aj0mlyimh2dc"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/p4XAj5--0PCsSQtsM86mxErkgAf0UdYoVrxYHpAwJnEeUI3YL9m30f1OWPevPLrBNkKYHOpbTq1ZzJ7jLC67u3YHLxTduqosTEI",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2007-Toyota-Corolla-LE-JTDBR32E070133165"
     },
     {
       "url": "https://jsautohaus.com/inventory/Used-2022-Land_Rover-Discovery_Sport-S-SALCJ2FX9NH909589",
@@ -7912,37 +7329,6 @@
       "id": "Used-2024-Ford-Transit-250-Base-1FTBR1Y80RKA40336"
     },
     {
-      "url": "https://jsautohaus.com/inventory/Used-2019-Mitsubishi-Outlander-SE-JA4AD3A30KZ053096",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2019-Mitsubishi-Outlander-SE-JA4AD3A30KZ053096",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2019-Mitsubishi-Outlander-SE-JA4AD3A30KZ053096",
-      "scrapedAt": "2026-02-12T16:54:44.184Z",
-      "lastVerified": "2026-02-12T16:54:44.184Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2019,
-      "make": "Mitsubishi",
-      "model": "Outlander",
-      "trim": "SE",
-      "vin": "JA4AD3A30KZ053096",
-      "stock": "2832A",
-      "mileage": 223682,
-      "specs": {
-        "engine": "I4",
-        "transmission": "CVT",
-        "drivetrain": "FWD",
-        "bodyType": "SUV",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/t2rqf9tf7eyw8n2oeu9nf5l9n9vt"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/fhQLJftaH2fQaQisIyfxh5ooZ4i8CKuBf-Lxl9sjUTkds2MtggzS3KNy8z_4pCSwIm07qo2ygndQ2ry_qyjjwpdyql42IWbzpIk",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2019-Mitsubishi-Outlander-SE-JA4AD3A30KZ053096"
-    },
-    {
       "url": "https://jsautohaus.com/inventory/Used-2025-Ford-Bronco_Sport-Outer_Banks-3FMCR9CN2SRE13695",
       "detailUrl": "https://jsautohaus.com/inventory/Used-2025-Ford-Bronco_Sport-Outer_Banks-3FMCR9CN2SRE13695",
       "sourceUrl": "https://jsautohaus.com/inventory/Used-2025-Ford-Bronco_Sport-Outer_Banks-3FMCR9CN2SRE13695",
@@ -8011,37 +7397,6 @@
       "priceText": "$29,995",
       "description": "",
       "id": "Used-2025-Ford-Bronco_Sport-Outer_Banks-3FMCR9CN2SRE13695"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2023-Acura-Integra-A-Spec_Tech_Package-19UDE4H63PA017836",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2023-Acura-Integra-A-Spec_Tech_Package-19UDE4H63PA017836",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2023-Acura-Integra-A-Spec_Tech_Package-19UDE4H63PA017836",
-      "scrapedAt": "2026-02-12T16:54:50.505Z",
-      "lastVerified": "2026-02-12T16:54:50.505Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2023,
-      "make": "Acura",
-      "model": "Integra",
-      "trim": "A-Spec Tech Package",
-      "vin": "19UDE4H63PA017836",
-      "stock": "R3760",
-      "mileage": 43725,
-      "specs": {
-        "engine": "1.5L I4 DOHC 16V",
-        "transmission": "CVT",
-        "drivetrain": "FWD",
-        "bodyType": "Hatchback",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/cgyozoranakzsdes23ihat1fwcyt"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/9THbJZSnCkB9v0WHogmDM2L7uped_ipbC5wQcTgyAzlScDgZRcpvLkKgllKYV85XGfmDD2FD4gwklnTshKT3XQhb_Yh_OEbH_xs",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2023-Acura-Integra-A-Spec_Tech_Package-19UDE4H63PA017836"
     },
     {
       "url": "https://jsautohaus.com/inventory/Used-2025-Tesla-Model_Y-Performance-7SAYGDEF1SA345500",
@@ -8244,37 +7599,6 @@
       "priceText": "$19,999",
       "description": "",
       "id": "Used-2023-Mazda-Mazda3-2_5_S_Carbon_Edition-3MZBPACM0PM365114"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2025-Ram-2500-Big_Horn-3C6UR5DJ9SG566865",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2025-Ram-2500-Big_Horn-3C6UR5DJ9SG566865",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2025-Ram-2500-Big_Horn-3C6UR5DJ9SG566865",
-      "scrapedAt": "2026-02-12T16:55:05.904Z",
-      "lastVerified": "2026-02-12T16:55:05.904Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2025,
-      "make": "Ram",
-      "model": "2500",
-      "trim": "Big Horn",
-      "vin": "3C6UR5DJ9SG566865",
-      "stock": "SX18327",
-      "mileage": 22338,
-      "specs": {
-        "engine": "6.4L V8",
-        "transmission": "8-Speed Automatic",
-        "drivetrain": "4WD",
-        "bodyType": "Truck",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/xrxd3yuz33kyggpn915brmols5km"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/-1YR8ZCVMCJR5SUbNskB47ZsCGcb1-B9gSMgBUesEF9J465fKiMoTKZG06fHIoe5DethNTHHQYG_gazCBveITADPK6BsSi8sp5o",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2025-Ram-2500-Big_Horn-3C6UR5DJ9SG566865"
     },
     {
       "url": "https://jsautohaus.com/inventory/Used-2019-Audi-A5_Sportback-Premium_Plus_45_TFSI_quattro-WAUENCF57KA009820",
@@ -9327,37 +8651,6 @@
       "id": "Used-2021-Porsche-Taycan-Base-WP0AA2Y15MSA19019"
     },
     {
-      "url": "https://jsautohaus.com/inventory/Used-2025-Mitsubishi-Outlander-Trail_Edition-JA4J4VA80SZ018310",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2025-Mitsubishi-Outlander-Trail_Edition-JA4J4VA80SZ018310",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2025-Mitsubishi-Outlander-Trail_Edition-JA4J4VA80SZ018310",
-      "scrapedAt": "2026-02-12T16:56:17.006Z",
-      "lastVerified": "2026-02-12T16:56:17.006Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2025,
-      "make": "Mitsubishi",
-      "model": "Outlander",
-      "trim": "Trail Edition",
-      "vin": "JA4J4VA80SZ018310",
-      "stock": "D165",
-      "mileage": 15850,
-      "specs": {
-        "engine": "2.5L I4 DOHC 16V LEV3-ULEV50 1...",
-        "transmission": "CVT",
-        "drivetrain": "4WD",
-        "bodyType": "SUV",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/543w4alaum6ohbnkdaoyato9qfno"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/Cak8nPp7Ec8BvHA7VXiaR_F-1PohR_eGDVRuR7rjywJxnzaGHqbnbcQQZ-MKbcv2OQNuyYfrQvcY0LTwLNdY5ggSfUwyUsZdqTo",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2025-Mitsubishi-Outlander-Trail_Edition-JA4J4VA80SZ018310"
-    },
-    {
       "url": "https://jsautohaus.com/inventory/Used-2021-Ram-1500-TRX-1C6SRFU90MN903680",
       "detailUrl": "https://jsautohaus.com/inventory/Used-2021-Ram-1500-TRX-1C6SRFU90MN903680",
       "sourceUrl": "https://jsautohaus.com/inventory/Used-2021-Ram-1500-TRX-1C6SRFU90MN903680",
@@ -9637,37 +8930,6 @@
       "priceText": "$61,995",
       "description": "",
       "id": "Used-2018-BMW-M3-Base-WBS8M9C57J5L01218"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2013-Honda-Civic-EX-L-2HGFB2F92DH542466",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2013-Honda-Civic-EX-L-2HGFB2F92DH542466",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2013-Honda-Civic-EX-L-2HGFB2F92DH542466",
-      "scrapedAt": "2026-02-12T16:56:35.920Z",
-      "lastVerified": "2026-02-12T16:56:35.920Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2013,
-      "make": "Honda",
-      "model": "Civic",
-      "trim": "EX-L",
-      "vin": "2HGFB2F92DH542466",
-      "stock": "R3758",
-      "mileage": 62379,
-      "specs": {
-        "engine": "1.8L I4 SOHC 16V i-VTEC",
-        "transmission": "Compact 5-Speed Automatic",
-        "drivetrain": "FWD",
-        "bodyType": "Sedan",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/kvubynfukohkwmb0k1utzjcwc8qe"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/NvTQSeQm5jY0jrdJPSfEAJ4jwj876yDiKSDkRny3hvDWmY--uUZCI55rZLN6y2t9qLoACOqN_Oizwqs3mvcwPZ6N0JLs_wp1GXw",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2013-Honda-Civic-EX-L-2HGFB2F92DH542466"
     },
     {
       "url": "https://jsautohaus.com/inventory/Used-2023-Mercedes-Benz-GLS-Maybach_GLS_600-4JGFF8HB7PB018339",
@@ -10468,76 +9730,6 @@
       "id": "Used-2022-Jeep-Compass-Limited_4x4-3C4NJDCB0NT200426"
     },
     {
-      "url": "https://jsautohaus.com/inventory/Used-2017-Land_Rover-Range_Rover_Evoque-SALVP2BG0HH249959",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2017-Land_Rover-Range_Rover_Evoque-SALVP2BG0HH249959",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2017-Land_Rover-Range_Rover_Evoque-SALVP2BG0HH249959",
-      "scrapedAt": "2026-02-12T16:57:29.942Z",
-      "lastVerified": "2026-02-12T16:57:29.942Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2017,
-      "make": "Land",
-      "model": "Rover® Range Rover Evoque",
-      "trim": "",
-      "vin": "SALVP2BG0HH249959",
-      "stock": "SX18257A",
-      "mileage": 107928,
-      "specs": {
-        "engine": "2.0L Turbocharged",
-        "transmission": "9-Speed Automatic",
-        "drivetrain": "4WD",
-        "bodyType": "SUV",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/ldto19cxl4xhouvr99mb31uqym5v",
-        "https://images.app.ridemotive.com/xu18m0n3fw0qogm08jilggswi6ld",
-        "https://images.app.ridemotive.com/ufa6tfgd304r2ltj3fjacfzjo5xq",
-        "https://images.app.ridemotive.com/i1i5gynxch2i0oy1p3q0swabnyjh",
-        "https://images.app.ridemotive.com/wbkuvtyjrdc678yd140cupvxxmva",
-        "https://images.app.ridemotive.com/uixsatgo2qshipabluk20k92ju1s",
-        "https://images.app.ridemotive.com/ygvfby9szz3y65a162dq26w5p4ei",
-        "https://images.app.ridemotive.com/6vwig7k72l7ja2g8hbpbg1ks30ca",
-        "https://images.app.ridemotive.com/i1k3z946q3basapencledzki9bzf",
-        "https://images.app.ridemotive.com/bsmtacdrugz0kzpvw7bfdju2slt4",
-        "https://images.app.ridemotive.com/17k17dzc5t9yvbbq8xaq94maou0z",
-        "https://images.app.ridemotive.com/vl8vlh168vsg0yqome0x7878l0a3",
-        "https://images.app.ridemotive.com/synwvmggl01n498w7grds7r7rrvd",
-        "https://images.app.ridemotive.com/blypzzroqg3rbk3fzvoftsjq69i3",
-        "https://images.app.ridemotive.com/8ifym0b12n0e7gmkz7a0jc54cug2",
-        "https://images.app.ridemotive.com/wx92h2zt7rnjprgkz5avgdg294f5",
-        "https://images.app.ridemotive.com/ljjwzpe8whudf87q9jfsfq8kkwtf",
-        "https://images.app.ridemotive.com/nx2v50y6yfimge3wd18fkgxx6trv",
-        "https://images.app.ridemotive.com/1qp51ov0qck9zhmcbc2ep3pz3fij",
-        "https://images.app.ridemotive.com/9c2vxzzx32af3zm8qfm9r8devmu9",
-        "https://images.app.ridemotive.com/pykwgpg16msjs0kcwe0ikmjto5qk",
-        "https://images.app.ridemotive.com/6smviyyp1rfquuu8xe5orfysomn1",
-        "https://images.app.ridemotive.com/jktqt7ggk5f7rd9pjqa8gp5ae5r9",
-        "https://images.app.ridemotive.com/zm46fvf82mnush4q41twn33wkyam",
-        "https://images.app.ridemotive.com/q8l0ikhb6qqn66syh2mgjr4vuif1",
-        "https://images.app.ridemotive.com/7moelj9wjaw0csu8mukmd96sx4l3",
-        "https://images.app.ridemotive.com/5zk7zrxkv9b0rohr5e4ca3984bie",
-        "https://images.app.ridemotive.com/3c5671lxfakbn7bb2w8w8e9a216u",
-        "https://images.app.ridemotive.com/bw6gecfkwi88nni8wguyet0shay5",
-        "https://images.app.ridemotive.com/d42gi62ti9cqzdzxmsfxph3a93bg",
-        "https://images.app.ridemotive.com/hez9xje91ggolnxsmpaam6hopxcy",
-        "https://images.app.ridemotive.com/ogpk424vsvp308ojk1vvhvnvcgip",
-        "https://images.app.ridemotive.com/nb0tn36k5efev4fz95q76zar7oou",
-        "https://images.app.ridemotive.com/4uq0fewo4vejb0jkjpcgxyc932v2",
-        "https://images.app.ridemotive.com/l37s7y2donjzc7oyi8awsc6aekca",
-        "https://images.app.ridemotive.com/1xwgxruh1ec1o0jaxny7evqvlhbt",
-        "https://images.app.ridemotive.com/8qo2vq6gxz92uqvyyiieg8f7jnxk",
-        "https://images.app.ridemotive.com/8boi64lhng38hfagpmwt4fsx18y5",
-        "https://images.app.ridemotive.com/dvi5draff6q7qktnqfs0rxohilr2",
-        "https://images.app.ridemotive.com/30dlp746ue15e4sme9e35e14mt6j"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/NM44IcQfYbcZvEfmbpQbDLUXIbsvGdDzY_4AxuUcFELZgipCrAoUTg61kbudYg2KZ2x4WHTcFu3g8vEBT3ktjskXaQbd3Fc_rII",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2017-Land_Rover-Range_Rover_Evoque-SALVP2BG0HH249959"
-    },
-    {
       "url": "https://jsautohaus.com/inventory/Used-2024-Ford-Transit-250-Base-1FTBR1Y86RKA71459",
       "detailUrl": "https://jsautohaus.com/inventory/Used-2024-Ford-Transit-250-Base-1FTBR1Y86RKA71459",
       "sourceUrl": "https://jsautohaus.com/inventory/Used-2024-Ford-Transit-250-Base-1FTBR1Y86RKA71459",
@@ -10733,37 +9925,6 @@
       "priceText": "$36,999",
       "description": "",
       "id": "Used-2022-Jeep-Wagoneer-Series_II-1C4SJVBT8NS139931"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2019-Honda-Civic-Sport-SHHFK7H47KU422886",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2019-Honda-Civic-Sport-SHHFK7H47KU422886",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2019-Honda-Civic-Sport-SHHFK7H47KU422886",
-      "scrapedAt": "2026-02-12T16:57:43.343Z",
-      "lastVerified": "2026-02-12T16:57:43.343Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2019,
-      "make": "Honda",
-      "model": "Civic",
-      "trim": "Sport",
-      "vin": "SHHFK7H47KU422886",
-      "stock": "R3722",
-      "mileage": 56027,
-      "specs": {
-        "engine": "1.5L I4 DOHC 16V",
-        "transmission": "CVT",
-        "drivetrain": "FWD",
-        "bodyType": "Hatchback",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/r3hrlb2fkeuc32xk8iy6iqc3lrtw"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/iarMmSkpYhUr2_wQpFcPcfwvfkPfmZfV3NbNpPndtH1X3Bx6cx17K7dNwQK6hlBzjbR5Jjj90KNxtIwe2QMIthulZUCSYuwRup4",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2019-Honda-Civic-Sport-SHHFK7H47KU422886"
     },
     {
       "url": "https://jsautohaus.com/inventory/Used-2021-Porsche-Panamera_E-Hybrid_Sport_Turismo-4S-WP0CK2A79ML191565",
@@ -12043,37 +11204,6 @@
       "id": "Used-2021-Mercedes-Benz-GLS-GLS_63_AMG_-4JGFF8KE2MA317337"
     },
     {
-      "url": "https://jsautohaus.com/inventory/Used-2022-Volkswagen-Atlas_Cross_Sport-2_0T_SE_w_Technology-1V2KC2CA6NC212955",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2022-Volkswagen-Atlas_Cross_Sport-2_0T_SE_w_Technology-1V2KC2CA6NC212955",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2022-Volkswagen-Atlas_Cross_Sport-2_0T_SE_w_Technology-1V2KC2CA6NC212955",
-      "scrapedAt": "2026-02-12T16:59:04.823Z",
-      "lastVerified": "2026-02-12T16:59:04.823Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2022,
-      "make": "Volkswagen",
-      "model": "Atlas Cross Sport",
-      "trim": "2.0T SE w/Technology",
-      "vin": "1V2KC2CA6NC212955",
-      "stock": "D177",
-      "mileage": 65804,
-      "specs": {
-        "engine": "2.0L TSI",
-        "transmission": "8-Speed Automatic with Tiptron...",
-        "drivetrain": "AWD",
-        "bodyType": "SUV",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/7w1awp1vzeyhc035g2gxxixxn7wb"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/V0vwzGHTkgj63LNolPgolWkjMVuKUBhzm1cadz0gpTcQliaRL6NmAQ3gVCvkqxpTMeWek2DUcBKboHk2-UbB2dEHhSadRgdKzg8",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2022-Volkswagen-Atlas_Cross_Sport-2_0T_SE_w_Technology-1V2KC2CA6NC212955"
-    },
-    {
       "url": "https://jsautohaus.com/inventory/Used-2023-Land_Rover-Range_Rover_Sport-SE_Dynamic-SAL1L9FU7PA137217",
       "detailUrl": "https://jsautohaus.com/inventory/Used-2023-Land_Rover-Range_Rover_Sport-SE_Dynamic-SAL1L9FU7PA137217",
       "sourceUrl": "https://jsautohaus.com/inventory/Used-2023-Land_Rover-Range_Rover_Sport-SE_Dynamic-SAL1L9FU7PA137217",
@@ -12453,68 +11583,6 @@
       "id": "Used-2022-Land_Rover-Defender_90-V8-SALEW6RE0N2097985"
     },
     {
-      "url": "https://jsautohaus.com/inventory/Used-2015-Honda-Civic-EX-19XFB2F82FE206319",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2015-Honda-Civic-EX-19XFB2F82FE206319",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2015-Honda-Civic-EX-19XFB2F82FE206319",
-      "scrapedAt": "2026-02-12T16:59:31.557Z",
-      "lastVerified": "2026-02-12T16:59:31.557Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2015,
-      "make": "Honda",
-      "model": "Civic",
-      "trim": "EX",
-      "vin": "19XFB2F82FE206319",
-      "stock": "R3750",
-      "mileage": 198393,
-      "specs": {
-        "engine": "1.8L I4 SOHC 16V i-VTEC",
-        "transmission": "CVT",
-        "drivetrain": "FWD",
-        "bodyType": "Sedan",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/ae34kcko44i5l0ujtrqej55oz0i2"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/RF0JObKFdDoIrzQYYPcVg93lzCQ8qlE4aR06zUqZTGKgQqF5NciTQHFBHgUhq-17OGaY71UQiXTu-cgH8TEnhD6kEldg0jj5vT8",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2015-Honda-Civic-EX-19XFB2F82FE206319"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2023-Acura-MDX-Technology-5J8YE1H4XPL020638",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2023-Acura-MDX-Technology-5J8YE1H4XPL020638",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2023-Acura-MDX-Technology-5J8YE1H4XPL020638",
-      "scrapedAt": "2026-02-12T16:59:35.518Z",
-      "lastVerified": "2026-02-12T16:59:35.518Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2023,
-      "make": "Acura",
-      "model": "MDX",
-      "trim": "Technology SH-AWD",
-      "vin": "5J8YE1H4XPL020638",
-      "stock": "R3694",
-      "mileage": 41107,
-      "specs": {
-        "engine": "3.5L V6 SOHC i-VTEC 24V",
-        "transmission": "10-Speed Automatic",
-        "drivetrain": "AWD",
-        "bodyType": "SUV",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/jyjwpcydbjron724shi1pu0gpx33"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/D0P_yz6dvvqvzZl585mZaHDpZQs4IDk8B6XeBcGLQm0xftk65aX14jLk6MGu8pEZ6Cvy-tays94KGAuO3d2ghy75jA82171AIjw",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2023-Acura-MDX-Technology-5J8YE1H4XPL020638"
-    },
-    {
       "url": "https://jsautohaus.com/inventory/Used-2021-Chevrolet-Suburban-LS-1GNSKBKDXMR169384",
       "detailUrl": "https://jsautohaus.com/inventory/Used-2021-Chevrolet-Suburban-LS-1GNSKBKDXMR169384",
       "sourceUrl": "https://jsautohaus.com/inventory/Used-2021-Chevrolet-Suburban-LS-1GNSKBKDXMR169384",
@@ -12612,37 +11680,6 @@
       "id": "Used-2022-Jeep-Compass-Limited-3C4NJDCB8NT124521"
     },
     {
-      "url": "https://jsautohaus.com/inventory/Used-2022-Nissan-Sentra-SV-3N1AB8CVXNY248499",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2022-Nissan-Sentra-SV-3N1AB8CVXNY248499",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2022-Nissan-Sentra-SV-3N1AB8CVXNY248499",
-      "scrapedAt": "2026-02-12T16:59:47.699Z",
-      "lastVerified": "2026-02-12T16:59:47.699Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2022,
-      "make": "Nissan",
-      "model": "Sentra",
-      "trim": "SV",
-      "vin": "3N1AB8CVXNY248499",
-      "stock": "D176",
-      "mileage": 35533,
-      "specs": {
-        "engine": "2.0L DOHC",
-        "transmission": "CVT with Xtronic",
-        "drivetrain": "FWD",
-        "bodyType": "Sedan",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/3p6l6jvejm8cpdbbzvfbttw1dcu5"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/s-Typ0zZ60BoihGkrH2Tx63GwJc1mldhZ4-A4ZHCgIPbZZIsZMBmj6ZZVMZsngbc1mEUnjslkg8Je_qbrW0nvG3i-9_o8b7iZfk",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2022-Nissan-Sentra-SV-3N1AB8CVXNY248499"
-    },
-    {
       "url": "https://jsautohaus.com/inventory/Used-2020-Mercedes-Benz-SL-Class-SL_550-W1KJK7DA2LF060279",
       "detailUrl": "https://jsautohaus.com/inventory/Used-2020-Mercedes-Benz-SL-Class-SL_550-W1KJK7DA2LF060279",
       "sourceUrl": "https://jsautohaus.com/inventory/Used-2020-Mercedes-Benz-SL-Class-SL_550-W1KJK7DA2LF060279",
@@ -12706,37 +11743,6 @@
       "priceText": "$63,995",
       "description": "",
       "id": "Used-2020-Mercedes-Benz-SL-Class-SL_550-W1KJK7DA2LF060279"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2021-Audi-S5_Sportback-Prestige-WAUB4CF58MA004408",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2021-Audi-S5_Sportback-Prestige-WAUB4CF58MA004408",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2021-Audi-S5_Sportback-Prestige-WAUB4CF58MA004408",
-      "scrapedAt": "2026-02-12T16:59:56.044Z",
-      "lastVerified": "2026-02-12T16:59:56.044Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2021,
-      "make": "Audi",
-      "model": "S5 Sportback",
-      "trim": "Prestige quattro",
-      "vin": "WAUB4CF58MA004408",
-      "stock": "25497LA",
-      "mileage": 71449,
-      "specs": {
-        "engine": "3.0L TFSI",
-        "transmission": "8-Speed Automatic with Tiptron...",
-        "drivetrain": "quattro",
-        "bodyType": "Hatchback",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/z5a3dmy85dbumrg2ym0k4myw7i3q"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/MP3YypLu7DUMQbpZSom3RDiP3FE2L6zQm5ApOKQwUtBsdMDFFTy8TVt4jvgZeSIYd5BZYoEr-sczjs9bA5o3dh_bBzbX5uEGIhk",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2021-Audi-S5_Sportback-Prestige-WAUB4CF58MA004408"
     },
     {
       "url": "https://jsautohaus.com/inventory/Used-2022-Land_Rover-Range_Rover_Sport-HSE_Silver_Edition-SALWR2SU1NA230023",
@@ -12908,99 +11914,6 @@
       "priceText": "$30,499",
       "description": "",
       "id": "Used-2019-Chevrolet-Silverado_1500-LTZ-1GCUYGED8KZ119461"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2006-Toyota-Highlander-Limited-JTEEP21A760139311",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2006-Toyota-Highlander-Limited-JTEEP21A760139311",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2006-Toyota-Highlander-Limited-JTEEP21A760139311",
-      "scrapedAt": "2026-02-12T17:00:11.434Z",
-      "lastVerified": "2026-02-12T17:00:11.434Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2006,
-      "make": "Toyota",
-      "model": "Highlander",
-      "trim": "Limited",
-      "vin": "JTEEP21A760139311",
-      "stock": "R3754",
-      "mileage": 119446,
-      "specs": {
-        "engine": "3.3L V6 SMPI DOHC",
-        "transmission": "5-Speed Automatic with Overdri...",
-        "drivetrain": "AWD",
-        "bodyType": "SUV",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/sseutm9uzys3ffb6ei2gonqqsc3w"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/u2bGfJsMGxrr3Mt8IlxF8rXqNuTf7kceKvMZvn9Uf_e84XTww1ARGoribO4uTcSZXORWjpCLKdS-Uy1d5pfwVhsYe1ek4pqXlkg",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2006-Toyota-Highlander-Limited-JTEEP21A760139311"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2019-Mercedes-Benz-C-Class-C_300-WDDWK8DBXKF818162",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2019-Mercedes-Benz-C-Class-C_300-WDDWK8DBXKF818162",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2019-Mercedes-Benz-C-Class-C_300-WDDWK8DBXKF818162",
-      "scrapedAt": "2026-02-12T17:00:15.203Z",
-      "lastVerified": "2026-02-12T17:00:15.203Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2019,
-      "make": "Mercedes-Benz",
-      "model": "C-Class",
-      "trim": "C 300",
-      "vin": "WDDWK8DBXKF818162",
-      "stock": "25877G",
-      "mileage": 81405,
-      "specs": {
-        "engine": "2.0L I4 Turbocharged",
-        "transmission": "9-Speed Automatic",
-        "drivetrain": "RWD",
-        "bodyType": "Convertible",
-        "doors": 2
-      },
-      "images": [
-        "https://images.app.ridemotive.com/eqftzohd44fmtvf4pjxldroadvql"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/tvAMH5XFjCQZfwM91kEi7RobOX7wJEJPeqNFPSFw5y_y_5jSrVMSx0Jl5pWPFXJLJXlc3v35DYXvKiTcFHQcd8zJhH6ArJW90pE",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2019-Mercedes-Benz-C-Class-C_300-WDDWK8DBXKF818162"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2023-Chevrolet-Colorado-Work_Truck-1GCGSBEC6P1171055",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2023-Chevrolet-Colorado-Work_Truck-1GCGSBEC6P1171055",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2023-Chevrolet-Colorado-Work_Truck-1GCGSBEC6P1171055",
-      "scrapedAt": "2026-02-12T17:00:19.009Z",
-      "lastVerified": "2026-02-12T17:00:19.009Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2023,
-      "make": "Chevrolet",
-      "model": "Colorado",
-      "trim": "Work Truck",
-      "vin": "1GCGSBEC6P1171055",
-      "stock": "SX18330",
-      "mileage": 52957,
-      "specs": {
-        "engine": "2.7L Turbo",
-        "transmission": "8-Speed Automatic",
-        "drivetrain": "RWD",
-        "bodyType": "Truck",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/cb8ln1rvzrekz4btgjlbxoi5kngo"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/FnQzv2ZV6VTkOG4XolF4UyxhZKnO4DB5eyWSf4Lqs59KjzgcF7de9R4zcSF6RR6snpdY2WzHRefpnXek2aXsEF2ZS1qD_jAcSns",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2023-Chevrolet-Colorado-Work_Truck-1GCGSBEC6P1171055"
     },
     {
       "url": "https://jsautohaus.com/inventory/Used-2022-Jeep-Compass-Limited_4x4-3C4NJDCB0NT200426",
@@ -13445,37 +12358,6 @@
       "priceText": "$19,495",
       "description": "",
       "id": "Used-2019-Toyota-RAV4-LE_AWD-JTMF1RFV1KD503675"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2023-Tesla-Model_Y-Performance-7SAYGDEFXPF599751",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2023-Tesla-Model_Y-Performance-7SAYGDEFXPF599751",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2023-Tesla-Model_Y-Performance-7SAYGDEFXPF599751",
-      "scrapedAt": "2026-02-12T17:00:51.279Z",
-      "lastVerified": "2026-02-12T17:00:51.279Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2023,
-      "make": "Tesla",
-      "model": "Model Y",
-      "trim": "Performance",
-      "vin": "7SAYGDEFXPF599751",
-      "stock": "B4512A",
-      "mileage": 55890,
-      "specs": {
-        "engine": "Electric Motor",
-        "transmission": "1-Speed Automatic",
-        "drivetrain": "AWD",
-        "bodyType": "SUV",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/jwaozpvrt82yh10s2cbj82qfiurt"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/aPcTAJH7KE56zErdXTbTC865OiR1nE-GKM8UG7W-OO2vY7LY2xTGxK7A7RS7q6k88F2LSylSn311HovY7Vo_IiP8F6enIwEhPD0",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2023-Tesla-Model_Y-Performance-7SAYGDEFXPF599751"
     },
     {
       "url": "https://jsautohaus.com/inventory/Used-2020-Mercedes-Benz-GLS-GLS_450-4JGFF5KEXLA264982",
@@ -14559,37 +13441,6 @@
       "id": "Used-2023-Audi-A6-45_Premium_Plus-WAUD3BF23PN001148"
     },
     {
-      "url": "https://jsautohaus.com/inventory/Used-2021-Chevrolet-Silverado_2500HD-LTZ-1GC4YPEY5MF274976",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2021-Chevrolet-Silverado_2500HD-LTZ-1GC4YPEY5MF274976",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2021-Chevrolet-Silverado_2500HD-LTZ-1GC4YPEY5MF274976",
-      "scrapedAt": "2026-02-12T17:02:01.831Z",
-      "lastVerified": "2026-02-12T17:02:01.831Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2021,
-      "make": "Chevrolet",
-      "model": "Silverado 2500HD",
-      "trim": "LTZ",
-      "vin": "1GC4YPEY5MF274976",
-      "stock": "SX18333",
-      "mileage": 70808,
-      "specs": {
-        "engine": "Duramax 6.6L V8 Turbodiesel",
-        "transmission": "10-Speed Automatic",
-        "drivetrain": "4WD",
-        "bodyType": "Truck",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/asvrd2uynxzs1lo5teo22x3asu4d"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/jb1MkU9YsH4yMf7v0eh-CMbsf-AIwtJS518V4Bvv9QhCFYAucc5sQpV20qtnVKubOBi-9AgWv4Q1IE1jlnHXqoqhCPAwmWc73ZM",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2021-Chevrolet-Silverado_2500HD-LTZ-1GC4YPEY5MF274976"
-    },
-    {
       "url": "https://jsautohaus.com/inventory/Used-2021-GMC-Sierra_3500HD-Denali-1GT49WEY4MF318506",
       "detailUrl": "https://jsautohaus.com/inventory/Used-2021-GMC-Sierra_3500HD-Denali-1GT49WEY4MF318506",
       "sourceUrl": "https://jsautohaus.com/inventory/Used-2021-GMC-Sierra_3500HD-Denali-1GT49WEY4MF318506",
@@ -14938,37 +13789,6 @@
       "id": "Used-2022-Chevrolet-Tahoe-LT-1GNSKNKD5NR125683"
     },
     {
-      "url": "https://jsautohaus.com/inventory/Used-2012-MINI-Cooper-Base-WMWSU3C53CT260074",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2012-MINI-Cooper-Base-WMWSU3C53CT260074",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2012-MINI-Cooper-Base-WMWSU3C53CT260074",
-      "scrapedAt": "2026-02-12T17:02:25.759Z",
-      "lastVerified": "2026-02-12T17:02:25.759Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2012,
-      "make": "MINI",
-      "model": "Cooper",
-      "trim": "Base",
-      "vin": "WMWSU3C53CT260074",
-      "stock": "SX18176A",
-      "mileage": 87777,
-      "specs": {
-        "engine": "1.6L I4 DOHC 16V",
-        "transmission": "6-Speed Automatic Steptronic",
-        "drivetrain": "FWD",
-        "bodyType": "Coupe",
-        "doors": 2
-      },
-      "images": [
-        "https://images.app.ridemotive.com/4m9zigzmhbvf1asqn9j2682jptzn"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/5AXgjgsQNvYpKpWnQ5DR-QcMs7jW3muHvHL0GepWoJQAUzS4f4syE76RrIrOjPs1yxzAIQDNDavjAf9JkYtZF2B30tuSJqsfkf8",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2012-MINI-Cooper-Base-WMWSU3C53CT260074"
-    },
-    {
       "url": "https://jsautohaus.com/inventory/Used-2023-Ram-ProMaster_2500-High_Roof-3C6LRVDG1PE579175",
       "detailUrl": "https://jsautohaus.com/inventory/Used-2023-Ram-ProMaster_2500-High_Roof-3C6LRVDG1PE579175",
       "sourceUrl": "https://jsautohaus.com/inventory/Used-2023-Ram-ProMaster_2500-High_Roof-3C6LRVDG1PE579175",
@@ -15028,37 +13848,6 @@
       "priceText": "$28,499",
       "description": "",
       "id": "Used-2023-Ram-ProMaster_2500-High_Roof-3C6LRVDG1PE579175"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2017-Toyota-Tacoma-SR5-5TFSZ5AN5HX075723",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2017-Toyota-Tacoma-SR5-5TFSZ5AN5HX075723",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2017-Toyota-Tacoma-SR5-5TFSZ5AN5HX075723",
-      "scrapedAt": "2026-02-12T17:02:34.685Z",
-      "lastVerified": "2026-02-12T17:02:34.685Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2017,
-      "make": "Toyota",
-      "model": "Tacoma",
-      "trim": "SR5 V6",
-      "vin": "5TFSZ5AN5HX075723",
-      "stock": "R3691",
-      "mileage": 84211,
-      "specs": {
-        "engine": "V6",
-        "transmission": "6-Speed Automatic",
-        "drivetrain": "4WD",
-        "bodyType": "Truck",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/e4pgj0x1ja74h9cwa4vfqc3o74a0"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/gGYZG6qqqlO0UDvh0zmUTtMksS7PEXBQqIF1PJp5MjEtII27u8vbqDCsXHiWnLfoui95jGsOFpOnfPRs5COVhaAqirVXDfyr2mE",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2017-Toyota-Tacoma-SR5-5TFSZ5AN5HX075723"
     },
     {
       "url": "https://jsautohaus.com/inventory/Used-2017-Cadillac-CTS-V-Base-1G6A15S62H0143899",
@@ -16066,37 +14855,6 @@
       "id": "Used-2024-Land_Rover-Range_Rover_Sport-SE-SAL1P9EU8RA171482"
     },
     {
-      "url": "https://jsautohaus.com/inventory/Used-2016-Honda-CR-V-EX-L-2HKRM4H7XGH720164",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2016-Honda-CR-V-EX-L-2HKRM4H7XGH720164",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2016-Honda-CR-V-EX-L-2HKRM4H7XGH720164",
-      "scrapedAt": "2026-02-12T17:03:43.311Z",
-      "lastVerified": "2026-02-12T17:03:43.311Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2016,
-      "make": "Honda",
-      "model": "CR-V",
-      "trim": "EX-L",
-      "vin": "2HKRM4H7XGH720164",
-      "stock": "SX18206A",
-      "mileage": 98895,
-      "specs": {
-        "engine": "2.4L I4 DOHC 16V i-VTEC",
-        "transmission": "CVT",
-        "drivetrain": "AWD",
-        "bodyType": "SUV",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/eta8vbzo7yiwltccw7w882cxm7l4"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/uTfFGtuuSWzW2ScPrqMNTquwK_qPq3myi5f_xQqFWgw9XX73obTmWhGY24hu1p49n7eORq0-URu6FXfsTCvSdYJCHrQ2j3POeMQ",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2016-Honda-CR-V-EX-L-2HKRM4H7XGH720164"
-    },
-    {
       "url": "https://jsautohaus.com/inventory/Used-2022-Lexus-RC-300-JTHG85EC6N5006837",
       "detailUrl": "https://jsautohaus.com/inventory/Used-2022-Lexus-RC-300-JTHG85EC6N5006837",
       "sourceUrl": "https://jsautohaus.com/inventory/Used-2022-Lexus-RC-300-JTHG85EC6N5006837",
@@ -16460,37 +15218,6 @@
       "id": "Used-2023-Land_Rover-Range_Rover_Sport-SE_Dynamic-SAL1L9FU9PA106535"
     },
     {
-      "url": "https://jsautohaus.com/inventory/Used-2018-Acura-MDX-3_5L-5J8YD4H54JL020493",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2018-Acura-MDX-3_5L-5J8YD4H54JL020493",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2018-Acura-MDX-3_5L-5J8YD4H54JL020493",
-      "scrapedAt": "2026-02-12T17:04:14.335Z",
-      "lastVerified": "2026-02-12T17:04:14.335Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2018,
-      "make": "Acura",
-      "model": "MDX",
-      "trim": "3.5L SH-AWD w/Technology Package",
-      "vin": "5J8YD4H54JL020493",
-      "stock": "R3756",
-      "mileage": 78094,
-      "specs": {
-        "engine": "3.5L V6 SOHC i-VTEC 24V",
-        "transmission": "9-Speed Automatic",
-        "drivetrain": "AWD",
-        "bodyType": "SUV",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/ri2iyz0pkav371fet42rkhsc7um5"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/ykAaJ4FJWNrorJhiYHUcmLlNmXf6WZ24B3HpWhwK-G1UZ7PEwa-8y-b1FwZq6CYkuw5CuSZIMjeDBhB34AiBf_p1Ll2gc3hl5sY",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2018-Acura-MDX-3_5L-5J8YD4H54JL020493"
-    },
-    {
       "url": "https://jsautohaus.com/inventory/Used-2024-Mercedes-Benz-GLS-GLS_580-4JGFF8FEXRB125126",
       "detailUrl": "https://jsautohaus.com/inventory/Used-2024-Mercedes-Benz-GLS-GLS_580-4JGFF8FEXRB125126",
       "sourceUrl": "https://jsautohaus.com/inventory/Used-2024-Mercedes-Benz-GLS-GLS_580-4JGFF8FEXRB125126",
@@ -16752,37 +15479,6 @@
       "priceText": "$19,495",
       "description": "",
       "id": "Used-2018-INFINITI-QX80-AWD-JN8AZ2NE1J9193576"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2015-Land_Rover-Range_Rover_Evoque-Dynamic-SALVT2BG8FH038369",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2015-Land_Rover-Range_Rover_Evoque-Dynamic-SALVT2BG8FH038369",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2015-Land_Rover-Range_Rover_Evoque-Dynamic-SALVT2BG8FH038369",
-      "scrapedAt": "2026-02-12T17:04:34.291Z",
-      "lastVerified": "2026-02-12T17:04:34.291Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2015,
-      "make": "Land",
-      "model": "Rover® Range Rover Evoque",
-      "trim": "Dynamic",
-      "vin": "SALVT2BG8FH038369",
-      "stock": "25384W",
-      "mileage": 98735,
-      "specs": {
-        "engine": "2.0L I4",
-        "transmission": "9-Speed Automatic",
-        "drivetrain": "4WD",
-        "bodyType": "SUV",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/awa2ociwq9lg2e6bsjx8hqc8dw1e"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/-Hi95GQ2B5Unn8_59OlLGWUMSdTZ86q_Mwt6MAA4Io4cvovTtqwHQHZvb6g2Jgb6DrfNEm1JCiab8apwCEWMViHVjurOIGG749E",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2015-Land_Rover-Range_Rover_Evoque-Dynamic-SALVT2BG8FH038369"
     },
     {
       "url": "https://jsautohaus.com/inventory/Used-2023-Subaru-Crosstrek-Hybrid-JF2GTDEC5PH290183",
@@ -17155,37 +15851,6 @@
       "priceText": "$39,995",
       "description": "",
       "id": "Used-2022-Mercedes-Benz-E-Class-E_450-W1K1J5JB1NF177018"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-1999-Porsche-Boxster-Base-WP0CA2983XU623694",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-1999-Porsche-Boxster-Base-WP0CA2983XU623694",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-1999-Porsche-Boxster-Base-WP0CA2983XU623694",
-      "scrapedAt": "2026-02-12T17:05:01.361Z",
-      "lastVerified": "2026-02-12T17:05:01.361Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 1999,
-      "make": "Porsche",
-      "model": "Boxster",
-      "trim": "Base",
-      "vin": "WP0CA2983XU623694",
-      "stock": "25318B",
-      "mileage": 60638,
-      "specs": {
-        "engine": "2.5L H6",
-        "transmission": "5-Speed Manual",
-        "drivetrain": "RWD",
-        "bodyType": "Convertible",
-        "doors": 2
-      },
-      "images": [
-        "https://images.app.ridemotive.com/1pmoks77fk9trpczhenb6rjhvdzh"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/QXyvKtsVqJwVoD7g2jEttIXhtN9y4irYDMgcdp-Vs-fu9zIzNVLb-sGB6Xj7a6b7EDJS733FbCMeCVHa_8MU59DscOQyiXGDRWI",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-1999-Porsche-Boxster-Base-WP0CA2983XU623694"
     },
     {
       "url": "https://jsautohaus.com/inventory/Used-2022-Mercedes-Benz-GLE-GLE_350-4JGFB4JBXNA721726",
@@ -17794,37 +16459,6 @@
       "priceText": "$71,995",
       "description": "",
       "id": "Used-2022-Porsche-Cayenne_Coupe-GTS-WP1BG2AY7NDA55581"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2024-Volkswagen-Taos-1_5T_SE-3VVEX7B29RM076143",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2024-Volkswagen-Taos-1_5T_SE-3VVEX7B29RM076143",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2024-Volkswagen-Taos-1_5T_SE-3VVEX7B29RM076143",
-      "scrapedAt": "2026-02-12T17:05:42.434Z",
-      "lastVerified": "2026-02-12T17:05:42.434Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2024,
-      "make": "Volkswagen",
-      "model": "Taos",
-      "trim": "1.5T SE",
-      "vin": "3VVEX7B29RM076143",
-      "stock": "D178",
-      "mileage": 47164,
-      "specs": {
-        "engine": "1.5L I4 Turbocharged DOHC 16V ...",
-        "transmission": "8-Speed Automatic with Tiptron...",
-        "drivetrain": "FWD",
-        "bodyType": "SUV",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/pmujlu1r4nzyjiit1bg148hn961e"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/hw8lkDo6KCduLdiNFZH4Q_31sra19707D2Tn4m4d8uEZCejAaJ0Zo9z5JoNO5pqWcnOgrbJlXVzJS4aHzEwYgdsbGB-6cCM-Iso",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2024-Volkswagen-Taos-1_5T_SE-3VVEX7B29RM076143"
     },
     {
       "url": "https://jsautohaus.com/inventory/Used-2019-Mercedes-Benz-AMG__GT_63-Base-WDD7X8JBXKA005685",
@@ -18572,37 +17206,6 @@
       "id": "Used-2022-Mitsubishi-Eclipse_Cross-SE_AWD-JA4ATWAA7NZ054978"
     },
     {
-      "url": "https://jsautohaus.com/inventory/Used-2018-Jeep-Compass-Latitude-3C4NJDBB3JT492780",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2018-Jeep-Compass-Latitude-3C4NJDBB3JT492780",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2018-Jeep-Compass-Latitude-3C4NJDBB3JT492780",
-      "scrapedAt": "2026-02-12T17:06:34.026Z",
-      "lastVerified": "2026-02-12T17:06:34.026Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2018,
-      "make": "Jeep",
-      "model": "Compass",
-      "trim": "Latitude",
-      "vin": "3C4NJDBB3JT492780",
-      "stock": "D156",
-      "mileage": 69291,
-      "specs": {
-        "engine": "2.4L I4",
-        "transmission": "9-Speed Automatic",
-        "drivetrain": "4WD",
-        "bodyType": "SUV",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/rny1eq1pzml6pjdbp84sd35wwhzh"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/BM_0PVxKnNz8Wdf8h3QE03G93vMoFrmHjRCEFGtc1GgAoEpNBaURPIy7U0ij8HNGfywNmh203wtY-5ZVgopTlPk-ysHg-t9WR1g",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2018-Jeep-Compass-Latitude-3C4NJDBB3JT492780"
-    },
-    {
       "url": "https://jsautohaus.com/inventory/Used-2021-Dodge-Charger-SXT_RWD-2C3CDXBG7MH632410",
       "detailUrl": "https://jsautohaus.com/inventory/Used-2021-Dodge-Charger-SXT_RWD-2C3CDXBG7MH632410",
       "sourceUrl": "https://jsautohaus.com/inventory/Used-2021-Dodge-Charger-SXT_RWD-2C3CDXBG7MH632410",
@@ -18753,37 +17356,6 @@
       "priceText": "$43,995",
       "description": "",
       "id": "Used-2023-Mercedes-Benz-EQS-450-4JGDM2DB9PA006554"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-1999-Porsche-Boxster-Base-WP0CA2983XU623694",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-1999-Porsche-Boxster-Base-WP0CA2983XU623694",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-1999-Porsche-Boxster-Base-WP0CA2983XU623694",
-      "scrapedAt": "2026-02-12T17:06:51.263Z",
-      "lastVerified": "2026-02-12T17:06:51.263Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 1999,
-      "make": "Porsche",
-      "model": "Boxster",
-      "trim": "Base",
-      "vin": "WP0CA2983XU623694",
-      "stock": "25318B",
-      "mileage": 60638,
-      "specs": {
-        "engine": "2.5L H6",
-        "transmission": "5-Speed Manual",
-        "drivetrain": "RWD",
-        "bodyType": "Convertible",
-        "doors": 2
-      },
-      "images": [
-        "https://images.app.ridemotive.com/1pmoks77fk9trpczhenb6rjhvdzh"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/QXyvKtsVqJwVoD7g2jEttIXhtN9y4irYDMgcdp-Vs-fu9zIzNVLb-sGB6Xj7a6b7EDJS733FbCMeCVHa_8MU59DscOQyiXGDRWI",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-1999-Porsche-Boxster-Base-WP0CA2983XU623694"
     },
     {
       "url": "https://jsautohaus.com/inventory/Used-2023-Chevrolet-Corvette-Stingray-1G1YC2D40P5103959",
@@ -19254,37 +17826,6 @@
       "id": "Used-2022-Nissan-Frontier-SV-1N6ED1EK5NN667020"
     },
     {
-      "url": "https://jsautohaus.com/inventory/Used-2024-Ford-Escape-ST-Line-1FMCU0MN8RUB35932",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2024-Ford-Escape-ST-Line-1FMCU0MN8RUB35932",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2024-Ford-Escape-ST-Line-1FMCU0MN8RUB35932",
-      "scrapedAt": "2026-02-12T17:07:24.509Z",
-      "lastVerified": "2026-02-12T17:07:24.509Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2024,
-      "make": "Ford",
-      "model": "Escape",
-      "trim": "ST-Line",
-      "vin": "1FMCU0MN8RUB35932",
-      "stock": "25839",
-      "mileage": 63109,
-      "specs": {
-        "engine": "1.5L EcoBoost",
-        "transmission": "8-Speed Automatic",
-        "drivetrain": "FWD",
-        "bodyType": "SUV",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/dgltwnr3lnws2pr3elr6zm78affg"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/2OU9cbPkW3T1j3ejjIIP2StFub3OGXTC16LSOJsncCTZu5TKa7jdIgwqoLsUY-WMt52a8C9aKjZNfdNd1muHkhozLADpvcYUnEg",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2024-Ford-Escape-ST-Line-1FMCU0MN8RUB35932"
-    },
-    {
       "url": "https://jsautohaus.com/inventory/Used-2024-Toyota-Corolla-LE-5YFB4MDE4RP094929",
       "detailUrl": "https://jsautohaus.com/inventory/Used-2024-Toyota-Corolla-LE-5YFB4MDE4RP094929",
       "sourceUrl": "https://jsautohaus.com/inventory/Used-2024-Toyota-Corolla-LE-5YFB4MDE4RP094929",
@@ -19314,37 +17855,6 @@
       "priceText": "$17,995",
       "description": "",
       "id": "Used-2024-Toyota-Corolla-LE-5YFB4MDE4RP094929"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2018-GMC-Yukon-Denali-1GKS2CKJ0JR264251",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2018-GMC-Yukon-Denali-1GKS2CKJ0JR264251",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2018-GMC-Yukon-Denali-1GKS2CKJ0JR264251",
-      "scrapedAt": "2026-02-12T17:07:32.588Z",
-      "lastVerified": "2026-02-12T17:07:32.588Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2018,
-      "make": "GMC",
-      "model": "Yukon",
-      "trim": "Denali",
-      "vin": "1GKS2CKJ0JR264251",
-      "stock": "SX18116A",
-      "mileage": 101303,
-      "specs": {
-        "engine": "EcoTec3 6.2L V8",
-        "transmission": "10-Speed Automatic with Overdr...",
-        "drivetrain": "4WD",
-        "bodyType": "SUV",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/ovnpj2dofo6m7l67zb4vgzxld3h2"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/et7Bu50PTroo6qOBvm-3euP46ksX4gTraIKIzuKeM8BQKF3-zWNvJ7P4i9j-lJtsbCv8ATs5p2xREuUzBtZ6oJAdRoiCjdzrBS8",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2018-GMC-Yukon-Denali-1GKS2CKJ0JR264251"
     },
     {
       "url": "https://jsautohaus.com/inventory/Used-2021-Jaguar-F-TYPE-R-SAJD51FE2MCK74771",
@@ -19541,37 +18051,6 @@
       "priceText": "$29,495",
       "description": "",
       "id": "Used-2020-Jeep-Gladiator-Rubicon-1C6JJTBG9LL200074"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2018-Jeep-Compass-Latitude-3C4NJDBB3JT492780",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2018-Jeep-Compass-Latitude-3C4NJDBB3JT492780",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2018-Jeep-Compass-Latitude-3C4NJDBB3JT492780",
-      "scrapedAt": "2026-02-12T17:07:48.056Z",
-      "lastVerified": "2026-02-12T17:07:48.056Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2018,
-      "make": "Jeep",
-      "model": "Compass",
-      "trim": "Latitude",
-      "vin": "3C4NJDBB3JT492780",
-      "stock": "D156",
-      "mileage": 69291,
-      "specs": {
-        "engine": "2.4L I4",
-        "transmission": "9-Speed Automatic",
-        "drivetrain": "4WD",
-        "bodyType": "SUV",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/rny1eq1pzml6pjdbp84sd35wwhzh"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/BM_0PVxKnNz8Wdf8h3QE03G93vMoFrmHjRCEFGtc1GgAoEpNBaURPIy7U0ij8HNGfywNmh203wtY-5ZVgopTlPk-ysHg-t9WR1g",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2018-Jeep-Compass-Latitude-3C4NJDBB3JT492780"
     },
     {
       "url": "https://jsautohaus.com/inventory/Used-2024-BMW-XM-Label-5YM33CS02R9U67018",
@@ -20432,37 +18911,6 @@
       "id": "Used-2022-Mercedes-Benz-S-Class-S_580-W1K6G7GB7NA106524"
     },
     {
-      "url": "https://jsautohaus.com/inventory/Used-2015-Nissan-Rogue_Select-S-JN8AS5MV9FW763937",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2015-Nissan-Rogue_Select-S-JN8AS5MV9FW763937",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2015-Nissan-Rogue_Select-S-JN8AS5MV9FW763937",
-      "scrapedAt": "2026-02-12T17:08:44.793Z",
-      "lastVerified": "2026-02-12T17:08:44.793Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2015,
-      "make": "Nissan",
-      "model": "Rogue Select",
-      "trim": "S",
-      "vin": "JN8AS5MV9FW763937",
-      "stock": "25450W",
-      "mileage": 102779,
-      "specs": {
-        "engine": "2.5L I4 DOHC 16V",
-        "transmission": "CVT with Xtronic",
-        "drivetrain": "AWD",
-        "bodyType": "SUV",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/ofitmi9lxtnnynm7h2j7nxy57gwq"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/pwtgCDhPWe_qAHJFk-WG0380jKQJrrVncYGKS4TUo1lIwck8igjDH5nHDaCfv64WzEiEJvwa76O6fZmrgYPvbS9CLJyYkWkI3zY",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2015-Nissan-Rogue_Select-S-JN8AS5MV9FW763937"
-    },
-    {
       "url": "https://jsautohaus.com/inventory/Used-2022-Jaguar-F-TYPE-R-SAJD55FE2NCK77534",
       "detailUrl": "https://jsautohaus.com/inventory/Used-2022-Jaguar-F-TYPE-R-SAJD55FE2NCK77534",
       "sourceUrl": "https://jsautohaus.com/inventory/Used-2022-Jaguar-F-TYPE-R-SAJD55FE2NCK77534",
@@ -21030,37 +19478,6 @@
       "id": "Used-2022-GMC-Savana_2500-Work_Van-1GTW7AFP2N1157644"
     },
     {
-      "url": "https://jsautohaus.com/inventory/Used-2015-Chevrolet-Silverado_2500HD-LT-1GC1KVEG8FF571632",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2015-Chevrolet-Silverado_2500HD-LT-1GC1KVEG8FF571632",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2015-Chevrolet-Silverado_2500HD-LT-1GC1KVEG8FF571632",
-      "scrapedAt": "2026-02-12T17:09:25.979Z",
-      "lastVerified": "2026-02-12T17:09:25.979Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2015,
-      "make": "Chevrolet",
-      "model": "Silverado 2500HD",
-      "trim": "LT",
-      "vin": "1GC1KVEG8FF571632",
-      "stock": "D160",
-      "mileage": 101741,
-      "specs": {
-        "engine": "Vortec 6.0L V8 SFI Flex Fuel V...",
-        "transmission": "6-Speed Automatic HD Electroni...",
-        "drivetrain": "4WD",
-        "bodyType": "Truck",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/grzkwkti75r0t3lcqlai00fz560l"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/18VOFYPwB0jNT0yc02T_nNV52PkJkRF_BHu6isztsdJCCQdRnWEHVgPHBrM23QJk9dowir6yWCsqf8rdxTCzPURJleKR_C1Cw-g",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2015-Chevrolet-Silverado_2500HD-LT-1GC1KVEG8FF571632"
-    },
-    {
       "url": "https://jsautohaus.com/inventory/Used-2022-Mercedes-Benz-GLE-GLE_350-4JGFB4KBXNA634763",
       "detailUrl": "https://jsautohaus.com/inventory/Used-2022-Mercedes-Benz-GLE-GLE_350-4JGFB4KBXNA634763",
       "sourceUrl": "https://jsautohaus.com/inventory/Used-2022-Mercedes-Benz-GLE-GLE_350-4JGFB4KBXNA634763",
@@ -21129,37 +19546,6 @@
       "priceText": "$39,995",
       "description": "",
       "id": "Used-2022-Mercedes-Benz-GLE-GLE_350-4JGFB4KBXNA634763"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2019-Audi-Q8-3_0T_Premium_Plus-WA1BVAF13KD028297",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2019-Audi-Q8-3_0T_Premium_Plus-WA1BVAF13KD028297",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2019-Audi-Q8-3_0T_Premium_Plus-WA1BVAF13KD028297",
-      "scrapedAt": "2026-02-12T17:09:33.040Z",
-      "lastVerified": "2026-02-12T17:09:33.040Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2019,
-      "make": "Audi",
-      "model": "Q8",
-      "trim": "3.0T Premium Plus quattro",
-      "vin": "WA1BVAF13KD028297",
-      "stock": "D175",
-      "mileage": 83243,
-      "specs": {
-        "engine": "3.0L V6 Turbocharged DOHC 24V ...",
-        "transmission": "8-Speed Automatic with Tiptron...",
-        "drivetrain": "quattro",
-        "bodyType": "SUV",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/vyug4o7fwd5jnrbb7zzbu2cfzubs"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/53KWRah7V2d_xIeR_Rcw4DnWvloGEK_3ye9yy7B6rBvi_M6_6Y0uhfqDQ9u3JqBZkbRMxEPUeOkhHMLQKoL1piDrJxGTF_EY1VE",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2019-Audi-Q8-3_0T_Premium_Plus-WA1BVAF13KD028297"
     },
     {
       "url": "https://jsautohaus.com/inventory/Used-2017-Honda-Civic-EX-L-SHHFK7H74HU424081",
@@ -21358,37 +19744,6 @@
       "priceText": "$87,995",
       "description": "",
       "id": "Used-2026-BMW-M4-Competition-WBS33HK02TCV73543"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2018-Audi-RS_5-2_9T-WUARWAF59JA903860",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2018-Audi-RS_5-2_9T-WUARWAF59JA903860",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2018-Audi-RS_5-2_9T-WUARWAF59JA903860",
-      "scrapedAt": "2026-02-12T17:09:48.768Z",
-      "lastVerified": "2026-02-12T17:09:48.768Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2018,
-      "make": "Audi",
-      "model": "RS 5",
-      "trim": "2.9T quattro",
-      "vin": "WUARWAF59JA903860",
-      "stock": "B45603",
-      "mileage": 84024,
-      "specs": {
-        "engine": "2.9L V6 Turbocharged DOHC 24V ...",
-        "transmission": "8-Speed Automatic with Tiptron...",
-        "drivetrain": "quattro",
-        "bodyType": "Coupe",
-        "doors": 2
-      },
-      "images": [
-        "https://images.app.ridemotive.com/3alrxucougpqpinfrfw0vod4x5hy"
-      ],
-      "carfaxUrl": "http://www.carfax.com/VehicleHistory/p/Report.cfx?partner=DVW_1&vin=WUARWAF59JA903860",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2018-Audi-RS_5-2_9T-WUARWAF59JA903860"
     },
     {
       "url": "https://jsautohaus.com/inventory/Used-2017-BMW-M6-Gran_Coupe-WBS6E9C57HG437481",
@@ -21593,37 +19948,6 @@
       "id": "Used-2018-BMW-3_Series-320i_xDrive_Sedan_South_Africa-WBA8E5G57JNV01830"
     },
     {
-      "url": "https://jsautohaus.com/inventory/Used-2018-Audi-Q3-2_0T_Premium-WA1ECCFS2JR023259",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2018-Audi-Q3-2_0T_Premium-WA1ECCFS2JR023259",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2018-Audi-Q3-2_0T_Premium-WA1ECCFS2JR023259",
-      "scrapedAt": "2026-02-12T17:10:04.820Z",
-      "lastVerified": "2026-02-12T17:10:04.820Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2018,
-      "make": "Audi",
-      "model": "Q3",
-      "trim": "2.0T Premium quattro",
-      "vin": "WA1ECCFS2JR023259",
-      "stock": "D163",
-      "mileage": 63065,
-      "specs": {
-        "engine": "2.0L 4-Cylinder TFSI",
-        "transmission": "6-Speed Automatic with Tiptron...",
-        "drivetrain": "quattro",
-        "bodyType": "SUV",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/4zncawrzsdo3fjqkycwbvl3mdt56"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/ZeB3wJNQtKUYNc9g2ym-9lwNEDWl8A8eW9rHv1g9-WGl4rXtJpFv8uyrQIgd1bB8lX9VRIl4cB9LjJ8KxoL3CNoGwqDXGxn2lpQ",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2018-Audi-Q3-2_0T_Premium-WA1ECCFS2JR023259"
-    },
-    {
       "url": "https://jsautohaus.com/inventory/Used-2023-Acura-Integra-CVT-19UDE4H22PA010051",
       "detailUrl": "https://jsautohaus.com/inventory/Used-2023-Acura-Integra-CVT-19UDE4H22PA010051",
       "sourceUrl": "https://jsautohaus.com/inventory/Used-2023-Acura-Integra-CVT-19UDE4H22PA010051",
@@ -21678,69 +20002,6 @@
       "priceText": "$20,995",
       "description": "",
       "id": "Used-2023-Acura-Integra-CVT-19UDE4H22PA010051"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2025-Ram-1500-Big_Horn_Lone_Star-1C6SRFBP8SN520102",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2025-Ram-1500-Big_Horn_Lone_Star-1C6SRFBP8SN520102",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2025-Ram-1500-Big_Horn_Lone_Star-1C6SRFBP8SN520102",
-      "scrapedAt": "2026-02-12T17:10:12.902Z",
-      "lastVerified": "2026-02-12T17:10:12.902Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2025,
-      "make": "Ram",
-      "model": "1500",
-      "trim": "Big Horn/Lone Star",
-      "vin": "1C6SRFBP8SN520102",
-      "stock": "P1850",
-      "mileage": 13210,
-      "specs": {
-        "engine": "3.0L I6",
-        "transmission": "8-Speed Automatic",
-        "drivetrain": "4WD",
-        "bodyType": "Truck",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/ws0kbwqm7bysfexdgb5f23h6vne3",
-        "https://images.app.ridemotive.com/urax5x7fe6du8tqlgth2u2gqtmoc",
-        "https://images.app.ridemotive.com/dq0nqqf5m4xp0sodak27kuf8a3it",
-        "https://images.app.ridemotive.com/p0vw4urh1aej4qxnzez92232ew37",
-        "https://images.app.ridemotive.com/u2v0acynyr66b3u1bvaox6s7b352",
-        "https://images.app.ridemotive.com/f5ypmkdbwwccnrl6mupngs9c60ij",
-        "https://images.app.ridemotive.com/5cdlxmz4mht4306g27vo7bbkx0k5",
-        "https://images.app.ridemotive.com/oe6u08z4wbs07un2wwc8c1s4bkwo",
-        "https://images.app.ridemotive.com/f40ccq09va8eon5buvmkoamg7bm7",
-        "https://images.app.ridemotive.com/xuenutszd5u4drr3qow8vx1r01d5",
-        "https://images.app.ridemotive.com/9whtn2yaqz8knb31leybrgi4g3bd",
-        "https://images.app.ridemotive.com/pi3wj5ajdt62w6ltsvo9gj9xnzs0",
-        "https://images.app.ridemotive.com/tewvguc4jyvtgsyeat8kmvsetusi",
-        "https://images.app.ridemotive.com/f57c930ujkuwh87vm7lcoj74cx2n",
-        "https://images.app.ridemotive.com/kqyszsilliacqjydzryemmu6b7tf",
-        "https://images.app.ridemotive.com/ix6j8k474jtj6e7djhl6nch61ifh",
-        "https://images.app.ridemotive.com/inkhdo32ijdlzzri8rruqnhy8js8",
-        "https://images.app.ridemotive.com/c0qyoffcgzgu11v4slt17jx9nc4y",
-        "https://images.app.ridemotive.com/7m9kwjo9zvxdj29agvrzv3blr34x",
-        "https://images.app.ridemotive.com/gkewap9oxcfaolvre24hwkre6jb5",
-        "https://images.app.ridemotive.com/qx6oj1atlr2fqnss7ujiww6f941b",
-        "https://images.app.ridemotive.com/ojsx4mdl2pa2j72078umwfo0mb90",
-        "https://images.app.ridemotive.com/pvps5shca8gshapsmg5lhc11r766",
-        "https://images.app.ridemotive.com/r9tuhemqgguggjokm4pvmeonpe0a",
-        "https://images.app.ridemotive.com/sc3pv6cegg7erzy02nejdsydh79m",
-        "https://images.app.ridemotive.com/rxx5dq3ris5f6ub3j03mqo8ki7fr",
-        "https://images.app.ridemotive.com/mkhrn75amum2hjlxykzuc9cyit2n",
-        "https://images.app.ridemotive.com/b3o3iaymye8m66bduadke6r6kgvl",
-        "https://images.app.ridemotive.com/jcien7b0ar0zm34lsvmq6mqlnc4b",
-        "https://images.app.ridemotive.com/sfxagup13zp62rnsrdlo2qf4pzli",
-        "https://images.app.ridemotive.com/z6mmd1uszfl9hj76lm5f77ueo1vx",
-        "https://images.app.ridemotive.com/95b5pm837g7kc0045tbrpjqkbpxz",
-        "https://images.app.ridemotive.com/hx34w2ifozk1eacctrgtcy2tfpxy"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/6rR8xTBZq1DT7BjiiBAVZ2BotypKXRqydlTD3zWvTjSUXbr6KTCvRx2Py1b1E4oozTuZavphvxaznDVCPCWxDdKU8eiPIXwFqks",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2025-Ram-1500-Big_Horn_Lone_Star-1C6SRFBP8SN520102"
     },
     {
       "url": "https://jsautohaus.com/inventory/Used-2016-Porsche-911-GT3_RS-WP0AF2A98GS192181",
@@ -22349,74 +20610,6 @@
       "id": "Used-2024-Tesla-Cybertruck-Base-7G2CEHED4RA015392"
     },
     {
-      "url": "https://jsautohaus.com/inventory/Used-2022-Jaguar-F-TYPE-R-SAJD55FE9NCK78289",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2022-Jaguar-F-TYPE-R-SAJD55FE9NCK78289",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2022-Jaguar-F-TYPE-R-SAJD55FE9NCK78289",
-      "scrapedAt": "2026-02-12T17:10:56.550Z",
-      "lastVerified": "2026-02-12T17:10:56.550Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2022,
-      "make": "Jaguar",
-      "model": "F-TYPE",
-      "trim": "R",
-      "vin": "SAJD55FE9NCK78289",
-      "stock": "P1848",
-      "mileage": 57648,
-      "specs": {
-        "engine": "5.0L V8 Supercharged",
-        "transmission": "8-Speed Automatic",
-        "drivetrain": "AWD",
-        "bodyType": "Convertible",
-        "doors": 2
-      },
-      "images": [
-        "https://images.app.ridemotive.com/ij8zal5t2hapzzltfo7eef8p1grq",
-        "https://images.app.ridemotive.com/71ajwwvm90vspkaehv11g21ld9k3",
-        "https://images.app.ridemotive.com/sfsko3ohzmm5y1qrn9v4k1bh6g80",
-        "https://images.app.ridemotive.com/89jbgdpwkf49xn56y7mhof7gwgbl",
-        "https://images.app.ridemotive.com/rsq8a0grlnfwywdx71620k0dy40z",
-        "https://images.app.ridemotive.com/6gsr4l0iulg4wf7oj7g9oodjurb1",
-        "https://images.app.ridemotive.com/qbz4peyyzmpv1qeqyzmelv7e66zp",
-        "https://images.app.ridemotive.com/uew1oo1vx0tzybg5usbe96p02qka",
-        "https://images.app.ridemotive.com/xgewe1xmllbuqc1wah4sj26yh9xk",
-        "https://images.app.ridemotive.com/ywfr21r10gzalx7np2wms7ep9uuh",
-        "https://images.app.ridemotive.com/ccg5obhrl31mrh1wgu5rfxbo6r5a",
-        "https://images.app.ridemotive.com/dz8mb6dyfq1v9m2w9vpvte9vm3w5",
-        "https://images.app.ridemotive.com/897osfnj1ss3bqjn7o4wf1xh67y2",
-        "https://images.app.ridemotive.com/m8ae44ibdzqobqq31qx71a3ctr0t",
-        "https://images.app.ridemotive.com/gaz0khknfs8njqgt4l61cmjaunnf",
-        "https://images.app.ridemotive.com/mpsrzn5jdrufneboqtkyjqny3qxn",
-        "https://images.app.ridemotive.com/od8us3r0v84gglkpv8f1229103w7",
-        "https://images.app.ridemotive.com/tsa21ba5pceubup4mball44wbnsy",
-        "https://images.app.ridemotive.com/dkwy9iuejxmfz24gcjebaz1yqqrs",
-        "https://images.app.ridemotive.com/oaqxas2hw03mx8pfaqco8571awl0",
-        "https://images.app.ridemotive.com/5sglg3qfa4kp77e9x706m1c31wii",
-        "https://images.app.ridemotive.com/a4hhnthpefg5wlsh57xcvwr20na5",
-        "https://images.app.ridemotive.com/ixtmqwirjrc3m8urc4r29tgynfn2",
-        "https://images.app.ridemotive.com/0iknblc3bkpfjzbiq3sckhlo8y5f",
-        "https://images.app.ridemotive.com/8zi4xz2tv5hj426vaqidp1a7adce",
-        "https://images.app.ridemotive.com/fj2vxaz62u2n9pxzl0slmbwdvv04",
-        "https://images.app.ridemotive.com/i2cneolu1udqh4awxo5l51w0waft",
-        "https://images.app.ridemotive.com/7ij1h8ujxdbmp17tmaxic0oyil3n",
-        "https://images.app.ridemotive.com/7ajw8hhwxnbopcinzi8t4fifmiob",
-        "https://images.app.ridemotive.com/qzt3xbzid4lqbkrgn2lgk2tqh1ek",
-        "https://images.app.ridemotive.com/u20spzb8gf69itbfqqh6fq9jqv3u",
-        "https://images.app.ridemotive.com/xhpgcj2igg51eq6qfalulqk5pcls",
-        "https://images.app.ridemotive.com/8jpd3albj8xo6vxa7kyf0xmfr6ld",
-        "https://images.app.ridemotive.com/wgguxwuw5i8n44h6m3i549nkmbn3",
-        "https://images.app.ridemotive.com/nd6j7zey7pcmzo0t5b85emgv3uha",
-        "https://images.app.ridemotive.com/3u0zx7ssm46g1wgsssbclsw57i69",
-        "https://images.app.ridemotive.com/w88658c1oprbyx6473fz1135enjt",
-        "https://images.app.ridemotive.com/0rx4w56xsq9o1nyci3pkwyg8rmyo"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/sqsEdSAEBLHo1_LxdusVBUn1oWvdAGAoRPpp4id_nYrGFbSpqdjlJkQkBIM5rCEh1kGLHaivlgpS96orRwiQBdGs5UZIAYkEqk8",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2022-Jaguar-F-TYPE-R-SAJD55FE9NCK78289"
-    },
-    {
       "url": "https://jsautohaus.com/inventory/Used-2022-Porsche-Taycan-4S-WP0AB2Y16NSA45871",
       "detailUrl": "https://jsautohaus.com/inventory/Used-2022-Porsche-Taycan-4S-WP0AB2Y16NSA45871",
       "sourceUrl": "https://jsautohaus.com/inventory/Used-2022-Porsche-Taycan-4S-WP0AB2Y16NSA45871",
@@ -22698,130 +20891,6 @@
       "priceText": "$117,995",
       "description": "",
       "id": "Used-2025-Chevrolet-Corvette-Z06-1G1YF2D3XS5603117"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2025-Nissan-Sentra-S-3N1AB8BV1SY361559",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2025-Nissan-Sentra-S-3N1AB8BV1SY361559",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2025-Nissan-Sentra-S-3N1AB8BV1SY361559",
-      "scrapedAt": "2026-02-12T17:11:16.853Z",
-      "lastVerified": "2026-02-12T17:11:16.853Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2025,
-      "make": "Nissan",
-      "model": "Sentra",
-      "trim": "S",
-      "vin": "3N1AB8BV1SY361559",
-      "stock": "D168",
-      "mileage": 7083,
-      "specs": {
-        "engine": "2.0L I4 DOHC",
-        "transmission": "CVT with Xtronic",
-        "drivetrain": "FWD",
-        "bodyType": "Sedan",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/0ckl8ztqjig47wutqjie7jvis9b3"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/vbfbHXISu9mSM1Aj3UeTz42DKpo5pKUKb3Z7ba_AeP-I-nKsOX7ckig-iix28RG0G59o2PnpBFnEFSjHpFF7PA64yHQm_uu_s1I",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2025-Nissan-Sentra-S-3N1AB8BV1SY361559"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2023-Nissan-Altima-2_5_SR-1N4BL4CW8PN411298",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2023-Nissan-Altima-2_5_SR-1N4BL4CW8PN411298",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2023-Nissan-Altima-2_5_SR-1N4BL4CW8PN411298",
-      "scrapedAt": "2026-02-12T17:11:20.376Z",
-      "lastVerified": "2026-02-12T17:11:20.376Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2023,
-      "make": "Nissan",
-      "model": "Altima",
-      "trim": "2.5 SR",
-      "vin": "1N4BL4CW8PN411298",
-      "stock": "P1859",
-      "mileage": 18449,
-      "specs": {
-        "engine": "2.5L 4-Cylinder DOHC 16V",
-        "transmission": "CVT with Xtronic",
-        "drivetrain": "AWD",
-        "bodyType": "Sedan",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/a7nuhfb1nlsvytldra17483y3lmy"
-      ],
-      "carfaxUrl": "http://www.carfax.com/VehicleHistory/p/Report.cfx?partner=DVW_1&vin=1N4BL4CW8PN411298",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2023-Nissan-Altima-2_5_SR-1N4BL4CW8PN411298"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2023-Audi-S8-4_0T-WAULSAF80PN009883",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2023-Audi-S8-4_0T-WAULSAF80PN009883",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2023-Audi-S8-4_0T-WAULSAF80PN009883",
-      "scrapedAt": "2026-02-12T17:11:24.943Z",
-      "lastVerified": "2026-02-12T17:11:24.943Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2023,
-      "make": "Audi",
-      "model": "S8",
-      "trim": "4.0T quattro",
-      "vin": "WAULSAF80PN009883",
-      "stock": "P1854",
-      "mileage": 10447,
-      "specs": {
-        "engine": "4.0L V8 Turbocharged DOHC 32V ...",
-        "transmission": "8-Speed Automatic with Tiptron...",
-        "drivetrain": "quattro",
-        "bodyType": "Sedan",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/lgb4j44c0pmmjw13puax4xb1jz26"
-      ],
-      "carfaxUrl": "http://www.carfax.com/VehicleHistory/p/Report.cfx?partner=DVW_1&vin=WAULSAF80PN009883",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2023-Audi-S8-4_0T-WAULSAF80PN009883"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2018-Honda-CR-V-Touring-7FARW2H97JE092932",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2018-Honda-CR-V-Touring-7FARW2H97JE092932",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2018-Honda-CR-V-Touring-7FARW2H97JE092932",
-      "scrapedAt": "2026-02-12T17:11:28.863Z",
-      "lastVerified": "2026-02-12T17:11:28.863Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2018,
-      "make": "Honda",
-      "model": "CR-V",
-      "trim": "Touring",
-      "vin": "7FARW2H97JE092932",
-      "stock": "SX18174A",
-      "mileage": 101560,
-      "specs": {
-        "engine": "1.5L I4 DOHC 16V",
-        "transmission": "CVT",
-        "drivetrain": "AWD",
-        "bodyType": "SUV",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/ei2ikdx74vbnxrgcpqw8so7ougp7"
-      ],
-      "carfaxUrl": "http://www.carfax.com/VehicleHistory/p/Report.cfx?partner=DVW_1&vin=7FARW2H97JE092932",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2018-Honda-CR-V-Touring-7FARW2H97JE092932"
     },
     {
       "url": "https://jsautohaus.com/inventory/Used-2022-BMW-X6_M-Base-5YMCY0C03N9M45621",
@@ -23706,99 +21775,6 @@
       "id": "Used-2022-Ram-1500-TRX-1C6SRFU95NN230659"
     },
     {
-      "url": "https://jsautohaus.com/inventory/Used-2011-Nissan-Armada-SL-5N1AA0NC8BN624361",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2011-Nissan-Armada-SL-5N1AA0NC8BN624361",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2011-Nissan-Armada-SL-5N1AA0NC8BN624361",
-      "scrapedAt": "2026-02-12T17:12:25.634Z",
-      "lastVerified": "2026-02-12T17:12:25.634Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2011,
-      "make": "Nissan",
-      "model": "Armada",
-      "trim": "SL",
-      "vin": "5N1AA0NC8BN624361",
-      "stock": "SX18233A",
-      "mileage": 192535,
-      "specs": {
-        "engine": "5.6L 8-Cylinder SMPI DOHC",
-        "transmission": "5-Speed Automatic with Overdri...",
-        "drivetrain": "4WD",
-        "bodyType": "SUV",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/2sz4kpqxyl7kycppx623u9l6n4bi"
-      ],
-      "carfaxUrl": "http://www.carfax.com/VehicleHistory/p/Report.cfx?partner=DVW_1&vin=5N1AA0NC8BN624361",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2011-Nissan-Armada-SL-5N1AA0NC8BN624361"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2024-Nissan-Sentra-SR-3N1AB8DV1RY260657",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2024-Nissan-Sentra-SR-3N1AB8DV1RY260657",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2024-Nissan-Sentra-SR-3N1AB8DV1RY260657",
-      "scrapedAt": "2026-02-12T17:12:29.412Z",
-      "lastVerified": "2026-02-12T17:12:29.412Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2024,
-      "make": "Nissan",
-      "model": "Sentra",
-      "trim": "SR",
-      "vin": "3N1AB8DV1RY260657",
-      "stock": "P1860",
-      "mileage": 8682,
-      "specs": {
-        "engine": "2.0L I4 DOHC",
-        "transmission": "CVT with Xtronic",
-        "drivetrain": "FWD",
-        "bodyType": "Sedan",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/vt6mhtnerbiaoscz6cx70bro3sxn"
-      ],
-      "carfaxUrl": "http://www.carfax.com/VehicleHistory/p/Report.cfx?partner=DVW_1&vin=3N1AB8DV1RY260657",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2024-Nissan-Sentra-SR-3N1AB8DV1RY260657"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2020-Honda-CR-V-EX-L-2HKRW2H86LH693868",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2020-Honda-CR-V-EX-L-2HKRW2H86LH693868",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2020-Honda-CR-V-EX-L-2HKRW2H86LH693868",
-      "scrapedAt": "2026-02-12T17:12:32.861Z",
-      "lastVerified": "2026-02-12T17:12:32.861Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2020,
-      "make": "Honda",
-      "model": "CR-V",
-      "trim": "EX-L",
-      "vin": "2HKRW2H86LH693868",
-      "stock": "P1856",
-      "mileage": 51645,
-      "specs": {
-        "engine": "1.5L I4 DOHC 16V",
-        "transmission": "CVT",
-        "drivetrain": "AWD",
-        "bodyType": "SUV",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/bwlfu2stbte1yd9hg1gi1lh1c1g8"
-      ],
-      "carfaxUrl": "http://www.carfax.com/VehicleHistory/p/Report.cfx?partner=DVW_1&vin=2HKRW2H86LH693868",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2020-Honda-CR-V-EX-L-2HKRW2H86LH693868"
-    },
-    {
       "url": "https://jsautohaus.com/inventory/Used-2023-BMW-4_Series-430i_Gran_Coupe-WBA73AV09PFN00859",
       "detailUrl": "https://jsautohaus.com/inventory/Used-2023-BMW-4_Series-430i_Gran_Coupe-WBA73AV09PFN00859",
       "sourceUrl": "https://jsautohaus.com/inventory/Used-2023-BMW-4_Series-430i_Gran_Coupe-WBA73AV09PFN00859",
@@ -24200,166 +22176,6 @@
       "priceText": "$42,995",
       "description": "",
       "id": "Used-2022-Mercedes-Benz-E-Class-E_53_AMG_-W1K1J6BB8NF177358"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2024-Ford-F-350SD-King_Ranch-1FT8W3BT9RED24431",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2024-Ford-F-350SD-King_Ranch-1FT8W3BT9RED24431",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2024-Ford-F-350SD-King_Ranch-1FT8W3BT9RED24431",
-      "scrapedAt": "2026-02-12T17:13:05.533Z",
-      "lastVerified": "2026-02-12T17:13:05.533Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2024,
-      "make": "Ford",
-      "model": "F-350SD",
-      "trim": "King Ranch",
-      "vin": "1FT8W3BT9RED24431",
-      "stock": "SX18332",
-      "mileage": 38944,
-      "specs": {
-        "engine": "Power Stroke 6.7L V8 DI 32V OH...",
-        "transmission": "10-Speed Automatic",
-        "drivetrain": "4WD",
-        "bodyType": "Truck",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/4m9zigzmhbvf1asqn9j2682jptzn"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/l1skYObe9Sy676EmOlUip_R6Kog1ia_lrKjb1ob7BcEB69ffBBvdZ0iYHbZfsVX1uGyVnt6eaf9FrGwt8I-XpJ_tQql2cU0JWUw",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2024-Ford-F-350SD-King_Ranch-1FT8W3BT9RED24431"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2026-Toyota-GR_Supra-3_0_Premium-WZ1DB0G04TW071416",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2026-Toyota-GR_Supra-3_0_Premium-WZ1DB0G04TW071416",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2026-Toyota-GR_Supra-3_0_Premium-WZ1DB0G04TW071416",
-      "scrapedAt": "2026-02-12T17:13:08.972Z",
-      "lastVerified": "2026-02-12T17:13:08.972Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2026,
-      "make": "Toyota",
-      "model": "GR Supra",
-      "trim": "3.0 Premium",
-      "vin": "WZ1DB0G04TW071416",
-      "stock": "B4601",
-      "mileage": 1960,
-      "specs": {
-        "engine": "3.0L I6 DOHC 24V",
-        "transmission": "8-Speed Automatic",
-        "drivetrain": "RWD",
-        "bodyType": "Coupe",
-        "doors": 3
-      },
-      "images": [
-        "https://images.app.ridemotive.com/s8brzsvje47n5t18yq1351248w4o"
-      ],
-      "carfaxUrl": "http://www.carfax.com/VehicleHistory/p/Report.cfx?partner=DVW_1&vin=WZ1DB0G04TW071416",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2026-Toyota-GR_Supra-3_0_Premium-WZ1DB0G04TW071416"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2019-Jeep-Cherokee-Limited-1C4PJMDX0KD417317",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2019-Jeep-Cherokee-Limited-1C4PJMDX0KD417317",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2019-Jeep-Cherokee-Limited-1C4PJMDX0KD417317",
-      "scrapedAt": "2026-02-12T17:13:13.072Z",
-      "lastVerified": "2026-02-12T17:13:13.072Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2019,
-      "make": "Jeep",
-      "model": "Cherokee",
-      "trim": "Limited",
-      "vin": "1C4PJMDX0KD417317",
-      "stock": "P1849",
-      "mileage": 76863,
-      "specs": {
-        "engine": "3.2L V6",
-        "transmission": "9-Speed 948TE Automatic",
-        "drivetrain": "4WD",
-        "bodyType": "SUV",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/j0vtfzntrtvuuj41851asmj1rzim",
-        "https://images.app.ridemotive.com/lt3w8k36kxyte1mqac86p330xqh6",
-        "https://images.app.ridemotive.com/hwncmra2hyuagu4ot16ltezzh26k",
-        "https://images.app.ridemotive.com/r7ohl6jza0q08a2y29qarvliefz9",
-        "https://images.app.ridemotive.com/eklz9ix348sf0k6fco6fyvxrlbk6",
-        "https://images.app.ridemotive.com/mp17vumfnvtx4oeis0o9mpr6bnpf",
-        "https://images.app.ridemotive.com/chmiep7ivcyn8x8dwt3ebsi3dumz",
-        "https://images.app.ridemotive.com/bgn2emilb93751khzautvo2j8ta9",
-        "https://images.app.ridemotive.com/z3uu36kmm83mi8wo1jak60k53iq8",
-        "https://images.app.ridemotive.com/7ep2a4m5o3bouezc6u55dzggh06o",
-        "https://images.app.ridemotive.com/ukbkm9o6eexhb9y5uf5ho4we8cdq",
-        "https://images.app.ridemotive.com/du1bhaorfs7decvztwoce1rzffd8",
-        "https://images.app.ridemotive.com/c8hvj6uc5ltnm6hbqs41jg6ts4u8",
-        "https://images.app.ridemotive.com/2xgtrxsgkcpt8ektwludsfje0mj4",
-        "https://images.app.ridemotive.com/cpmcarx4eqrglnb399mk842bujb3",
-        "https://images.app.ridemotive.com/k025d8mymi76f3krp2ihdogzg04g",
-        "https://images.app.ridemotive.com/0vtjpoudihvxblo7nkhjwobslmp3",
-        "https://images.app.ridemotive.com/tb5rm4siz8i4hkm3hjf4h243mx15",
-        "https://images.app.ridemotive.com/c3j9yyz2910tgi3tinw7w9krarug",
-        "https://images.app.ridemotive.com/cmtt2r161r9plie8dckfadl0nh9v",
-        "https://images.app.ridemotive.com/53e8exgmdg17u172aedrmrxaidlz",
-        "https://images.app.ridemotive.com/7nf47ggwrdq3edatktadt7ws8k5y",
-        "https://images.app.ridemotive.com/3a6mrr9iczjs06ogwvz1v930zvwc",
-        "https://images.app.ridemotive.com/kj2hise3vifoog4a5hda1dib6925",
-        "https://images.app.ridemotive.com/xt7efmzujdo8vlcbs528lg1lfvi2",
-        "https://images.app.ridemotive.com/22cytag6d9f1itdigoeyavscczzc",
-        "https://images.app.ridemotive.com/zqq2bfu7hsemihszxgdkctmtql29",
-        "https://images.app.ridemotive.com/d2s39u8nlhlj3ja1va3y5v1xu36e",
-        "https://images.app.ridemotive.com/kbaig39tdw2tq6wbbmdpac1hi7ei",
-        "https://images.app.ridemotive.com/xcxl7mhyjolbn8r3dppagn9ow58w",
-        "https://images.app.ridemotive.com/ynmnamz14ww0ojupwfanbm7i2be3",
-        "https://images.app.ridemotive.com/1jhim9mk8ebiryo0xrisoyq6zhpa",
-        "https://images.app.ridemotive.com/s0adlbed3wvr7a5v5bymrvn70itu",
-        "https://images.app.ridemotive.com/458lnbikp2vs49h2mnznazr97bvr",
-        "https://images.app.ridemotive.com/flrh0tcmc1o8i3edv0xrw94xxqal",
-        "https://images.app.ridemotive.com/tnszeae311p13hj75uutf6jdrnir",
-        "https://images.app.ridemotive.com/y7weq0o2o459kjpvwbcex2k4t5o1"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/5nZwUS4B0GmfB-TjO2Y434wswAmnSfhm7M871owYI5McnKSSu2CL7K5K9YR4JiH3M6tkTWQLdqhR8cAQbVRPe22VOZR-sucecdQ",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2019-Jeep-Cherokee-Limited-1C4PJMDX0KD417317"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2019-BMW-X5-xDrive40i-5UXCR6C59KLL26344",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2019-BMW-X5-xDrive40i-5UXCR6C59KLL26344",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2019-BMW-X5-xDrive40i-5UXCR6C59KLL26344",
-      "scrapedAt": "2026-02-12T17:13:16.360Z",
-      "lastVerified": "2026-02-12T17:13:16.360Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2019,
-      "make": "BMW",
-      "model": "X5",
-      "trim": "xDrive40i",
-      "vin": "5UXCR6C59KLL26344",
-      "stock": "D157",
-      "mileage": 46340,
-      "specs": {
-        "engine": "3.0L I6 DOHC 24V TwinPower Tur...",
-        "transmission": "8-Speed Automatic",
-        "drivetrain": "AWD",
-        "bodyType": "SUV",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/aenrg1fxjq5bpv0mf3935fatei4w"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/xbg9y9Ux6TWYDugHnk3vtXG6h12h1Ayjm95QMgRD1QavrWMysuiBoltr-kYFzLv3748XA5SCykd5P-hoz7oEb8J2eNYBAbgS1Xw",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2019-BMW-X5-xDrive40i-5UXCR6C59KLL26344"
     },
     {
       "url": "https://jsautohaus.com/inventory/Used-2021-Mercedes-Benz-E-Class-E_450-W1K1J5KBXMF165754",
@@ -24885,70 +22701,6 @@
       "priceText": "$37,995",
       "description": "",
       "id": "Used-2023-Volkswagen-Golf_R-2_0T-WVWCB7CD4PW187572"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2018-Toyota-Tacoma-TRD_Sport-3TMDZ5BN1JM044813",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2018-Toyota-Tacoma-TRD_Sport-3TMDZ5BN1JM044813",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2018-Toyota-Tacoma-TRD_Sport-3TMDZ5BN1JM044813",
-      "scrapedAt": "2026-02-12T17:13:56.251Z",
-      "lastVerified": "2026-02-12T17:13:56.251Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2018,
-      "make": "Toyota",
-      "model": "Tacoma",
-      "trim": "TRD Sport V6",
-      "vin": "3TMDZ5BN1JM044813",
-      "stock": "SX18187A",
-      "mileage": 102030,
-      "specs": {
-        "engine": "3.5L V6 PDI DOHC 24V LEV3-ULEV...",
-        "transmission": "6-Speed Automatic",
-        "drivetrain": "4WD",
-        "bodyType": "Truck",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/po79sypiwnoa59ftrufyvor6ohvb",
-        "https://images.app.ridemotive.com/b5pf1wkrxbte4fx1ppr9kaih4053",
-        "https://images.app.ridemotive.com/9nlbd80qniht7u7jj3rnymx5y5ct",
-        "https://images.app.ridemotive.com/4hrqngidjfgk8tmqheic7x6di5ta",
-        "https://images.app.ridemotive.com/1qypmy998vardenla3oaskyjf8fg",
-        "https://images.app.ridemotive.com/yge58offr0h9mzv4mk4cwsuui619",
-        "https://images.app.ridemotive.com/eef9wr8po4xuguove7r8gmkbmzsw",
-        "https://images.app.ridemotive.com/4nvclmb94zupr3jdy83uqn4dh67x",
-        "https://images.app.ridemotive.com/oc059fd4n8t2c8zup6k8rwhnsmz5",
-        "https://images.app.ridemotive.com/rxcfreatix8ywgmztumsw6dh0pda",
-        "https://images.app.ridemotive.com/7psa2bopw1lmsolagz4gztq6e2vp",
-        "https://images.app.ridemotive.com/pvoux9g6etdkwbqutp86njwp02re",
-        "https://images.app.ridemotive.com/nc1dowkibgdyb8tfd60hmewgjubh",
-        "https://images.app.ridemotive.com/2xnx21sq29bncv75i9prbyskj0b7",
-        "https://images.app.ridemotive.com/zzdq8oss6mye6ihqbajgxd87z57z",
-        "https://images.app.ridemotive.com/6pa30jsgws2p88gz504wvqmkrn8n",
-        "https://images.app.ridemotive.com/b940z44g0c1z09ady1wnuh5483lu",
-        "https://images.app.ridemotive.com/w0ws2zjp2f1uel11ww7rfgxci4lu",
-        "https://images.app.ridemotive.com/ipn3h2zt92lnp2pmhk784wcc301l",
-        "https://images.app.ridemotive.com/hu4i87z9phwgvwcfoobhesv1secs",
-        "https://images.app.ridemotive.com/pa1bpjbco996owlq1hlu0hgp2tg4",
-        "https://images.app.ridemotive.com/x0gtpnicxla78qibgejvz3ulgkel",
-        "https://images.app.ridemotive.com/3ljbuk0c3wd0m0zv76u04h4feirk",
-        "https://images.app.ridemotive.com/rt6z1h66awv0b2wxbse941jmno5i",
-        "https://images.app.ridemotive.com/rndzbhmfvoondizzkjmhu3dxcaxv",
-        "https://images.app.ridemotive.com/26ud4s70xlemqg5gua1ly5amwq8o",
-        "https://images.app.ridemotive.com/ua7s7xbansumpxae8otmc0t47bdd",
-        "https://images.app.ridemotive.com/orkxb5pykhk9tgth7w6t1lxg7n6v",
-        "https://images.app.ridemotive.com/757eyvyknn6pdkf8742kbfe5ok48",
-        "https://images.app.ridemotive.com/xuoii3nfthgexpw521j7zfx4k476",
-        "https://images.app.ridemotive.com/00bg413gvlggaweeuxkxcgu83et9",
-        "https://images.app.ridemotive.com/tozwb361hyugszv2a4qd7s2porxp",
-        "https://images.app.ridemotive.com/ct2ac45k2utekzkkx5qxxwd0oivp",
-        "https://images.app.ridemotive.com/4u5dvzs5so5w3jjx0yzeclg9eelc"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/_bkvHq4VtHPcy4Cqj3omgFi77UEyJ9lQBWyy806avF56SrhXIO7C2tLV_UAsL8DGs5_pxJSCtHSghomrSOPdsaku6M6zmUGQI1M",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2018-Toyota-Tacoma-TRD_Sport-3TMDZ5BN1JM044813"
     },
     {
       "url": "https://jsautohaus.com/inventory/Used-2021-Ford-Mustang-GT_Premium-1FA6P8CFXM5119189",
@@ -25531,74 +23283,6 @@
       "id": "Used-2016-Mercedes-Benz-E-Class-E_63_S_AMG_-WDDHH7GB2GB312711"
     },
     {
-      "url": "https://jsautohaus.com/inventory/Used-2018-Maserati-Ghibli-S_Q4_GranLusso-ZAM57YTL2J1292991",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2018-Maserati-Ghibli-S_Q4_GranLusso-ZAM57YTL2J1292991",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2018-Maserati-Ghibli-S_Q4_GranLusso-ZAM57YTL2J1292991",
-      "scrapedAt": "2026-02-12T17:14:37.134Z",
-      "lastVerified": "2026-02-12T17:14:37.134Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2018,
-      "make": "Maserati",
-      "model": "Ghibli",
-      "trim": "S Q4 GranLusso",
-      "vin": "ZAM57YTL2J1292991",
-      "stock": "SX18119A",
-      "mileage": 102806,
-      "specs": {
-        "engine": "3.0L V6",
-        "transmission": "ZF 8-Speed Automatic",
-        "drivetrain": "AWD",
-        "bodyType": "Sedan",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/c986s3hzboa9e3crflpyhqp2rpio",
-        "https://images.app.ridemotive.com/rdf9xueuljdjaael7j16ofu8b2vu",
-        "https://images.app.ridemotive.com/gupyn75aiqn9ycu6non1vwc14bx8",
-        "https://images.app.ridemotive.com/z13qyej9t33shnruy1wm283n78qd",
-        "https://images.app.ridemotive.com/x9r8ywqsaj5g7sfwvk9437p77ywd",
-        "https://images.app.ridemotive.com/hiy9bt8qtm1xs4365qq3vh8hbl0v",
-        "https://images.app.ridemotive.com/z51986gjivzuorensfsm790lld66",
-        "https://images.app.ridemotive.com/4dm8ew25tcqugcdswnmd2w772l2s",
-        "https://images.app.ridemotive.com/3m5oxtk6i8nhra5gtle6mub3zro0",
-        "https://images.app.ridemotive.com/rzdtbiu2ttvjivfrz8kqqdzeaptc",
-        "https://images.app.ridemotive.com/c78z8ix1e92vwtst9ab2i0cv8r7a",
-        "https://images.app.ridemotive.com/5nhj0gp1h8fr0j5sjqeumvviqyt5",
-        "https://images.app.ridemotive.com/shtizjjqzps2siyugy37qqinzk8z",
-        "https://images.app.ridemotive.com/fdq55gmi4g82kxfutng6tyy4n6pi",
-        "https://images.app.ridemotive.com/edqy69sgaee2qs11qe4842qjkq84",
-        "https://images.app.ridemotive.com/zpxk1v5ve49jlf9gnisuiywe3v2x",
-        "https://images.app.ridemotive.com/wwkelrvm8xduijv01ux0cryjlyu8",
-        "https://images.app.ridemotive.com/b2whz11ixmnstrfn9ex0oz6mf1vy",
-        "https://images.app.ridemotive.com/8xq5tij2r32rtz6zv5g0t47nph5e",
-        "https://images.app.ridemotive.com/0d3ewlgdmyfcf2w2phjr63e9k5zg",
-        "https://images.app.ridemotive.com/zdnas3fm0bv5tx5ep9lktavjq1k1",
-        "https://images.app.ridemotive.com/996o60swqtgw8kve9c39pliu6ww5",
-        "https://images.app.ridemotive.com/fcvcqkzdfhjjb587w5alzoovenan",
-        "https://images.app.ridemotive.com/gb6dw8xlri63l259jisa443djmf7",
-        "https://images.app.ridemotive.com/tufdqnh4cqf4810xn5bvmrwkixzu",
-        "https://images.app.ridemotive.com/zwf36ge4rfmlv83xh8mu0rpo5wdd",
-        "https://images.app.ridemotive.com/pdif7gcpefansmc3q1licfh0jd73",
-        "https://images.app.ridemotive.com/mw04kf02ta6mjc0xmtdbs26jocu1",
-        "https://images.app.ridemotive.com/lmajiocfcv9eacgqhdngvnf93gbp",
-        "https://images.app.ridemotive.com/obr0i0mww8ihlhxd5l4ffvvijzr6",
-        "https://images.app.ridemotive.com/8h22i1c6u7d07vploy4jf9v284ya",
-        "https://images.app.ridemotive.com/u1wd9zlmy29l1z1kikc4cfh1ubae",
-        "https://images.app.ridemotive.com/oplhrv81cza0mi0d2n6hauhzsx3z",
-        "https://images.app.ridemotive.com/yag75znwxp1fxxvc334cab4hk2at",
-        "https://images.app.ridemotive.com/d4xyiwmmj18zbox9aszh2fkeyhxb",
-        "https://images.app.ridemotive.com/g44yq9j3uxb09vz4ppr1u6hezriz",
-        "https://images.app.ridemotive.com/w3osqwz5lq2vptih3867sm3gpbqz",
-        "https://images.app.ridemotive.com/mngkok4fr9c3o0whjxpg3kxxi3vr"
-      ],
-      "carfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/G2BeaGawEoHmKzspp9EPsDglagkWAgGshIHmj0pGaqyoVb6Lgh9aJ4tEbxltUShyH3ciySVZAeJp-ZGHq3zS-soFN_dzTRX45Uk",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2018-Maserati-Ghibli-S_Q4_GranLusso-ZAM57YTL2J1292991"
-    },
-    {
       "url": "https://jsautohaus.com/inventory/Used-2021-Ford-F-150-XLT-1FTEW1EP4MKD78686",
       "detailUrl": "https://jsautohaus.com/inventory/Used-2021-Ford-F-150-XLT-1FTEW1EP4MKD78686",
       "sourceUrl": "https://jsautohaus.com/inventory/Used-2021-Ford-F-150-XLT-1FTEW1EP4MKD78686",
@@ -25733,68 +23417,6 @@
       "priceText": "$93,995",
       "description": "",
       "id": "Used-2023-Land_Rover-Range_Rover-SE_LWB_7_SEATS-SALKPBFU4PA074030"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2019-Mercedes-Benz-G-Class-G_63_AMG_-WDCYC7HJ0KX320598",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2019-Mercedes-Benz-G-Class-G_63_AMG_-WDCYC7HJ0KX320598",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2019-Mercedes-Benz-G-Class-G_63_AMG_-WDCYC7HJ0KX320598",
-      "scrapedAt": "2026-02-12T17:14:48.817Z",
-      "lastVerified": "2026-02-12T17:14:48.817Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2019,
-      "make": "Mercedes-Benz",
-      "model": "G-Class",
-      "trim": "G 63 AMG® 4MATIC®",
-      "vin": "WDCYC7HJ0KX320598",
-      "stock": "B4602",
-      "mileage": 25122,
-      "specs": {
-        "engine": "4.0L V8",
-        "transmission": "9-Speed Automatic",
-        "drivetrain": "4MATIC®",
-        "bodyType": "SUV",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/3s0c8mdg7x598tzp4erx6zgnreah"
-      ],
-      "carfaxUrl": "http://www.carfax.com/VehicleHistory/p/Report.cfx?partner=DVW_1&vin=WDCYC7HJ0KX320598",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2019-Mercedes-Benz-G-Class-G_63_AMG_-WDCYC7HJ0KX320598"
-    },
-    {
-      "url": "https://jsautohaus.com/inventory/Used-2019-Jaguar-F-PACE-30t_Prestige-SADCK2GX9KA353862",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2019-Jaguar-F-PACE-30t_Prestige-SADCK2GX9KA353862",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2019-Jaguar-F-PACE-30t_Prestige-SADCK2GX9KA353862",
-      "scrapedAt": "2026-02-12T17:14:52.237Z",
-      "lastVerified": "2026-02-12T17:14:52.237Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2019,
-      "make": "Jaguar",
-      "model": "F-PACE",
-      "trim": "30t Prestige",
-      "vin": "SADCK2GX9KA353862",
-      "stock": "25727HA",
-      "mileage": 87662,
-      "specs": {
-        "engine": "2.0L I4 Turbocharged",
-        "transmission": "8-Speed Automatic",
-        "drivetrain": "AWD",
-        "bodyType": "SUV",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/399oslor8lvh16jtajwolouvsq6r"
-      ],
-      "carfaxUrl": "http://www.carfax.com/VehicleHistory/p/Report.cfx?partner=DVW_1&vin=SADCK2GX9KA353862",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2019-Jaguar-F-PACE-30t_Prestige-SADCK2GX9KA353862"
     },
     {
       "url": "https://jsautohaus.com/inventory/Used-2017-Hyundai-Elantra-SE_2_0L_Auto_PZEV__Alabama___Ltd_Avail_-5NPD84LFXHH013662",
@@ -26133,37 +23755,6 @@
       "id": "Used-2022-Nissan-Altima-2_5_SV-1N4BL4DV1NN333529"
     },
     {
-      "url": "https://jsautohaus.com/inventory/Used-2022-Hyundai-IONIQ_5-SEL-KM8KNDAF3NU105888",
-      "detailUrl": "https://jsautohaus.com/inventory/Used-2022-Hyundai-IONIQ_5-SEL-KM8KNDAF3NU105888",
-      "sourceUrl": "https://jsautohaus.com/inventory/Used-2022-Hyundai-IONIQ_5-SEL-KM8KNDAF3NU105888",
-      "scrapedAt": "2026-02-12T17:15:19.640Z",
-      "lastVerified": "2026-02-12T17:15:19.640Z",
-      "isActive": true,
-      "importBatch": "2026-02-12-full",
-      "year": 2022,
-      "make": "Hyundai",
-      "model": "IONIQ 5",
-      "trim": "SEL",
-      "vin": "KM8KNDAF3NU105888",
-      "stock": "25860A",
-      "mileage": 43946,
-      "specs": {
-        "engine": "Electric Motor",
-        "transmission": "1-Speed Automatic",
-        "drivetrain": "AWD",
-        "bodyType": "SUV",
-        "doors": 4
-      },
-      "images": [
-        "https://images.app.ridemotive.com/co2ihyh94jvsvnzboeq7qtvwl3un"
-      ],
-      "carfaxUrl": "http://www.carfax.com/VehicleHistory/p/Report.cfx?partner=DVW_1&vin=KM8KNDAF3NU105888",
-      "price": 0,
-      "priceText": "Call for Price",
-      "description": "",
-      "id": "Used-2022-Hyundai-IONIQ_5-SEL-KM8KNDAF3NU105888"
-    },
-    {
       "url": "https://jsautohaus.com/inventory/Used-2024-MINI-John_Cooper_Works-WMW63DL07R3R34413",
       "detailUrl": "https://jsautohaus.com/inventory/Used-2024-MINI-John_Cooper_Works-WMW63DL07R3R34413",
       "sourceUrl": "https://jsautohaus.com/inventory/Used-2024-MINI-John_Cooper_Works-WMW63DL07R3R34413",
@@ -26262,5 +23853,6 @@
       "description": "",
       "id": "Used-2019-Hyundai-Santa_Fe-Limited_2_0T_Auto_FWD-5NMS53AA5KH109401"
     }
-  ]
+  ],
+  "filteredAt": "2026-02-12T20:36:56.980Z"
 }

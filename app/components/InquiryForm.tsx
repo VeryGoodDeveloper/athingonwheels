@@ -60,12 +60,11 @@ export default function InquiryForm({ vehicle }: InquiryFormProps) {
   };
 
   return (
-    <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 md:p-8 border-2 border-amber-500/40 shadow-2xl">
+    <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 md:p-8 border border-gray-700/30 shadow-2xl">
       <h2 className="text-2xl font-bold mb-6 text-white">Check if Your Thing is Available</h2>
       
       {status === "success" ? (
         <div className="bg-green-500/20 border border-green-500 rounded-lg p-6 text-center">
-          <div className="text-green-400 text-5xl mb-4">✓</div>
           <h3 className="text-xl font-bold text-green-400 mb-2">Thing Status: Checking!</h3>
           <p className="text-gray-300">
             We're checking on your {vehicle.year} {vehicle.make} {vehicle.model}.

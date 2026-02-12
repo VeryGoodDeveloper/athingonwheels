@@ -30,11 +30,8 @@ export default function PaymentCalculator({ price }: PaymentCalculatorProps) {
   const monthlyPayment = calculatePayment();
 
   return (
-    <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border-2 border-amber-500/40 shadow-2xl">
-      <div className="flex items-center gap-2 mb-4">
-        <span className="text-2xl">💳</span>
-        <h3 className="text-xl font-bold text-white">Estimate Your Payment</h3>
-      </div>
+    <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-gray-700/30 shadow-2xl">
+      <h3 className="text-xl font-bold text-white mb-4">Estimate Your Payment</h3>
 
       <div className="space-y-4 mb-6">
         {/* Down Payment */}
